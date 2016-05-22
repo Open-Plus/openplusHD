@@ -1,1 +1,1 @@
-# openplusHD
+# openplusHD v2 FullHD
