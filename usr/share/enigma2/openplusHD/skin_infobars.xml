@@ -307,7 +307,7 @@
     <convert type="openplusHDChannelCryptoInfo">ConaxEcm</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-   <panel name="menu_template_infobar" />
+  <panel name="menu_template_infobar" />
   <panel name="menu_template_infobar_infos" />
   <panel name="menu_template_infobar_icons" />
   <panel name="menu_template_infobar_yweather" />
