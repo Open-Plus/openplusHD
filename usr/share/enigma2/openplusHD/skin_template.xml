@@ -1,4 +1,77 @@
 <skin>
+<screen name="menu_templateOP">
+<eLabel text="OPENPANEL" position="center,155" size="430,65" font="audiowide; 42" halign="center" transparent="1" foregroundColor="white" backgroundColor="un42b3" />
+  <eLabel position="1201,840" size="230,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+  <widget transparent="1" render="Label" zPosition="2" valign="center" halign="left" position="365,235" size="1125,50" font="Caviar_bold; 32" backgroundColor="black" foregroundColor="white" noWrap="1" name="label1" />
+  <widget source="global.CurrentTime" render="Label" position="1287,144" size="251,55" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 26" valign="center" halign="right">
+    <convert type="ClockToText">Format:%-H:%M</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1238,172" size="300,55" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 18" valign="center" halign="right">
+    <convert type="ClockToText">Date</convert>
+  </widget>
+  <widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=25,repeat=150,startdelay=1500,always=0" position="377,841" size="224,50" font="plus; 19" transparent="1" valign="center" zPosition="2" backgroundColor="black" foregroundColor="white" noWrap="1" halign="center">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <eLabel position="center,center" size="1288,808" transparent="0" zPosition="-15" backgroundColor="transpWhite" />
+  <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 25" position="1207,848" size="218,50" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white">
+    <convert type="VtiInfo">TempInfo</convert>
+  </widget>
+  <eLabel position="center,234" size="1217,50" transparent="0" foregroundColor="white" backgroundColor="black" />
+  <eLabel position="375,840" size="229,50" transparent="0" foregroundColor="white" backgroundColor="black" />
+  <eLabel position="640,840" size="551,50" transparent="0" foregroundColor="white" backgroundColor="un929292" zPosition="-1" />
+  <eLabel position="640,312" size="901,514" transparent="0" foregroundColor="white" backgroundColor="un6e6e6e" zPosition="-10" />
+  
+  <eLabel text="EXIT" position="1441,840" size="100,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+  <eLabel position="center,150" size="1217,68" transparent="0" foregroundColor="white" backgroundColor="transpblue" zPosition="-10" />
+ </screen>
+ <screen name="menu_templateOP2">
+<eLabel text="OPENPANEL" position="center,155" size="430,65" font="audiowide; 42" halign="center" transparent="1" foregroundColor="white" backgroundColor="un42b3" />
+  <eLabel position="1201,840" size="230,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+  <widget source="global.CurrentTime" render="Label" position="1287,144" size="251,55" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 26" valign="center" halign="right">
+    <convert type="ClockToText">Format:%-H:%M</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1238,172" size="300,55" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 18" valign="center" halign="right">
+    <convert type="ClockToText">Date</convert>
+  </widget>
+  <widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=25,repeat=150,startdelay=1500,always=0" position="377,841" size="224,50" font="plus; 19" transparent="1" valign="center" zPosition="2" backgroundColor="black" foregroundColor="white" noWrap="1" halign="center">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <eLabel position="center,center" size="1288,808" transparent="0" zPosition="-15" backgroundColor="transpWhite" />
+  <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 25" position="1207,848" size="218,50" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white">
+    <convert type="VtiInfo">TempInfo</convert>
+  </widget>
+  <eLabel position="center,234" size="1217,50" transparent="0" foregroundColor="white" backgroundColor="black" />
+  <eLabel position="375,840" size="229,50" transparent="0" foregroundColor="white" backgroundColor="black" />
+  <eLabel position="640,840" size="551,50" transparent="0" foregroundColor="white" backgroundColor="un929292" zPosition="-1" />
+  <eLabel position="640,312" size="901,460" transparent="0" foregroundColor="white" backgroundColor="black" zPosition="-8" />
+  <eLabel text="EXIT" position="1441,840" size="100,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+  <eLabel position="center,150" size="1217,68" transparent="0" foregroundColor="white" backgroundColor="transpblue" zPosition="-10" />
+ </screen>
+ <screen name="menu_templateOPinf">
+<eLabel position="640,312" size="901,514" transparent="0" foregroundColor="white" backgroundColor="black" zPosition="-8" />
+ <eLabel text="OPENPANEL" position="center,155" size="430,65" font="audiowide; 42" halign="center" transparent="1" foregroundColor="white" backgroundColor="un42b3" />
+  <eLabel position="1201,840" size="230,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+  <widget transparent="1" render="Label" zPosition="2" valign="center" halign="left" position="365,235" size="1125,50" font="Caviar_bold; 32" backgroundColor="black" foregroundColor="white" noWrap="1" name="label2" />
+  <widget source="global.CurrentTime" render="Label" position="1287,144" size="251,55" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 26" valign="center" halign="right">
+    <convert type="ClockToText">Format:%-H:%M</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1238,172" size="300,55" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 18" valign="center" halign="right">
+    <convert type="ClockToText">Date</convert>
+  </widget>
+  <widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=25,repeat=150,startdelay=1500,always=0" position="377,841" size="224,50" font="plus; 19" transparent="1" valign="center" zPosition="2" backgroundColor="black" foregroundColor="white" noWrap="1" halign="center">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <eLabel position="center,center" size="1288,808" transparent="0" zPosition="-15" backgroundColor="transpWhite" />
+  <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 25" position="1207,848" size="218,50" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white">
+    <convert type="VtiInfo">TempInfo</convert>
+  </widget>
+  <eLabel position="center,234" size="1217,50" transparent="0" foregroundColor="white" backgroundColor="black" />
+  <eLabel position="375,840" size="229,50" transparent="0" foregroundColor="white" backgroundColor="black" />
+  <eLabel position="640,840" size="551,50" transparent="0" foregroundColor="white" backgroundColor="un929292" zPosition="-1" />
+  <eLabel position="640,312" size="901,514" transparent="0" foregroundColor="white" backgroundColor="black" zPosition="-8" />
+  <eLabel text="EXIT" position="1441,840" size="100,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+  <eLabel position="center,150" size="1217,68" transparent="0" foregroundColor="white" backgroundColor="transpblue" zPosition="-10" />
+ </screen>
 <screen name="menu_template1">
   <eLabel text="OPENPLUS" position="center,155" size="430,65" font="audiowide; 42" halign="center" transparent="1" foregroundColor="white" backgroundColor="un42b3" />
   <eLabel position="1201,840" size="230,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />

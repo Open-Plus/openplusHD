@@ -1907,9 +1907,7 @@
     <widget name="icon2" position="944,655" size="96,96" zPosition="2" alphatest="blend" backgroundColor="un6e6e6e" />
     <widget name="icon3" position="1122,655" size="96,96" zPosition="2" alphatest="blend" backgroundColor="un6e6e6e" />
     <widget name="icon4" position="1306,655" size="96,96" zPosition="2" alphatest="blend" backgroundColor="un6e6e6e" />
-    <widget backgroundColor="un6e6e6e" font="Caviar_bold; 22" foregroundColor="white" halign="right" render="Label" position="1087,417" size="450,35" source="session.CurrentService" transparent="1" zPosition="2">
-      <convert type="YWeather">city</convert>
-    </widget>
+    <widget backgroundColor="un6e6e6e" font="Caviar_bold; 22" foregroundColor="white" halign="right" render="Label" position="1041,417" size="496,35" source="city_locale" transparent="1" zPosition="2" />
     <panel name="menu_template_net" />
     <panel name="button_template_rava_n" />
     <widget transparent="1" zPosition="5" valign="center" halign="left" position="645,417" size="295,35" font="Caviar_bold; 22" backgroundColor="un6e6e6e" foregroundColor="white" noWrap="1" source="text_city" render="Label" />
@@ -1959,4 +1957,104 @@
     <widget transparent="1" zPosition="5" valign="center" halign="left" position="1104,302" size="138,30" font="audiowide; 19" foregroundColor="white" noWrap="1" source="text_sunri" render="Label" />
     <widget transparent="1" zPosition="5" valign="center" halign="left" position="1104,395" size="137,30" font="audiowide; 19" foregroundColor="white" noWrap="1" source="text_sunset" render="Label" />
   </screen>
+  <screen name="Openpanel" position="center,center" size="1920,1080" title="Open Panel" flags="wfNoBorder" backgroundColor="transparent">
+    <widget name="Mlist" position="640,312" size="901,487" itemHeight="60" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="un6e6e6e" foregroundColor="white" transparent="1" />
+  <ePixmap pixmap="openplusHD/menu/oplusp.png" zPosition="-3" position="354,452" size="250,240" alphatest="blend" />
+  <panel name="menu_templateOP" />
+</screen>
+<screen name="Info" position="center,center" size="1920,1080" title="Open Panel-Info" flags="wfNoBorder" backgroundColor="transparent">
+ <widget name="label1" position="655,327" size="886,497" font="Console;20" zPosition="1" backgroundColor="black" transparent="1" foregroundColor="white" />
+<ePixmap pixmap="openplusHD/menu/oplusp.png" zPosition="-3" position="354,452" size="250,240" alphatest="blend" />
+<panel name="menu_templateOPinf" />
+</screen>
+<screen name="Info2" position="center,center" size="1920,1080" title="Open Panel-Info" flags="wfNoBorder" backgroundColor="transparent">
+ <widget name="label1" position="655,327" size="886,497" font="Console;20" zPosition="1" backgroundColor="black" transparent="1" foregroundColor="white" />
+<ePixmap pixmap="openplusHD/menu/oplusp.png" zPosition="-3" position="354,452" size="250,240" alphatest="blend" />
+<panel name="menu_templateOPinf" />
+</screen>
+<screen name="SoftcamPanel" position="center,center" size="1920,1080" title="Softcam Panel" flags="wfNoBorder" backgroundColor="transparent">
+     <widget font="Regular;18" name="camcount" position="652,320" size="175,30" backgroundColor="black" halign="center" />
+   <widget name="config" position="640,358" size="901,100" backgroundColor="black" font="Regular; 20" />
+   <ePixmap pixmap="openplusHD/menu/oplusp.png" zPosition="-3" position="354,452" size="250,240" alphatest="blend" />
+   <widget font="Regular; 18" name="actifcam" position="652,476" size="360,35" backgroundColor="black" halign="center" />
+   <widget font="Regular; 18" name="actifcam2" position="1169,476" size="360,35" backgroundColor="black" halign="center" />
+   <widget font="Regular; 19" name="ecminfo" position="640,529" size="901,241" backgroundColor="black" halign="center" transparent="1" /> 
+   <eLabel transparent="1" zPosition="2" valign="center" halign="left" position="365,235" size="1125,50" font="Caviar_bold; 32" backgroundColor="black" foregroundColor="white" noWrap="1" text="Softcam Panel" />
+   <panel name="menu_templateOP2" />
+   <panel name="button_template_rava_name" />
+  </screen>
+  <screen name="ShowSoftcamPackages" position="center,center" size="630,600" title="Install Softcams">
+			
+			<ePixmap pixmap="openplusHD/buttons/key_ok1.png" position="315,553" size="81,40" alphatest="blend" zPosition="10" />
+			<widget source="key_red" render="Label" position="5,553" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="red" transparent="0" foregroundColor="white" />
+			<widget source="key_green" render="Label" position="159,553" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="green" transparent="0" foregroundColor="white" />
+			<widget source="key_ok" render="Label" position="366,553" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#DBDBDB" transparent="0" foregroundColor="black" />
+			<widget source="list" render="Listboxlb" position="5,20" size="620,519" backgroundColor="un6e6e6e" foregroundColor="white" scrollbarMode="showNever">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (5, 1), size = (540, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+							MultiContentEntryText(pos = (5, 26), size = (540, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+							MultiContentEntryPixmapAlphaBlend(pos = (545, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+							MultiContentEntryPixmapAlphaBlend(pos = (5, 50), size = (610, 2), png = 5), # index 4 is the div pixmap
+						],
+					"fonts": [gFont("Regular", 22),gFont("Regular", 14)],
+					"itemHeight": 52
+					}
+				</convert>
+			</widget>
+		</screen>
+		<screen name="CronManager" position="0,0" size="1920,1080" title="Cron Manager" flags="wfNoBorder" backgroundColor="transparent">
+  <widget source="list" render="Listbox" zPosition="3" position="640,312" size="901,343" scrollbarMode="showOnDemand" backgroundColor="und6d6d6" foregroundColor="black" backgroundColorSelected="#fd6502" foregroundColorSelected="white" transparent="1" itemHeight="40">
+    <convert type="StringList" />
+  </widget>
+  <widget name="labdisabled" position="1311,725" size="230,30" font="Regular; 20" valign="center" halign="center" backgroundColor="red" zPosition="1" transparent="0" />
+  <widget name="labactive" position="1311,725" size="230,30" font="Regular; 20" valign="center" halign="center" backgroundColor="green" zPosition="2" transparent="0" />
+  <widget name="labstop" position="1311,680" size="230,30" font="Regular; 20" valign="center" halign="center" backgroundColor="red" zPosition="1" transparent="0" />
+  <widget name="labrun" position="1311,680" size="230,30" font="Regular; 20" valign="center" halign="center" backgroundColor="green" zPosition="2" transparent="0" foregroundColor="white" />
+  <widget name="key" position="646,852" size="542,30" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="un929292" valign="center" transparent="1" />
+  <widget name="key" position="646,852" size="542,30" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="un929292" valign="center" transparent="1" />
+  <panel name="menu_templatewhite" />
+  <ePixmap pixmap="openplusHD/menu/backup.png" position="365,433" size="250,259" alphatest="blend" zPosition="-11" />
+  <widget name="lab1" position="1103,725" size="201,30" font="Regular;20" valign="center" halign="right" transparent="0" foregroundColor="black" />
+  <widget name="lab2" position="1103,680" size="201,30" font="Regular;20" valign="center" halign="right" transparent="0" foregroundColor="black" />
+  <!--widget name="key" position="70,520" size="700,30" font="Regular;20" foregroundColor="layer-a-foreground" halign="center" backgroundColor="layer-a-background" valign="center" transparent="1"/-->
+  <panel name="menu_templatewhite" />
+  <panel name="button_template_rava_n" />
+</screen>
+<screen name="SetupCronConf" position="0,0" size="1920,1080" title="Cron Manager" flags="wfNoBorder" backgroundColor="transparent">
+  <widget name="config" zPosition="3" position="640,312" size="901,418" itemHeight="30" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="un6e6e6e" foregroundColor="white" backgroundColorSelected="#fd6502" foregroundColorSelected="white" transparent="0" font="Regular; 19" />
+  <widget name="description" position="640,731" size="901,97" halign="center" valign="center" transparent="0" foregroundColor="white" font="Regular; 17" backgroundColor="un6e6e6e" />
+  <widget name="HelpWindow" position="720,945" size="901,126" zPosition="1" transparent="1" alphatest="blend" foregroundColor="black" halign="center" />
+  <ePixmap pixmap="openplusHD/menu/menu1.png" position="360,443" size="250,359" alphatest="blend" zPosition="-11" />
+  <eLabel position="640,730" zPosition="-11" size="901,2" backgroundColor="white" foregroundColor="white" />
+  <eLabel position="640,731" size="901,97" halign="center" valign="center" transparent="0" foregroundColor="white" backgroundColor="un6e6e6e" zPosition="-1" />
+  <panel name="menu_templatewhite" />
+  <panel name="button_template_rv_lg" />
+</screen>
+<screen name="ScriptRunner" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="Script Runner">
+		  <panel name="menu_template1" />
+                 <panel name="button_template_rv_lg" />
+                <widget name="lab1" position="975,244" size="560,35" font="Regular; 22" zPosition="2" transparent="0" halign="right" backgroundColor="black" />
+	
+                <widget name="list" position="640,312" size="901,506" font="Regular;24" foregroundColor="white" backgroundColor="un6e6e6e" transparent="0" itemHeight="60" />
+                <ePixmap pixmap="openplusHD/menu/crash.png" position="410,435" size="250,259" alphatest="blend" zPosition="-11" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(45)
+		</applet>
+	</screen>
+<screen name="Swap" title="Swap File Manager" position="center,center" size="1920,1080" backgroundColor="transparent">
+  <widget name="autostart_on" position="869,420" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+  <widget name="autostart_off" position="869,420" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+  <widget name="inactive" position="901,592" size="310,40" font="Regular;20" valign="center" backgroundColor="red" halign="center" zPosition="0" />
+ <widget name="lab1" position="901,413" size="722,40" font="Regular; 22" valign="center" transparent="1" foregroundColor="white" backgroundColor="un6e6e6e" halign="left" />
+  <widget name="lab2" position="670,472" size="223,40" font="Regular; 22" valign="center" transparent="1" foregroundColor="white" backgroundColor="un6e6e6e" />
+  <widget name="labplace" position="901,472" size="310,40" font="Regular;20" valign="center" backgroundColor="un4d5375" halign="center" />
+  <widget name="lab3" position="670,532" size="223,40" font="Regular; 22" valign="top" transparent="1" foregroundColor="white" backgroundColor="un6e6e6e" />
+  <widget name="labsize" position="901,532" size="310,40" font="Regular;20" valign="center" backgroundColor="un4d5375" halign="center" />
+  <widget name="lab4" position="670,592" size="223,40" font="Regular; 22" valign="center" transparent="1" foregroundColor="white" backgroundColor="un6e6e6e" />
+  <widget name="active" position="901,592" size="310,40" font="Regular;20" valign="center" backgroundColor="un11b90a" halign="center" />
+  <ePixmap pixmap="openplusHD/menu/adapter.png" position="363,447" size="250,250" alphatest="blend" zPosition="-11" />
+  <panel name="button_template_rava_name" />
+  <panel name="menu_template_net" />
+</screen>
 </skin>
