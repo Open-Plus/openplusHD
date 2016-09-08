@@ -1013,7 +1013,7 @@
     <eLabel position="center,233" size="866,43" transparent="0" foregroundColor="white" backgroundColor="black" zPosition="-1" />
     <eLabel position="527,233" size="43,43" backgroundColor="unfc0063" transparent="0" foregroundColor="unfc0063" zPosition="10" />
   </screen>
-  <screen name="EMCSelection" position="0,0" size="1920,1080" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent" zPosition="-1">
+<screen name="EMCSelection" position="0,0" size="1920,1080" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent" zPosition="-1">
     <ePixmap position="201,229" size="480,315" zPosition="1" pixmap="openplusHD/cover_bg.png" />
     <eLabel position="683,975" size="232,35" zPosition="0" font="Regular; 18" halign="center" backgroundColor="black" transparent="0" foregroundColor="white" />
     <eLabel text="E n h a n c e d  M o v i e  C e n t e r" position="295,77" size="550,35" font="plus; 25" foregroundColor="black" backgroundColor="white" transparent="1" />
@@ -1021,7 +1021,7 @@
     <!-- Cover Mini Tv -->
     <widget name="CoverBg" position="201,229" size="480,315" zPosition="4" alphatest="off" transparent="0" pixmap="openplusHD/cover_bg1.png" />
     <widget name="Cover" position="201,229" size="480,315" zPosition="4" alphatest="blend" />
-    <widget name="list" position="814,275" size="970,639" itemHeight="32" CoolFont="Regular;20" CoolSelectFont="Regular;20" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="545" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="122" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="590" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#FFFFFF" UnwatchedColor="#FFFFFF" WatchingColor="#3486F4" FinishedColor="#46D93A" RecordingColor="#9F1313" BackColorSel="#000000" backgroundColorSelected="black" foregroundColorSelected="#ffffff" foregroundColor="iplusAccent2" backgroundColor="black" scrollbarMode="showNever" transparent="1" selectionPixmap="openplusHD/cursor1.png" />
+    <widget name="list" position="814,275" size="970,639" itemHeight="32" CoolFont="Regular;20" CoolSelectFont="Regular;20" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="930" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="122" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="590" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#FFFFFF" UnwatchedColor="#FFFFFF" WatchingColor="#3486F4" FinishedColor="#46D93A" RecordingColor="#9F1313" BackColorSel="#000000" backgroundColorSelected="black" foregroundColorSelected="#ffffff" foregroundColor="iplusAccent2" backgroundColor="black" scrollbarMode="showNever" transparent="1" selectionPixmap="openplusHD/cursor1.png" />
     <widget name="wait" position="282,493" size="1280,50" zPosition="15" font="Caviar_bold; 32" foregroundColor="white" backgroundColor="black" halign="center" valign="center" transparent="1" />
     <widget source="Service" options="movetype=running,startpoint=0,direction=left,steptime=25,repeat=5,startdelay=1500,always=0" render="RunningText" position="131,144" size="783,40" font="Caviar_bold;24" foregroundColor="white" backgroundColor="black" halign="left" transparent="1">
       <convert type="EMCEventName">Name</convert>

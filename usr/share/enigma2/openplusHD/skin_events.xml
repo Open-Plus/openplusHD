@@ -47,7 +47,7 @@
     <widget name="FullDescription" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=5,oneshot=1" render="RunningText" position="15,55" size="1449,364" font="Regular;22" foregroundColor="white" backgroundColor="black" scrollbarMode="showNever" transparent="1" />
   </screen>
   <screen name="EventViewSimple" position="center,center" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-  <widget source="Title" render="Label" position="266,434" size="437,37" font="audiowide; 20" transparent="1" foregroundColor="unffa500" backgroundColor="transpBlackb" zPosition="1" valign="center" halign="center" />
+  <widget source="Title" render="Label" position="266,434" size="437,53" font="audiowide; 20" transparent="1" foregroundColor="unffa500" backgroundColor="transpBlackb" zPosition="1" valign="center" halign="center" />
   <widget name="datetime" position="253,490" size="463,35" font="audiowide; 24" foregroundColor="white" backgroundColor="transpBlackb" transparent="1" valign="center" halign="center" />
   <widget name="duration" position="253,544" size="463,35" font="audiowide; 24" foregroundColor="unffa500" backgroundColor="transpBlackb" transparent="1" noWrap="1" valign="center" halign="center" />
   <widget name="FullDescription" position="729,231" size="895,598" font="Regular;22" foregroundColor="white" backgroundColor="black" scrollbarMode="showNever" transparent="1" />

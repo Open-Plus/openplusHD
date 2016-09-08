@@ -27,7 +27,7 @@
     <eLabel text="CHANNELS" position="841,320" size="597,38" font="Arial; 22" backgroundColor="un929292" transparent="1" foregroundColor="black" zPosition="1" />
     <eLabel position="362,148" size="1,28" backgroundColor="black" transparent="0" foregroundColor="iplusPink" halign="center" />
     <!-- /*Infobar-->
-    <widget source="ServiceEvent" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=5,oneshot=1" render="RunningText" position="245,434" size="543,295" font="Regular; 18" foregroundColor="white" backgroundColor="black" transparent="1" valign="top" halign="left">
+    <widget source="ServiceEvent" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=5,oneshot=1" render="RunningText" position="245,434" size="543,295" font="Regular; 21" foregroundColor="white" backgroundColor="black" transparent="1" valign="top" halign="left">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="Title" render="Label" position="368,144" size="805,45" font="plus; 28" backgroundColor="white" transparent="1" foregroundColor="black" noWrap="1" />
