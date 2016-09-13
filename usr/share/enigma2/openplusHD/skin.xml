@@ -1225,7 +1225,7 @@
     <eLabel position="center,center" size="1651,1037" transparent="0" zPosition="-22" backgroundColor="transpWhite" />
     <!-- /* LOGOPLUS -->
     <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 25" position="1182,963" size="218,50" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white">
-      <convert type="VtiInfo">TempInfo</convert>
+       <convert type="MetrixSTBinfo">SYStemp</convert>
     </widget>
     <!-- LOGOPLUS */ -->
     <eLabel position="center,114" size="1617,50" transparent="0" foregroundColor="white" backgroundColor="black" />
