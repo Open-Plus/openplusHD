@@ -1,0 +1,18 @@
+<skin>
+<screen name="SecondInfoBar" position="center,center" size="1920,1080" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
+  <panel name="menu_template_infobar" />
+  <panel name="menu_template_secinfo" />
+  <panel name="menu_template_infobar_infos" />
+  <panel name="menu_template_infobar_icons" />
+  <panel name="menu_template_infobar_yweather_off" />
+  <panel name="menu_template_infobar_fweather_off" />
+  <panel name="menu_template_infobar_description" />
+  <panel name="menu_template_infobar_eventname" />
+  <panel name="menu_template_tuner_type" />
+  <panel name="menu_template_crypto_info" />
+  <panel name="menu_template_mini_health" />
+  <panel name="menu_template_frec" />
+  <panel name="menu_template_camcryptecm" />
+  <panel name="menu_template_provider" />	 
+</screen>
+</skin>

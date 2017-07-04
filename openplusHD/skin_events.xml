@@ -1,0 +1,79 @@
+<skin>
+ 
+  <screen name="EventView" position="center,center" size="1920,1080" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">
+  <eLabel text="Program Duration:" position="305,538" size="362,31" font="audiowide; 19" backgroundColor="transpBlack" transparent="1" foregroundColor="unffa500" valign="top" zPosition="-20" halign="center" />
+  <eLabel position="327,634" size="315,2" backgroundColor="iplusAccent1" foregroundColor="iplusAccent1" />
+  <widget backgroundColor="red" font="Regular; 16" halign="center" name="key_red" position="729,854" size="180,30" transparent="0" zPosition="1" foregroundColor="white" />
+  <widget backgroundColor="green" font="Regular; 16" halign="center" name="key_green" position="971,854" size="180,30" transparent="0" zPosition="1" foregroundColor="white" />
+  <widget backgroundColor="yellow" font="Regular; 16" halign="center" name="key_yellow" position="1208,854" size="180,30" transparent="0" zPosition="1" foregroundColor="white" />
+  <widget backgroundColor="iplusbarraback" font="Regular; 16" halign="center" name="key_blue" position="1445,854" size="180,30" transparent="0" zPosition="1" foregroundColor="white" />
+  <widget scrollbarMode="showNever" backgroundColor="black" font="Regular; 22" foregroundColor="white" name="epg_description" position="729,231" size="895,598" transparent="1" />
+  <widget alphatest="blend" position="373,231" render="oPicon" size="220,132" source="Service" transparent="1" zPosition="5">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget font="Caviar_bold; 20" foregroundColor="white" halign="center" noWrap="1" options="movetype=running,direction=left,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=5,oneshot=1" position="266,704" render="RunningText" size="437,38" source="session.Event_Now" transparent="1" backgroundColor="transpBlack" zPosition="0">
+    <convert type="EventName">Name</convert>
+  </widget>
+ <widget backgroundColor="iplusBackground" borderWidth="0" pixmap="openplusHD/colors/00a61d4d.png" position="332,751" render="Progress" size="305,25" source="session.Event_Now" transparent="1" zPosition="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <eLabel backgroundColor="darkgrey" foregroundColor="black" position="332,751" size="305,25" />
+  <widget font="audiowide; 20" foregroundColor="unffa500" halign="center" noWrap="1" options="movetype=running,direction=left,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=5,oneshot=1" position="266,434" render="RunningText" size="437,37" source="Event" transparent="1" backgroundColor="transpBlack" zPosition="0">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget name="datetime" position="294,485" size="384,40" font="audiowide; 24" halign="center" backgroundColor="transpBlack" transparent="1" foregroundColor="white" />
+  <eLabel position="266,667" size="437,31" font="Caviar_bold; 19" backgroundColor="transpBlack" transparent="1" foregroundColor="unffa500" valign="top" zPosition="-20" halign="center" text="You're watching..." />
+  <widget name="duration" position="372,575" size="229,40" font="audiowide; 24" halign="center" backgroundColor="transpBlack" transparent="1" foregroundColor="white" />
+  <widget name="channel" position="266,384" size="437,42" font="plus; 24" halign="center" backgroundColor="transpBlack" transparent="1" foregroundColor="white" />
+  <ePixmap position="646,483" size="36,36" zPosition="10" pixmap="openplusHD/right.png" transparent="1" alphatest="blend" />
+  <ePixmap position="291,483" size="36,36" zPosition="10" pixmap="openplusHD/left.png" transparent="1" alphatest="blend" />
+  <panel name="menu_template_events" />
+</screen>
+  <screen name="EventViewContextMenu" position="center,center" size="560,345" backgroundColor="transpWhite" transparent="0">
+    <widget name="menu" render="Listbox" position="0,20" size="560,325" foregroundColor="black" backgroundColor="transpWhite" transparent="0" enableWrapAround="1" scrollbarMode="showNever">
+      <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (465,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",28)],
+				"itemHeight": 40
+				}
+			</convert>
+    </widget>
+  </screen>
+  <screen name="InfoBarEventView" position="center,100" size="1480,434" backgroundColor="transpBlackb" flags="wfNoBorder" zPosition="1">
+    <eLabel position="0,0" size="1480,50" zPosition="-1" backgroundColor="transpblue" />
+    <widget source="Title" render="Label" position="15,9" size="859,33" font="plus; 23" transparent="1" foregroundColor="white" backgroundColor="iplusbarraback" zPosition="1" valign="center" />
+    <widget name="datetime" position="1032,9" size="304,33" font="audiowide; 20" foregroundColor="white" backgroundColor="iplusbarraback" transparent="1" noWrap="1" valign="center" halign="right" />
+    <widget name="duration" position="1368,9" size="124,33" font="audiowide; 20" foregroundColor="unffa500" backgroundColor="iplusbarraback" transparent="1" noWrap="1" valign="center" halign="left" />
+    <widget name="FullDescription" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=5,oneshot=1" render="RunningText" position="15,55" size="1449,364" font="Regular;22" foregroundColor="white" backgroundColor="black" scrollbarMode="showNever" transparent="1" />
+  </screen>
+  <screen name="EventViewSimple" position="center,center" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+  <widget source="Title" render="Label" position="266,434" size="437,53" font="audiowide; 20" transparent="1" foregroundColor="unffa500" backgroundColor="transpBlackb" zPosition="1" valign="center" halign="center" />
+  <widget name="datetime" position="253,490" size="463,35" font="audiowide; 24" foregroundColor="white" backgroundColor="transpBlackb" transparent="1" valign="center" halign="center" />
+  <widget name="duration" position="253,544" size="463,35" font="audiowide; 24" foregroundColor="unffa500" backgroundColor="transpBlackb" transparent="1" noWrap="1" valign="center" halign="center" />
+  <widget name="epg_description" position="729,231" size="895,598" font="Regular;22" foregroundColor="white" backgroundColor="black" scrollbarMode="showNever" transparent="1" />
+ <widget alphatest="blend" position="373,231" render="XoPicon" size="220,132" source="Service" transparent="1" zPosition="5">
+    <convert type="MovieInfo">RecordServiceRef</convert>
+  </widget>
+  <eLabel text="Playback Time:" foregroundColor="unffa500" noWrap="1" font="audiowide; 18" halign="right" position="253,677" size="248,30" transparent="1" backgroundColor="transpBlackb" />
+<widget source="session.CurrentService" render="Label" font="audiowide; 18" halign="right" position="503,677" size="81,30" transparent="1" text="00:00" backgroundColor="transpBlackb">
+  <convert type="openplusHDServiceTime">StartTime</convert>
+</widget>
+<eLabel font="audiowide; 18" halign="center" position="584,677" size="30,30" text="-" transparent="1" backgroundColor="transpBlackb" />
+<widget source="session.CurrentService" render="Label" font="audiowide; 18" halign="left" position="614,677" size="97,30" transparent="1" foregroundColor="white" backgroundColor="transpBlackb" text="00:00">
+  <convert type="openplusHDServiceTime">EndTime</convert>
+</widget>
+<widget source="Service" render="Label" position="253,599" size="463,35" font="audiowide; 24" halign="center" transparent="1" foregroundColor="white" backgroundColor="transpBlackb">
+  <convert type="MovieInfo">FileSize</convert>
+</widget>
+<widget backgroundColor="iplusBackground" borderWidth="0" pixmap="openplusHD/colors/00a61d4d.png" position="332,751" render="Progress" size="305,25" source="session.CurrentService" transparent="1" zPosition="1">
+   <convert type="ServicePosition">Position</convert>
+</widget>
+<eLabel backgroundColor="darkgrey" foregroundColor="black" position="332,751" size="305,25" />
+
+<widget render="Label" position="266,384" size="437,42" font="plus; 24" halign="center" valign="center" source="Service" transparent="1" backgroundColor="transpBlackb" foregroundColor="white">
+  <convert type="EMCMovieInfo">RecordServiceName</convert>
+</widget>
+<widget backgroundColor="iplusbarraback" font="Regular; 16" halign="center" name="key_blue" position="1445,854" size="180,30" transparent="0" zPosition="1" foregroundColor="white" />		
+<panel name="menu_template_events" />
+</screen>
+</skin>

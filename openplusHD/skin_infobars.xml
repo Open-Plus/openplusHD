@@ -1,0 +1,12 @@
+<skin>
+ <!-- INFOBARS */-->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="0,0" size="1920,1080" title="InfoBar">
+    <panel name="menu_template_infobar" />
+    <panel name="menu_template_infobar_infos" />
+    <panel name="menu_template_infobar_icons" />
+	<panel name="menu_template_infobar_bitrate" />
+	<panel name="menu_template_infobar_yweather_off" />
+    <panel name="menu_template_infobar_fweather_off" />
+	<panel name="menu_template_infobar_eventname" />
+  </screen>
+</skin>
