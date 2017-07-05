@@ -23,8 +23,8 @@
     <widget source="list" render="Listbox" position="640,312" size="901,449" scrollbarMode="showNever" backgroundColor="un6e6e6e" foregroundColor="white" itemHeight="30" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [
-				MultiContentEntryText(pos = (12, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
-				MultiContentEntryPixmapAlphaTest(pos = (480, 0), size = (40, 40), png = 1),
+				MultiContentEntryText(pos = (12, 1), size = (800, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+				MultiContentEntryPixmapAlphaTest(pos = (820, 0), size = (40, 40), png = 1),
 				],
 				"fonts": [gFont("Caviar_bold", 23)],
 				"itemHeight": 30
@@ -39,8 +39,8 @@
     <widget source="list" render="Listbox" position="640,312" size="901,452" scrollbarMode="showNever" backgroundColor="un6e6e6e" foregroundColor="white" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [
-				MultiContentEntryText(pos = (12, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
-				MultiContentEntryPixmapAlphaTest(pos = (480, 0), size = (40, 40), png = 1),
+				MultiContentEntryText(pos = (12, 1), size = (800, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+				MultiContentEntryPixmapAlphaTest(pos = (820, 0), size = (40, 40), png = 1),
 				],
 				"fonts": [gFont("Caviar_bold", 23)],
 				"itemHeight": 30
@@ -56,7 +56,7 @@
       <convert type="TemplatedMultiContent">
 			{"template": [
 				MultiContentEntryPixmapAlphaTest(pos = (12, 4), size = (32, 32), png = 0),
-				MultiContentEntryText(pos = (58, 5), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+				MultiContentEntryText(pos = (58, 5), size = (800, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
 				],
 				"fonts": [gFont("Caviar_bold", 23)],
 				"itemHeight": 35
@@ -1959,7 +1959,7 @@
   </screen>
   <screen name="Openpanel" position="center,center" size="1920,1080" title="Open Panel" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="Mlist" position="640,312" size="901,487" itemHeight="60" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="un6e6e6e" foregroundColor="white" transparent="1" />
-  <ePixmap pixmap="openplusHD/menu/oplusp.png" zPosition="-3" position="360,443" size="250,240" alphatest="blend" />
+  <ePixmap pixmap="openplusHD/menu/oplusp.png" zPosition="-3" position="354,452" size="250,240" alphatest="blend" />
   <panel name="menu_templateOP" />
 </screen>
 <screen name="Info" position="center,center" size="1920,1080" title="Open Panel-Info" flags="wfNoBorder" backgroundColor="transparent">
