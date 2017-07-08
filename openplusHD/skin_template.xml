@@ -653,7 +653,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </widget>
   <ePixmap alphatest="blend" pixmap="openplusHD/icons/sub_off1.png" position="1174,901" size="51,25" />
   <widget alphatest="blend" pixmap="openplusHD/icons/sub_on1.png" position="1174,901" render="Pixmap" size="51,25" source="session.CurrentService" zPosition="1">
-  <convert type="PumServiceInfo">SubtitlesAvailable</convert>
+  <convert type="OPumServiceInfo">SubtitlesAvailable</convert>
   <convert type="ConditionalShowHide" />
 </widget>
   <ePixmap alphatest="blend" pixmap="openplusHD/icons/ico_hbbtv_off1.png" position="1102,901" size="64,25" zPosition="1" />
