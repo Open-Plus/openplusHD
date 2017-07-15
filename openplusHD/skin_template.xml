@@ -182,30 +182,29 @@
     
      <screen name="menu_template_list">
 
-<eLabel position="center,center" zPosition="-10" size="1511,860" backgroundColor="transpWhite" />
-         <eLabel position="238,311" size="560,40" transparent="0" foregroundColor="white" backgroundColor="un929292" zPosition="0" />
-     <eLabel position="833,311" size="844,40" transparent="0" foregroundColor="white" backgroundColor="un929292" zPosition="0" />
-   <eLabel position="238,351" size="560,543" backgroundColor="black" transparent="0" foregroundColor="white" zPosition="-1" />
-  <eLabel position="833,351" size="844,543" backgroundColor="black" transparent="0" foregroundColor="white" zPosition="-1" /> 
-    <eLabel position="204,203" size="50,50" backgroundColor="unfc0063" transparent="0" foregroundColor="unfc0063" zPosition="-1" />
-    <eLabel position="250,203" size="1207,50" backgroundColor="black" transparent="0" foregroundColor="iplusPink" zPosition="-1" />
+<eLabel position="center,center" zPosition="-10" size="1810,970" backgroundColor="transpWhite" />
+         <eLabel position="93,261" size="705,40" transparent="0" foregroundColor="white" backgroundColor="un929292" zPosition="0" />
+     <eLabel position="833,261" size="995,40" transparent="0" foregroundColor="white" backgroundColor="un929292" zPosition="0" />
+   <eLabel position="93,301" size="705,657" backgroundColor="black" transparent="0" foregroundColor="white" zPosition="-1" />
+  <eLabel position="833,301" size="995,657" backgroundColor="black" transparent="0" foregroundColor="white" zPosition="-1" /> 
+    <eLabel position="55,153" size="50,50" backgroundColor="unfc0063" transparent="0" foregroundColor="unfc0063" zPosition="-1" />
+    <eLabel position="105,153" size="1492,50" backgroundColor="black" transparent="0" foregroundColor="iplusPink" zPosition="-1" />
     
-    
- <eLabel text="CLICK      TO RECORD SELECTED PROGRAM" position="248,267" size="735,38" font="Arial; 25" backgroundColor="white" transparent="1" foregroundColor="black" />
- <ePixmap pixmap="openplusHD/graba.png" position="338,270" size="24,27" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Label" position="1296,131" size="159,26" font="audiowide; 20" halign="right" backgroundColor="white" transparent="1" foregroundColor="black">
+ <eLabel text="CLICK      TO RECORD SELECTED PROGRAM" position="103,217" size="735,38" font="Arial; 25" backgroundColor="white" transparent="1" foregroundColor="black" />
+ <ePixmap pixmap="openplusHD/graba.png" position="193,220" size="24,27" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="1436,71" size="159,26" font="audiowide; 20" halign="right" backgroundColor="white" transparent="1" foregroundColor="black">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
    
-    <widget source="global.CurrentTime" render="Label" position="1248,162" size="206,27" font="audiowide; 20" halign="right" backgroundColor="white" foregroundColor="black" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="1388,102" size="206,27" font="audiowide; 20" halign="right" backgroundColor="white" foregroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1329,209" size="120,30" font="audiowide; 30" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="1469,159" size="120,30" font="audiowide; 30" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
       <convert type="ClockToText">Default</convert>
     </widget>
          
-  <eLabel text="DESCRIPTION" position="248,320" size="410,38" font="Arial; 22" backgroundColor="un929292" transparent="1" foregroundColor="black" zPosition="1" />
-    <widget source="Event" render="Label" position="258,213" size="1030,33" font="Caviar_bold; 25" backgroundColor="black" transparent="0" valign="center" halign="left" foregroundColor="white">
+  <eLabel text="DESCRIPTION" position="103,270" size="410,38" font="Arial; 22" backgroundColor="un929292" transparent="1" foregroundColor="black" zPosition="1" />
+    <widget source="Event" render="Label" position="123,163" size="1311,33" font="Caviar_bold; 25" backgroundColor="black" transparent="0" valign="center" halign="left" foregroundColor="white">
       <convert type="EventName">EventName</convert>
     </widget> 
    
@@ -1160,18 +1159,18 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     
     
     <screen name="button_template_rava_list">
- <!-- colores keys  rojo azul verde amarillo menu info para templates  list-->
-   <eLabel position="981,915" size="35,35" transparent="0" foregroundColor="white" backgroundColor="uneefb1a" zPosition="-1" />
-    <eLabel position="670,915" size="35,35" transparent="0" foregroundColor="white" backgroundColor="un11b90a" zPosition="-1" />
-    <eLabel position="1291,915" size="35,35" transparent="0" foregroundColor="white" backgroundColor="un1a2cfb" zPosition="-1" />
-    <eLabel position="359,915" size="35,35" transparent="0" foregroundColor="white" backgroundColor="unee1d11" zPosition="-1" />
+<!-- colores keys  rojo azul verde amarillo menu info para templates  list-->
+   <eLabel position="996,975" size="35,35" transparent="0" foregroundColor="white" backgroundColor="uneefb1a" zPosition="-1" />
+    <eLabel position="625,975" size="35,35" transparent="0" foregroundColor="white" backgroundColor="un11b90a" zPosition="-1" />
+    <eLabel position="1371,975" size="35,35" transparent="0" foregroundColor="white" backgroundColor="un1a2cfb" zPosition="-1" />
+    <eLabel position="254,975" size="35,35" transparent="0" foregroundColor="white" backgroundColor="unee1d11" zPosition="-1" />
   
-   <widget name="key_red" position="394,915" size="232,35" zPosition="1" font="Regular; 18" halign="center" backgroundColor="black" transparent="0" foregroundColor="white" />
-    <widget name="key_green" position="705,915" size="232,35" zPosition="1" font="Regular; 18" halign="center" backgroundColor="black" transparent="0" foregroundColor="white" />
-    <widget name="key_yellow" position="1016,915" size="232,35" zPosition="1" font="Regular; 18" halign="center" backgroundColor="black" transparent="0" foregroundColor="white" />
-    <widget name="key_blue" position="1326,915" size="232,35" zPosition="1" font="Regular; 18" halign="center" backgroundColor="black" transparent="0" foregroundColor="white" />
-    <ePixmap position="238,912" size="81,40" zPosition="10" pixmap="openplusHD/buttons/key_menu2.png" transparent="1" alphatest="blend" />
-<ePixmap position="1596,912" size="81,40" zPosition="10" pixmap="openplusHD/buttons/key_info4.png" transparent="1" alphatest="blend" />
+   <widget name="key_red" position="289,975" size="250,35" zPosition="1" font="Regular; 20" halign="center" backgroundColor="black" transparent="0" foregroundColor="white" />
+    <widget name="key_green" position="660,975" size="250,35" zPosition="1" font="Regular; 20" halign="center" backgroundColor="black" transparent="0" foregroundColor="white" />
+    <widget name="key_yellow" position="1031,975" size="250,35" zPosition="1" font="Regular; 20" halign="center" backgroundColor="black" transparent="0" foregroundColor="white" />
+    <widget name="key_blue" position="1406,975" size="250,35" zPosition="1" font="Regular; 20" halign="center" backgroundColor="black" transparent="0" foregroundColor="white" />
+    <ePixmap position="93,972" size="81,40" zPosition="10" pixmap="openplusHD/buttons/key_menu2.png" transparent="1" alphatest="blend" />
+<ePixmap position="1747,972" size="81,40" zPosition="10" pixmap="openplusHD/buttons/key_info4.png" transparent="1" alphatest="blend" />
     <!-- fin colores keys -->
       </screen>
     <screen name="button_template_rv_name">

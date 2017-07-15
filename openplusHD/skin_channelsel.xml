@@ -3,35 +3,35 @@
 <screen name="ChannelSelection" position="center,center" size="1920,1080" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="menu_template_list" />
     <panel name="button_template_rava_list" />
-    <eLabel text="LIST" position="251,144" size="120,45" font="Arial; 34" backgroundColor="white" transparent="1" foregroundColor="unfc0063" />
-    <widget colorEventProgressbarBorderSelected="unffa500" foregroundColorServiceNotAvail="#00555555" picServiceEventProgressbar="openplusHD/bar_ber.png" colorServiceDescriptionSelected="white" name="list" position="843,367" size="823,519" zPosition="3" scrollbarMode="showNever" foregroundColor="white" foregroundColorSelected="white" backgroundColorSelected="#A71B4C" backgroundColor="black" transparent="1" />
-    <widget alphatest="blend" position="1469,136" render="oPicon" size="210,117" source="Service" transparent="1" zPosition="5">
+    <eLabel text="LIST" position="106,89" size="120,45" font="Arial; 34" backgroundColor="white" transparent="1" foregroundColor="unfc0063" />
+    <widget colorEventProgressbarBorderSelected="unffa500" foregroundColorServiceNotAvail="#00555555" picServiceEventProgressbar="openplusHD/bar_ber.png" colorServiceDescriptionSelected="white" name="list" position="843,317" size="975,632" zPosition="3" scrollbarMode="showNever" foregroundColor="white" foregroundColorSelected="white" backgroundColorSelected="#A71B4C" backgroundColor="black" transparent="1" />
+    <widget alphatest="blend" position="1606,71" render="oPicon" size="220,132" source="Service" transparent="1" zPosition="5">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget backgroundColor="transpBlackb" font="Caviar_bold; 26" foregroundColor="white" halign="center" options="movetype=running,direction=left,startpoint=0,steptime=50,repeat=5,startdelay=2000,always=0,oneshot=1" position="245,360" render="RunningText" size="543,40" source="ServiceEvent" transparent="1" valign="bottom">
+    <widget backgroundColor="transpBlackb" font="Caviar_bold; 27" foregroundColor="white" halign="center" options="movetype=running,direction=left,startpoint=0,steptime=50,repeat=5,startdelay=2000,always=0,oneshot=1" position="104,310" render="RunningText" size="684,40" source="ServiceEvent" transparent="1" valign="bottom">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget backgroundColor="transpBlackb" font="Caviar_bold; 21" halign="left" position="245,402" render="Label" size="70,24" source="ServiceEvent" transparent="1" foregroundColor="unffa500">
+    <widget backgroundColor="transpBlackb" font="Caviar_bold; 21" halign="left" position="104,352" render="Label" size="70,24" source="ServiceEvent" transparent="1" foregroundColor="unffa500">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">
       </convert>
     </widget>
-    <widget backgroundColor="transpBlackb" font="Caviar_bold; 21" halign="right" position="719,402" render="Label" size="69,24" source="ServiceEvent" transparent="1" foregroundColor="unffa500">
+    <widget backgroundColor="transpBlackb" font="Caviar_bold; 21" halign="right" position="719,352" render="Label" size="69,24" source="ServiceEvent" transparent="1" foregroundColor="unffa500">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget borderWidth="0" pixmap="openplusHD/colors/00a61d4d.png" position="322,412" render="Progress" size="389,5" source="ServiceEvent" transparent="1" zPosition="1">
+    <widget borderWidth="0" pixmap="openplusHD/colors/00a61d4d.png" position="182,362" render="Progress" size="528,5" source="ServiceEvent" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <eLabel backgroundColor="white" foregroundColor="white" position="322,414" size="389,1" />
-    <eLabel text="CHANNELS" position="841,320" size="597,38" font="Arial; 22" backgroundColor="un929292" transparent="1" foregroundColor="black" zPosition="1" />
-    <eLabel position="362,148" size="1,28" backgroundColor="black" transparent="0" foregroundColor="iplusPink" halign="center" />
+    <eLabel backgroundColor="white" foregroundColor="white" position="182,364" size="527,1" />
+    <eLabel text="CHANNELS" position="841,270" size="597,38" font="Arial; 22" backgroundColor="un929292" transparent="1" foregroundColor="black" zPosition="1" />
+    <eLabel position="217,93" size="1,28" backgroundColor="black" transparent="0" foregroundColor="iplusPink" halign="center" />
     <!-- /*Infobar-->
-    <widget source="ServiceEvent" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=5,oneshot=1" render="RunningText" position="245,434" size="543,295" font="Regular; 21" foregroundColor="white" backgroundColor="black" transparent="1" valign="top" halign="left">
+    <widget source="ServiceEvent" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=5,oneshot=1" render="RunningText" position="104,384" size="684,308" font="Regular; 23" foregroundColor="white" backgroundColor="black" transparent="1" valign="top" halign="left">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="Title" render="Label" position="368,144" size="805,45" font="plus; 28" backgroundColor="white" transparent="1" foregroundColor="black" noWrap="1" />
-    <widget source="ServiceEvent" render="openplusHDSingleEpgList" position="245,736" size="543,151" font="Regular; 18" backgroundColor="black" foregroundColor="unffa500" noWrap="1" transparent="1" />
+    <widget source="Title" render="Label" position="223,89" size="1107,45" font="plus; 28" backgroundColor="white" transparent="1" foregroundColor="black" noWrap="1" />
+    <widget source="ServiceEvent" render="openplusHDSingleEpgList" position="104,695" size="684,254" font="Regular; 19" backgroundColor="black" foregroundColor="unffa500" noWrap="1" transparent="1" />
   </screen>
   <screen name="ChannelSelectionRadio" position="255,75" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
     <widget colorEventProgressbarBorderSelected="unffa500" foregroundColorServiceNotAvail="#00555555"  picServiceEventProgressbar="openplusHD/bar_ber.png" colorServiceDescriptionSelected="white" name="list" position="121,216" size="845,443" zPosition="3" scrollbarMode="showNever" foregroundColor="white" foregroundColorSelected="white" backgroundColorSelected="#A71B4C" backgroundColor="black" transparent="1" itemHeight="35" />

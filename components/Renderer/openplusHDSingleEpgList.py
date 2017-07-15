@@ -38,7 +38,7 @@ class openplusHDSingleEpgList(Renderer, VariableText):
 						text = text + "n/a\n"
 
 				maxx += 1
-				if maxx > 7:
+				if maxx > 10:
 					break
 
 		self.text = text

@@ -874,44 +874,44 @@
     </widget>
   </screen>
   <screen name="EPGSelection" position="center,center" size="1920,1080" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent" zPosition="-1">
-  <widget name="lab1" position="952,599" size="625,35" font="Regular; 20" halign="center" valign="center" zPosition="20" foregroundColor="white" backgroundColor="black" transparent="1" />
-  <eLabel text="GUIDE" position="251,144" size="100,45" font="Arial; 34" backgroundColor="white" transparent="1" foregroundColor="unfc0063" />
-  <widget name="list" position="845,365" size="819,521" EventFontSingle="Regular; 22" zPosition="3" scrollbarMode="showNever" backgroundColorSelected="#A71B4C" foregroundColor="white" foregroundColorSelected="white" backgroundColor="black" transparent="1" enableWrapAround="1" />
-  <widget source="Event" render="RunningText" position="250,362" size="536,520" font="Regular; 22" foregroundColor="white" backgroundColor="black" transparent="1" valign="top" halign="left" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=2,oneshot=1">
+   <widget name="lab1" position="952,599" size="763,35" font="Regular; 20" halign="center" valign="center" zPosition="20" foregroundColor="white" backgroundColor="black" transparent="1" />
+  <eLabel text="GUIDE" position="106,89" size="100,45" font="Arial; 34" backgroundColor="white" transparent="1" foregroundColor="unfc0063" />
+  <widget name="list" position="845,312" size="971,636" EventFontSingle="Regular; 22" zPosition="3" scrollbarMode="showNever" backgroundColorSelected="#A71B4C" foregroundColor="white" foregroundColorSelected="white" backgroundColor="black" transparent="1" enableWrapAround="1" />
+  <widget source="Event" render="RunningText" position="101,312" size="688,636" font="Regular; 24" foregroundColor="white" backgroundColor="black" transparent="1" valign="top" halign="left" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=2,oneshot=1">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
-  <eLabel text="PROGRAMS TV" position="841,320" size="597,38" font="Arial; 22" backgroundColor="un929292" transparent="1" foregroundColor="black" zPosition="1" />
-  <eLabel position="349,148" size="1,28" backgroundColor="black" transparent="0" foregroundColor="iplusPink" halign="center" />
-  <widget alphatest="blend" position="1469,136" render="Picon" size="210,117" source="Service" transparent="1" zPosition="5">
+  <eLabel text="PROGRAMS TV" position="841,270" size="597,38" font="Arial; 22" backgroundColor="un929292" transparent="1" foregroundColor="black" zPosition="1" />
+  <eLabel position="204,93" size="1,28" backgroundColor="black" transparent="0" foregroundColor="iplusPink" halign="center" />
+  <widget alphatest="blend" position="1606,71" render="Picon" size="220,132" source="Service" transparent="1" zPosition="5">
     <convert type="oplusRefString">ServicelistRef</convert>
   </widget>
-  <widget source="Service" render="Label" position="368,144" size="805,45" font="plus; 28" backgroundColor="white" transparent="1" foregroundColor="black">
+  <widget source="Service" render="Label" position="218,89" size="1091,45" font="plus; 28" backgroundColor="white" transparent="1" foregroundColor="black">
     <convert type="ServiceName">Name</convert>
   </widget>
   <panel name="menu_template_list" />
   <panel name="button_template_rava_list" />
 </screen>
   <screen name="EPGSelectionMulti" position="center,center" size="1920,1080" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
-  <eLabel text="MULTIGUID" position="251,147" size="170,38" font="Arial; 26" backgroundColor="white" transparent="1" foregroundColor="unfc0063" />
-  <widget name="lab1" position="952,599" size="625,35" font="Regular; 20" halign="center" valign="center" zPosition="20" foregroundColor="white" backgroundColor="black" transparent="1" />
-  <widget name="list" position="842,360" size="826,523" itemHeight="30" EventFontMulti="Regular; 24" zPosition="3" backgroundColorSelected="#A71B4C" scrollbarMode="showNever" foregroundColor="white" foregroundColorSelected="white" backgroundColor="black" transparent="1" enableWrapAround="1" />
-  <widget source="Event" render="RunningText" position="246,361" size="543,526" font="Regular; 22" foregroundColor="white" backgroundColor="black" transparent="1" valign="top" halign="left" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=2,oneshot=1">
+ <eLabel text="MULTIGUID" position="106,97" size="170,38" font="Arial; 26" backgroundColor="white" transparent="1" foregroundColor="unfc0063" />
+  <widget name="lab1" position="952,599" size="721,35" font="Regular; 21" halign="center" valign="center" zPosition="20" foregroundColor="white" backgroundColor="black" transparent="1" />
+  <widget name="list" position="842,310" size="975,638" itemHeight="30" EventFontMulti="Regular; 24" zPosition="3" backgroundColorSelected="#A71B4C" scrollbarMode="showNever" foregroundColor="white" foregroundColorSelected="white" backgroundColor="black" transparent="1" enableWrapAround="1" />
+  <widget source="Event" render="RunningText" position="101,311" size="686,638" font="Regular; 24" foregroundColor="white" backgroundColor="black" transparent="1" valign="top" halign="left" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=2,oneshot=1">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
-  <widget source="Service" render="Label" position="418,143" size="805,45" font="plus; 28" backgroundColor="white" transparent="1" foregroundColor="black">
+  <widget source="Service" render="Label" position="273,93" size="1054,45" font="plus; 28" backgroundColor="white" transparent="1" foregroundColor="black">
     <convert type="ServiceName">Name</convert>
   </widget>
-  <eLabel position="405,149" size="1,28" backgroundColor="black" transparent="0" foregroundColor="iplusPink" halign="center" />
-  <widget alphatest="blend" position="1469,136" render="Picon" size="210,117" source="Service" transparent="1" zPosition="5">
+  <eLabel position="265,99" size="1,28" backgroundColor="black" transparent="0" foregroundColor="iplusPink" halign="center" />
+  <widget alphatest="blend" position="1606,71" render="Picon" size="220,132" source="Service" transparent="1" zPosition="5">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget name="now_button_sel" position="1023,316" size="450,35" zPosition="2" pixmap="openplusHD/epg_now.png" />
-  <widget name="next_button_sel" position="1022,316" size="450,35" zPosition="2" pixmap="openplusHD/epg_next.png" />
-  <widget name="more_button_sel" position="1022,316" size="450,35" zPosition="2" pixmap="openplusHD/epg_more.png" />
-  <widget name="now_text" position="1021,320" size="150,30" zPosition="3" font="Arial; 23" halign="center" backgroundColor="iplusDeepGrey" transparent="1" foregroundColor="white" text="NOW" />
-  <widget name="next_text" position="1172,320" size="150,30" zPosition="3" font="Arial; 23" halign="center" backgroundColor="iplusDeepGrey" transparent="1" foregroundColor="white" text="NEXT" />
-  <widget name="more_text" position="1322,320" size="150,30" zPosition="3" font="Arial; 23" halign="center" backgroundColor="iplusDeepGrey" transparent="1" foregroundColor="white" text="MORE" />
-  <widget name="date" position="1474,318" zPosition="3" size="191,30" font="Arial; 20" valign="center" halign="right" transparent="1" backgroundColor="un929292" foregroundColor="white" />
+  <widget name="now_button_sel" position="842,265" size="450,35" zPosition="2" pixmap="openplusHD/epg_now.png" />
+  <widget name="next_button_sel" position="842,265" size="450,35" zPosition="2" pixmap="openplusHD/epg_next.png" />
+  <widget name="more_button_sel" position="842,265" size="450,35" zPosition="2" pixmap="openplusHD/epg_more.png" />
+  <widget name="now_text" position="841,269" size="150,30" zPosition="3" font="Arial; 23" halign="center" backgroundColor="iplusDeepGrey" transparent="1" foregroundColor="white" text="NOW" />
+  <widget name="next_text" position="991,269" size="150,30" zPosition="3" font="Arial; 23" halign="center" backgroundColor="iplusDeepGrey" transparent="1" foregroundColor="white" text="NEXT" />
+  <widget name="more_text" position="1141,269" size="150,30" zPosition="3" font="Arial; 23" halign="center" backgroundColor="iplusDeepGrey" transparent="1" foregroundColor="white" text="MORE" />
+  <widget name="date" position="1304,268" zPosition="3" size="280,30" font="Arial; 20" valign="center" halign="left" transparent="1" backgroundColor="un929292" foregroundColor="white" />
   <panel name="menu_template_list" />
   <panel name="button_template_rava_list" />
 </screen>
