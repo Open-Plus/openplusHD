@@ -622,7 +622,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="MenuEntryCompare">epg_panel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/oplusp.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/oplusp.png" position="354,452" size="250,240" render="Pixmap"  source="menu">
       <convert type="MenuEntryCompare">Openpanel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
