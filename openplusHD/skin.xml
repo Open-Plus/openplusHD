@@ -248,87 +248,87 @@
     <color name="WindowTitleBackground" color="iplusBackground" />
   </windowstyle>
   <screen name="menu_osd_menu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="menu" render="Listbox" position="640,312" size="901,505" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
-      <convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,0), size = (865,45), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
-				"fonts": [gFont("Caviar_bold",30)],
-				"itemHeight": 45
+  <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
 				}
 			</convert>
-    </widget>
-    <ePixmap pixmap="openplusHD/menu/osdmenue.png" position="359,443" size="250,250" alphatest="blend" zPosition="10" />
-    <panel name="menu_template1" />
-  </screen>
+  </widget>
+  <ePixmap pixmap="openplusHD/menu/osdmenue.png" position="169,443" size="250,250" alphatest="blend" zPosition="10" />
+ <panel name="menu_templateBIG" />
+</screen>
   <screen name="menu_display" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="menu" render="Listbox" position="640,312" size="901,505" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
-      <convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,0), size = (865,45), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
-				"fonts": [gFont("Caviar_bold",30)],
-				"itemHeight": 45
+   <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
 				}
 			</convert>
-    </widget>
-    <ePixmap pixmap="openplusHD/menu/lcd.png" position="384,472" size="200,170" alphatest="blend" zPosition="10" />
-    <panel name="menu_template1" />
-  </screen>
+  </widget>
+  <ePixmap pixmap="openplusHD/menu/lcd.png" position="194,477" size="200,170" alphatest="blend" zPosition="10" />
+   <panel name="menu_templateBIG" />
+  
+</screen>
   <screen name="menu_audio_menu" position="0,0" size="1920,1080" title="Audio menu" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="menu" render="Listbox" position="640,312" size="901,505" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
-      <convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,0), size = (865,45), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
-				"fonts": [gFont("Caviar_bold",30)],
-				"itemHeight": 45
+  <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
 				}
 			</convert>
-    </widget>
-    <ePixmap pixmap="openplusHD/menu/audiomenu.png" zPosition="-3" position="379,452" size="220,220" alphatest="blend" />
-    <panel name="menu_template1" />
-  </screen>
+  </widget>
+  <ePixmap pixmap="openplusHD/menu/audiomenu.png" zPosition="-3" position="194,457" size="220,220" alphatest="blend" />
+  <panel name="menu_templateBIG" />
+</screen>
   <screen name="menu_video_menu" position="0,0" size="1920,1080" title="Video menu" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="menu" render="Listbox" position="640,312" size="901,505" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
-      <convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,0), size = (865,45), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
-				"fonts": [gFont("Caviar_bold",30)],
-				"itemHeight": 45
+  <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
 				}
 			</convert>
-    </widget>
-    <ePixmap pixmap="openplusHD/menu/video1.png" position="371,427" size="250,250" alphatest="blend" zPosition="10" />
-    <panel name="menu_template1" />
-  </screen>
+  </widget>
+  <ePixmap pixmap="openplusHD/menu/video1.png" position="186,427" size="250,250" alphatest="blend" zPosition="10" />
+   <panel name="menu_templateBIG" />
+</screen>
   <screen name="menu_rec" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="menu" render="Listbox" position="640,312" size="901,505" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
-      <convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,0), size = (865,45), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
-				"fonts": [gFont("Caviar_bold",30)],
-				"itemHeight": 45
+  <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
 				}
 			</convert>
-    </widget>
-    <ePixmap pixmap="openplusHD/menu/Dashboard.png" position="360,443" size="250,359" alphatest="blend" zPosition="-11" />
-    <panel name="menu_template1" />
-  </screen>
+  </widget>
+  <ePixmap pixmap="openplusHD/menu/Dashboard.png" position="175,443" size="250,359" alphatest="blend" zPosition="-11" />
+    <panel name="menu_templateBIG" />
+</screen>
   <screen name="Menu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="menu" render="Listbox" position="640,312" size="901,505" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
-      <convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,0), size = (865,45), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
-				"fonts": [gFont("Caviar_bold",30)],
-				"itemHeight": 45
+  <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
 				}
 			</convert>
-    </widget>
-    <ePixmap pixmap="openplusHD/menu/menup.png" position="385,428" size="250,359" alphatest="blend" zPosition="-11" />
-    <panel name="menu_template1" />
-    
-  </screen>
+  </widget>
+  <ePixmap pixmap="openplusHD/menu/menup.png" position="196,433" size="250,359" alphatest="blend" zPosition="-11" />
+  <panel name="menu_templateBIG" />
+</screen>
   <screen name="MovieMenu" position="center,center" size="1920,1080" title="MovieMenu" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="Title" transparent="1" render="Label" zPosition="2" valign="center" halign="left" position="365,235" size="800,50" font="Caviar_bold; 32" backgroundColor="black" foregroundColor="white" noWrap="1" />
-    <widget source="menu" font="Caviar_bold; 28" render="Listbox" position="651,322" size="879,487" scrollbarMode="showNever" enableWrapAround="1" transparent="1" foregroundColor="white" backgroundColor="un6e6e6e" itemHeight="35">
-      <convert type="StringList" />
-    </widget>
-    <ePixmap pixmap="openplusHD/menu/logonchannel2.png" position="403,383" size="192,370" alphatest="blend" zPosition="-11" />
-    <widget source="title" render="Label" position="654,840" size="470,50" font="Regular; 28" halign="left" foregroundColor="white" valign="center" transparent="1" zPosition="5" noWrap="1" backgroundColor="un929292" />
-    <panel name="menu_template1" />
-  </screen>
+  
+  <widget source="menu" font="Caviar_bold; 33" render="Listboxop" position="511,277" size="1239,623" scrollbarMode="showNever" enableWrapAround="1" transparent="1" foregroundColor="white" backgroundColor="un6e6e6e" itemHeight="45">
+    <convert type="StringList" />
+  </widget>
+  <ePixmap pixmap="openplusHD/menu/logonchannel2.png" position="213,383" size="192,370" alphatest="blend" zPosition="-11" />
+  <widget source="title" render="Label" position="520,945" size="681,60" font="Regular; 35" halign="left" foregroundColor="white" valign="center" transparent="1" zPosition="5" noWrap="1" backgroundColor="un929292" />
+  <panel name="menu_templateBIG" />
+</screen>
   <!-- Ecm Info -->
   <screen name="EcmInfoScreen" flags="wfNoBorder" position="center,center" size="604,84" zPosition="1" backgroundColor="transpBlackb" title="ECMInfo" transparent="0">
     <eLabel backgroundColor="un6e6e6e" position="9,11" size="233,25" zPosition="3" transparent="1" text="CCCAM INFO OPENPLUS" foregroundColor="unffff00" font="audiowide; 16" halign="center" />
@@ -362,228 +362,236 @@
     <eLabel position="0,0" size="64,64" zPosition="-10" backgroundColor="transpWhite" />
   </screen>
   <screen name="menu_network" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="menu_template1" />
-    <widget source="menu" render="Listbox" position="640,312" scrollbarMode="showNever" foregroundColor="iplusAccent2" backgroundColor="un6e6e6e" backgroundColorSelected="#fd6502" transparent="1" size="901,487">
-      <convert type="TemplatedMultiContent">
-    {"template": [ MultiContentEntryText(pos = (30, 5), size = (660, 45), flags = RT_HALIGN_LEFT, text = 0) ],
-    "fonts": [gFont("Caviar_bold", 30)],
-    "itemHeight": 45
-    }
-   </convert>
-    </widget>
-    <ePixmap pixmap="openplusHD/menu/network.png" position="378,447" size="212,212" alphatest="blend" zPosition="-11" />
-  </screen>
-  <screen name="menu_cam" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="menu" render="Listbox" position="640,312" size="901,505" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
-      <convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,0), size = (865,45), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
-				"fonts": [gFont("Caviar_bold",30)],
-				"itemHeight": 45
-				}
-			</convert>
-    </widget>
-    <ePixmap pixmap="openplusHD/menu/UNICAM.png" position="391,469" size="200,169" alphatest="blend" zPosition="10" />
-    <panel name="menu_template1" />
-  </screen>
-  <screen name="menu_harddisk" position="0,0" size="1920,1080" title="menu_harddisk" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="menu" render="Listbox" position="640,312" size="901,505" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
-      <convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,0), size = (865,45), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
-				"fonts": [gFont("Caviar_bold",30)],
-				"itemHeight": 45
-				}
-			</convert>
-    </widget>
-    <ePixmap pixmap="openplusHD/menu/storage.png" position="390,477" size="203,161" alphatest="blend" zPosition="10" />
-    <panel name="menu_template1" />
-  </screen>
-  <screen name="menu_epg" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="menu_template1" />
-    <ePixmap pixmap="openplusHD/menu/epg.png" position="360,443" size="250,259" alphatest="blend" zPosition="-11" />
-    <widget source="menu" render="Listbox" position="640,312" scrollbarMode="showNever" foregroundColor="white" backgroundColor="un6e6e6e" backgroundColorSelected="orange" transparent="1" size="901,514">
-      <convert type="TemplatedMultiContent">
-                               {"template": [ MultiContentEntryText(pos = (30, 5), size = (460, 50), flags = RT_HALIGN_LEFT, text = 0) ], 
-                                "fonts": [gFont("Caviar_bold", 30)], 
-                                "itemHeight": 50 
-                                 }
-</convert>
-    </widget>
-  </screen>
-  <screen name="menu_timermenu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap pixmap="openplusHD/menu/Dashboard.png" position="360,443" size="250,359" alphatest="blend" zPosition="-11" />
-    <widget source="menu" render="Listbox" position="640,312" scrollbarMode="showNever" foregroundColor="white" backgroundColor="un6e6e6e" backgroundColorSelected="orange" transparent="1" size="901,514">
-      <convert type="TemplatedMultiContent">
-                               {"template": [ MultiContentEntryText(pos = (30, 5), size = (660, 50), flags = RT_HALIGN_LEFT, text = 0) ], 
-                                "fonts": [gFont("Caviar_bold", 30)], 
-                                "itemHeight": 50 
-                                 }
-</convert>
-    </widget>
-    <panel name="menu_template1" />
-  </screen>
-  <screen name="menu_setup" position="0,center" size="1920,1080" title="Main menu" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
-    <ePixmap pixmap="openplusHD/menu/menu1.png" position="360,443" size="250,359" alphatest="blend" zPosition="-11" />
-    <widget source="menu" render="Listbox" position="640,312" scrollbarMode="showNever" foregroundColor="white" backgroundColor="un6e6e6e" backgroundColorSelected="orange" transparent="1" size="901,494">
-      <convert type="TemplatedMultiContent">
-                               {"template": [ MultiContentEntryText(pos = (30, 5), size = (460, 50), flags = RT_HALIGN_LEFT, text = 0) ], 
-                                "fonts": [gFont("Regular", 30)], 
-                                "itemHeight": 50 
-                                 }
-</convert>
-    </widget>
-    <panel name="menu_template1" />
-  </screen>
-  <screen name="menu_information" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap pixmap="openplusHD/menu/menuinf.png" position="360,443" size="250,359" alphatest="blend" zPosition="-11" />
-    <widget source="menu" render="Listbox" position="640,312" scrollbarMode="showNever" foregroundColor="white" backgroundColor="un6e6e6e" backgroundColorSelected="orange" transparent="1" size="901,514">
-      <convert type="TemplatedMultiContent">
-                               {"template": [ MultiContentEntryText(pos = (30, 5), size = (460, 50), flags = RT_HALIGN_LEFT, text = 0) ], 
-                                "fonts": [gFont("Caviar_bold", 30)], 
-                                "itemHeight": 50 
-                                 }
-</convert>
-    </widget>
-    <panel name="menu_template1" />
-  </screen>
-   <screen name="menu_scan" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-  <ePixmap pixmap="openplusHD/menu/antenna.png" position="355,428" size="250,359" alphatest="blend" zPosition="-11" />
-  <widget source="menu" render="Listbox" position="640,312" scrollbarMode="showNever" foregroundColor="white" backgroundColor="un6e6e6e" backgroundColorSelected="orange" transparent="1" size="901,514">
+    <panel name="menu_templateBIG" />
+  <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
     <convert type="TemplatedMultiContent">
-                               {"template": [ MultiContentEntryText(pos = (30, 5), size = (640, 50), flags = RT_HALIGN_LEFT, text = 0) ], 
-                                "fonts": [gFont("Caviar_bold", 30)], 
-                                "itemHeight": 50 
-                                 }
-</convert>
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
+				}
+			</convert>
   </widget>
-  <panel name="menu_template1" />
+  <ePixmap pixmap="openplusHD/menu/network.png" position="193,452" size="212,212" alphatest="blend" zPosition="-11" />
+</screen>
+  <screen name="menu_cam" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+   <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
+				}
+			</convert>
+  </widget>
+  <ePixmap pixmap="openplusHD/menu/UNICAM.png" position="206,474" size="200,169" alphatest="blend" zPosition="10" />
+    <panel name="menu_templateBIG" />
+</screen>
+  <screen name="menu_harddisk" position="0,0" size="1920,1080" title="menu_harddisk" backgroundColor="transparent" flags="wfNoBorder">
+  <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
+				}
+			</convert>
+  </widget>
+  <ePixmap pixmap="openplusHD/menu/storage.png" position="205,482" size="203,161" alphatest="blend" zPosition="10" />
+    <panel name="menu_templateBIG" />
+</screen>
+  <screen name="menu_epg" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+   <panel name="menu_templateBIG" />
+  <ePixmap pixmap="openplusHD/menu/epg.png" position="180,443" size="250,259" alphatest="blend" zPosition="-11" />
+  <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
+				}
+			</convert>
+  </widget>
+</screen>
+  <screen name="menu_timermenu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+  <ePixmap pixmap="openplusHD/menu/Dashboard.png" position="175,443" size="250,359" alphatest="blend" zPosition="-11" />
+  <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
+				}
+			</convert>
+  </widget>
+    <panel name="menu_templateBIG" />
+</screen>
+  <screen name="menu_setup" position="0,center" size="1920,1080" title="Main menu" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
+  <ePixmap pixmap="openplusHD/menu/menu1.png" position="172,448" size="250,359" alphatest="blend" zPosition="-11" />
+  <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
+				}
+			</convert>
+  </widget>
+   <panel name="menu_templateBIG" />
+</screen>
+  <screen name="menu_information" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+  <ePixmap pixmap="openplusHD/menu/menuinf.png" position="175,443" size="250,359" alphatest="blend" zPosition="-11" />
+ <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
+				}
+			</convert>
+  </widget>
+    <panel name="menu_templateBIG" />
+</screen>
+  <screen name="menu_scan" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+  <ePixmap pixmap="openplusHD/menu/antenna.png" position="175,428" size="250,359" alphatest="blend" zPosition="-11" />
+ <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
+				}
+			</convert>
+  </widget>
+    <panel name="menu_templateBIG" />
 </screen>
   <screen name="menu_mainmenu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
-    <panel name="menu_template1" />
-    <widget source="menu" render="Listbox" position="640,312" scrollbarMode="showNever" foregroundColor="white" backgroundColor="un6e6e6e" backgroundColorSelected="orange" transparent="1" size="901,494">
-      <convert type="TemplatedMultiContent">
-                               {"template": [ MultiContentEntryText(pos = (30, 5), size = (460, 50), flags = RT_HALIGN_LEFT, text = 0) ], 
-                                "fonts": [gFont("Regular", 30)], 
-                                "itemHeight": 50 
-                                 }
-</convert>
-    </widget>
-<ePixmap pixmap="openplusHD/menu/menup.png" position="385,428" size="250,359" alphatest="blend" zPosition="-12" />	  
-  </screen>
-  <screen name="menu_system" position="0,center" size="1920,1080" title="Main menu" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
-    <ePixmap pixmap="openplusHD/menu/osdmenu1.png" position="359,443" size="250,250" alphatest="blend" zPosition="10" />
-    <widget source="menu" render="Listbox" position="640,312" scrollbarMode="showNever" foregroundColor="white" backgroundColor="un6e6e6e" backgroundColorSelected="orange" transparent="1" size="901,494">
-      <convert type="TemplatedMultiContent">
-                               {"template": [ MultiContentEntryText(pos = (30, 5), size = (460, 50), flags = RT_HALIGN_LEFT, text = 0) ], 
-                                "fonts": [gFont("Regular", 30)], 
-                                "itemHeight": 50 
-                                 }
-</convert>
-    </widget>
-    <panel name="menu_template1" />
-  </screen>
-  <screen name="menu_shutdown" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap pixmap="openplusHD/menu/shutdonw.png" position="345,463" size="250,359" alphatest="blend" zPosition="-11" />
-    <widget source="menu" render="Listbox" position="640,312" scrollbarMode="showNever" foregroundColor="white" backgroundColor="un6e6e6e" backgroundColorSelected="orange" transparent="1" size="901,514">
-      <convert type="TemplatedMultiContent">
-                               {"template": [ MultiContentEntryText(pos = (30, 5), size = (460, 50), flags = RT_HALIGN_LEFT, text = 0) ], 
-                                "fonts": [gFont("Caviar_bold", 30)], 
-                                "itemHeight": 50 
-                                 }
-</convert>
-    </widget>
-    <panel name="menu_template1" />
-  </screen>
-  <screen name="UpdatePluginMenu" position="0,0" size="1920,1080" title="Softwaremanager..." flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="menu_template1" />
-    <panel name="button_template_r_lg" />
-    <ePixmap pixmap="openplusHD/menu/update.png" position="356,426" size="250,359" alphatest="blend" zPosition="-11" />
-    <widget source="menu" render="Listbox" position="640,634" size="901,183" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="unffff00" backgroundColor="un6e6e6e" transparent="1">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (0, 0), size = (890, 150), flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 2), # index 2 is the Description,
-					],
-				"fonts": [gFont("Regular", 22)],
-				"itemHeight": 90
+    <panel name="menu_templateBIG" />
+ <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
 				}
 			</convert>
-    </widget>
-    <widget source="menu" render="Listbox" position="640,312" foregroundColor="white" backgroundColor="un6e6e6e" size="901,309" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (15, 5), size = (823, 45), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
-					],
-				"fonts": [gFont("Caviar_bold", 30)],
-				"itemHeight": 45
-				}
-			</convert>
-    </widget>
-    <eLabel backgroundColor="white" foregroundColor="white" position="766,630" size="645,1" zPosition="1" halign="center" />
-    <eLabel text="MENU" position="1070,840" size="121,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
-  </screen>
-  <screen name="AboutReleaseNotes" title="AboutReleaseNotes" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-    <widget name="list" position="640,312" size="901,506" font="Regular;25" foregroundColor="white" backgroundColor="un6e6e6e" transparent="0" />
-    <ePixmap pixmap="openplusHD/menu/oplus.png" position="375,435" size="250,259" alphatest="blend" zPosition="-11" />
-    <panel name="menu_template1" />
-  </screen>
-<screen name="AboutOE" position="center,center" size="1920,1080" title="About" flags="wfNoBorder" backgroundColor="transparent">
-  <widget name="AboutScrollLabel" position="702,322" size="783,526" zPosition="10" backgroundColor="un6e6e6e" foregroundColor="white" font="Regular; 27" transparent="1" scrollbarMode="showNever" halign="left" noWrap="1" />
-  <widget source="lab1" render="Label" position="794,237" size="369,43" font="Regular;30" transparent="1" zPosition="2" foregroundColor="unffff00" backgroundColor="black" halign="center" />
-  <widget source="lab2" render="Label" position="338,768" size="282,28" font="Caviar_bold; 19" transparent="1" zPosition="2" foregroundColor="black" backgroundColor="white" halign="center" />
-  <widget source="lab3" render="Label" position="1176,248" size="363,25" font="Regular;19" transparent="1" zPosition="1" foregroundColor="white" backgroundColor="black" halign="right" />
-  <eLabel text="https://github.com/open-plus" position="338,740" size="282,28" font="Caviar_bold; 19" transparent="1" zPosition="1" foregroundColor="black" backgroundColor="white" halign="center" />
-  <eLabel text="https://github.com/oe-alliance" position="338,712" size="282,28" font="Caviar_bold; 19" transparent="1" zPosition="1" foregroundColor="black" backgroundColor="white" halign="center" />
-  <!--estructura menu/-->
-  <ePixmap pixmap="openplusHD/menu/oplus.png" position="360,443" size="250,259" alphatest="blend" zPosition="-11" />
-  <panel name="menu_template1" />
-  <!-- colores keys verde y azul sobre linea gris -->
-    <eLabel position="1099,844" size="90,40" zPosition="10" transparent="1" alphatest="blend" text="INFO" font="Regular; 30" halign="center" backgroundColor="un929292" foregroundColor="white" />
-   <eLabel position="647,847" size="36,36" transparent="0" foregroundColor="white" backgroundColor="green" zPosition="1" />
-   <widget source="key_green" render="Label" position="689,847" size="195,35" zPosition="1" font="Regular; 25" backgroundColor="un929292" transparent="1" foregroundColor="white" />
-   <!-- fin colores keys -->
-  <!--finestructura menu/-->
+  </widget>
+  <ePixmap pixmap="openplusHD/menu/menup.png" position="196,433" size="250,359" alphatest="blend" zPosition="-12" />
 </screen>
-  <screen name="AdapterSetup" position="0,0" size="1920,1080" title="Network Setup" flags="wfNoBorder" backgroundColor="transparent">
-    <eLabel render="Label" position="1170,572" size="370,32" font="Regular; 20" halign="center" backgroundColor="un42b3" foregroundColor="white" transparent="0" zPosition="-1" />
-    <widget source="Adapter" render="Label" position="647,324" size="320,28" font="Regular; 22" backgroundColor="black" transparent="1" foregroundColor="white" halign="left" zPosition="1" />
-    <widget name="config" position="648,364" size="501,322" itemHeight="35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="un6e6e6e" transparent="1" font="Regular; 23" foregroundColor="white" />
-    <eLabel position="640,321" render="Label" size="516,35" transparent="0" foregroundColor="white" backgroundColor="black" halign="center" zPosition="-10" />
-    <eLabel name="" position="1111,632" zPosition="-12" size="100,22" backgroundColor="black" foregroundColor="iplusBackground" />
-    <widget source="Adapter" render="Label" position="1219,242" size="320,28" font="Regular; 24" backgroundColor="black" transparent="1" foregroundColor="unffff00" halign="right" zPosition="1" />
-    <widget source="introduction2" render="Label" position="669,747" size="461,35" foregroundColor="black" font="Regular; 25" halign="center" valing="center" backgroundColor="white" transparent="1" />
-    <widget source="introduction" render="Label" position="1170,573" size="370,32" font="Regular; 20" halign="center" backgroundColor="un42b3" foregroundColor="white" transparent="1" />
-    <widget source="IPtext" render="Label" position="1144,619" size="210,24" font="Regular; 20" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" />
-    <widget source="Netmasktext" render="Label" position="1144,658" size="210,24" font="Regular; 20" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" />
-    <widget source="Gatewaytext" render="Label" position="1144,696" size="210,24" font="Regular; 20" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" />
-    <widget source="DNS1text" render="Label" position="1144,735" size="210,24" font="Regular; 20" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" />
-    <widget source="DNS2text" render="Label" position="1144,774" size="210,24" font="Regular; 20" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" />
-    <widget source="IP" render="Label" position="1368,619" size="210,24" font="Regular; 20" halign="left" backgroundColor="black" transparent="1" foregroundColor="unffff00" />
-    <widget source="Mask" render="Label" position="1368,658" size="210,24" font="Regular; 20" halign="left" backgroundColor="black" transparent="1" foregroundColor="unffff00" />
-    <widget source="Gateway" render="Label" position="1368,696" size="210,24" font="Regular; 20" halign="left" backgroundColor="black" transparent="1" foregroundColor="unffff00" />
-    <widget source="DNS1" render="Label" position="1368,735" size="210,24" font="Regular; 20" halign="left" backgroundColor="black" transparent="1" foregroundColor="unffff00" />
-    <widget source="DNS2" render="Label" position="1368,774" size="210,24" font="Regular; 20" halign="left" backgroundColor="black" transparent="1" foregroundColor="unffff00" />
+  <screen name="menu_system" position="0,center" size="1920,1080" title="Main menu" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
+  <ePixmap pixmap="openplusHD/menu/osdmenu1.png" position="169,443" size="250,250" alphatest="blend" zPosition="10" />
+  <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
+				}
+			</convert>
+  </widget>
+   <panel name="menu_templateBIG" />
+</screen>
+  <screen name="menu_shutdown" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+  <ePixmap pixmap="openplusHD/menu/shutdonw.png" position="160,468" size="250,359" alphatest="blend" zPosition="-11" />
+  <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
+				}
+			</convert>
+  </widget>
+  <panel name="menu_templateBIG" />
+</screen>
+<screen name="menu_extended" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap pixmap="openplusHD/menu/menupe.png" position="196,433" size="250,359" alphatest="blend" zPosition="-11" />
+     <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+    <convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (1165,57), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Caviar_bold",33)],
+				"itemHeight": 57
+				}
+			</convert>
+  </widget>
+   <panel name="menu_templateBIG" />
+  </screen>
+   <screen name="UpdatePluginMenu" position="0,0" size="1920,1080" title="Softwaremanager..." flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="menu_templateBIG" />
+    <panel name="button_template_r_lgBIG" />
+    <ePixmap pixmap="openplusHD/menu/update.png" position="171,426" size="250,359" alphatest="blend" zPosition="-11" />
+    <widget source="menu" render="Listbox" position="507,716" size="1247,210" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="unffffff" backgroundColor="un6e6e6e" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (0, 0), size = (1190, 230), flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 2), # index 2 is the Description,
+					],
+				"fonts": [gFont("Regular", 24)],
+				"itemHeight": 100
+				}
+			</convert>
+    </widget>
+    <widget source="menu" render="Listbox" position="507,273" foregroundColor="white" backgroundColor="un6e6e6e" size="1247,446" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (15, 10), size = (1123, 57), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+					],
+				"fonts": [gFont("Caviar_bold", 33)],
+				"itemHeight": 57
+				}
+			</convert>
+    </widget>
+    <eLabel backgroundColor="white" foregroundColor="white" position="507,720" size="1247,1" zPosition="1" halign="center" />
+    <eLabel text="MENU" position="1170,945" size="137,60" font="Regular; 38" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+</screen>
+  <screen name="AboutReleaseNotes" title="AboutReleaseNotes" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+    <widget name="list" position="507,273" size="1247,623" font="Regular; 28" foregroundColor="white" backgroundColor="un6e6e6e" transparent="0" />
+    <ePixmap pixmap="openplusHD/menu/oplus.png" position="165,443" size="250,259" alphatest="blend" zPosition="-11" />
+    <panel name="menu_templateBIG" />
+  </screen>
+  <screen name="AboutOE" position="center,center" size="1920,1080" title="About" flags="wfNoBorder" backgroundColor="transparent">
+    <widget name="AboutScrollLabel" position="572,303" size="1192,606" zPosition="10" backgroundColor="un6e6e6e" foregroundColor="white" font="audiowide; 40" transparent="1" scrollbarMode="showNever" halign="left" noWrap="1" />
+    <widget source="lab1" render="Label" position="784,189" size="400,70" font="Regular; 35" transparent="1" zPosition="2" foregroundColor="unffff00" backgroundColor="black" halign="center" noWrap="1" />
+    <widget source="lab2" render="Label" position="138,768" size="330,28" font="Caviar_bold; 22" transparent="1" zPosition="2" foregroundColor="black" backgroundColor="white" halign="center" />
+    <widget source="lab3" render="Label" position="1155,197" size="600,55" font="Regular; 25" transparent="1" zPosition="1" foregroundColor="white" backgroundColor="black" halign="right" noWrap="1" />
+    <eLabel text="https://github.com/open-plus" position="138,740" size="330,28" font="Caviar_bold; 22" transparent="1" zPosition="1" foregroundColor="black" backgroundColor="white" halign="center" />
+    <eLabel text="https://github.com/oe-alliance" position="138,712" size="330,28" font="Caviar_bold; 22" transparent="1" zPosition="1" foregroundColor="black" backgroundColor="white" halign="center" />
+    <!--estructura menu/-->
+    <ePixmap pixmap="openplusHD/menu/oplus.png" position="165,443" size="250,259" alphatest="blend" zPosition="-11" />
+    <panel name="menu_templateBIG" />
+    <panel name="button_template_v_lgBIG" />
+    <eLabel position="1164,949" size="150,60" zPosition="10" transparent="1" alphatest="blend" text="INFO" font="Regular; 38" halign="center" backgroundColor="un929292" foregroundColor="white" />
+ </screen>
+ <screen name="AdapterSetup" position="0,0" size="1920,1080" title="Network Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel render="Label" position="1230,552" size="460,42" font="Regular; 20" halign="center" backgroundColor="un42b3" foregroundColor="white" transparent="0" zPosition="-1" borderWidth="1" borderColor="black" />
+    <widget source="Adapter" render="Label" position="587,303" size="552,50" font="Regular; 28" backgroundColor="black" transparent="1" foregroundColor="white" halign="left" zPosition="1" />
+    <widget name="config" position="581,357" size="625,372" itemHeight="35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="un6e6e6e" transparent="1" font="Regular; 27" foregroundColor="white" />
+    <eLabel position="574,296" render="Label" size="637,55" transparent="0" foregroundColor="white" backgroundColor="black" halign="center" zPosition="-10" borderWidth="1" borderColor="black" />
+    <eLabel name="" position="1141,632" zPosition="-12" size="100,22" backgroundColor="black" foregroundColor="iplusBackground" />
+    <widget source="Adapter" render="Label" position="1374,194" size="379,50" font="Regular; 28" backgroundColor="black" transparent="1" foregroundColor="unffff00" halign="right" zPosition="1" />
+    <widget source="introduction2" render="Label" position="602,746" size="580,45" foregroundColor="white" font="Regular; 30" halign="center" valing="center" backgroundColor="un6e6e6e" transparent="1" />
+    <widget source="introduction" render="Label" position="1240,553" size="460,42" font="Regular; 27" halign="left" backgroundColor="un42b3" foregroundColor="white" transparent="1" />
+    <widget source="IPtext" render="Label" position="1245,614" size="210,34" font="Regular; 25" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" />
+    <widget source="Netmasktext" render="Label" position="1244,673" size="210,34" font="Regular; 25" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" />
+    <widget source="Gatewaytext" render="Label" position="1244,731" size="210,34" font="Regular; 25" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" />
+    <widget source="DNS1text" render="Label" position="1244,790" size="210,34" font="Regular; 25" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" />
+    <widget source="DNS2text" render="Label" position="1244,849" size="210,34" font="Regular; 25" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" />
+    <widget source="IP" render="Label" position="1465,614" size="210,34" font="Regular; 25" halign="left" backgroundColor="black" transparent="1" foregroundColor="unffff00" />
+    <widget source="Mask" render="Label" position="1466,673" size="210,34" font="Regular; 25" halign="left" backgroundColor="black" transparent="1" foregroundColor="unffff00" />
+    <widget source="Gateway" render="Label" position="1465,731" size="210,34" font="Regular; 25" halign="left" backgroundColor="black" transparent="1" foregroundColor="unffff00" />
+    <widget source="DNS1" render="Label" position="1465,790" size="210,34" font="Regular; 25" halign="left" backgroundColor="black" transparent="1" foregroundColor="unffff00" />
+    <widget source="DNS2" render="Label" position="1465,849" size="210,34" font="Regular; 25" halign="left" backgroundColor="black" transparent="1" foregroundColor="unffff00" />
     <eLabel name="" position="860,400" zPosition="-12" size="100,20" backgroundColor="black" foregroundColor="iplusBackground" />
     <eLabel name="" position="860,486" zPosition="-12" size="100,20" backgroundColor="black" foregroundColor="iplusBackground" />
     <!-- colores keys -->
-    <ePixmap pixmap="openplusHD/menu/adapter.png" position="363,447" size="250,250" alphatest="blend" zPosition="-11" />
+    <ePixmap pixmap="openplusHD/menu/adapter.png" position="175,457" size="250,250" alphatest="blend" zPosition="-11" />
     <!--fin estructuramenu/-->
-    <eLabel position="640,355" size="516,355" transparent="0" foregroundColor="un6e6e6e" backgroundColor="un6e6e6e" zPosition="-11" />
-    <eLabel position="1170,604" size="370,222" transparent="0" foregroundColor="white" backgroundColor="black" zPosition="-11" />
-    <widget name="HelpWindow" position="684,896" size="604,126" zPosition="1" transparent="1" alphatest="blend" />
-    <panel name="menu_templatewhite" />
-    <panel name="button_template_ra_lg" />
+    <eLabel position="574,351" size="637,446" transparent="0" foregroundColor="un6e6e6e" backgroundColor="un6e6e6e" zPosition="-11" borderWidth="1" borderColor="black" />
+    <eLabel position="1230,594" size="460,309" transparent="0" foregroundColor="white" backgroundColor="black" zPosition="-11" borderWidth="1" borderColor="black" />
+    <widget name="HelpWindow" position="588,809" size="604,126" zPosition="1" transparent="1" alphatest="blend" />
+    <panel name="menu_templatewhiteBIG" />
+    <panel name="button_template_ra_lgBIG" />
   </screen>
   <screen name="AdapterSetupConfiguration" position="0,0" size="1920,1080" title="Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
-    <eLabel render="Label" position="640,645" size="901,53" font="Regular; 20" halign="center" backgroundColor="un42b3" foregroundColor="white" transparent="0" zPosition="-1" />
-    <widget source="IF" render="Label" position="1219,242" size="320,28" font="Regular; 24" backgroundColor="black" transparent="1" foregroundColor="unffff00" halign="right" zPosition="1" />
-    <widget source="Statustext" render="Label" position="1303,654" size="200,35" backgroundColor="un42b3" foregroundColor="white" zPosition="10" font="Caviar_bold; 28" transparent="1" halign="right" />
-    <widget name="statuspic" pixmaps="openplusHD/skin_default/buttons/button_green.png,openplusHD/skin_default/buttons/button_green_off.png" position="1509,663" zPosition="10" size="20,20" transparent="1" alphatest="on" />
-    <widget name="menulist" font="Regular;26" position="651,326" size="880,290" itemHeight="40" scrollbarMode="showNever" foregroundColor="white" backgroundColor="un6e6e6e" enableWrapAround="1" transparent="1" />
-    <widget source="description" render="Label" position="640,697" size="901,130" font="Regular; 22" halign="center" valign="center" backgroundColor="black" transparent="0" foregroundColor="white" />
+    <eLabel render="Label" position="640,664" size="924,53" font="Regular; 20" halign="center" backgroundColor="un42b3" foregroundColor="white" transparent="0" zPosition="-1" borderWidth="1" borderColor="black" />
+    <widget source="IF" render="Label" position="1374,194" size="379,50" font="Regular; 28" backgroundColor="black" transparent="1" foregroundColor="unffff00" halign="right" zPosition="1" />
+    <widget source="Statustext" render="Label" position="1258,674" size="268,35" backgroundColor="un42b3" foregroundColor="white" zPosition="10" font="Caviar_bold; 30" transparent="1" halign="right" />
+    <widget name="statuspic" pixmaps="openplusHD/skin_default/buttons/button_green.png,openplusHD/skin_default/buttons/button_green_off.png" position="1534,683" zPosition="10" size="20,20" transparent="1" alphatest="on" />
+    <widget name="menulist" font="Regular;30" position="646,307" size="913,348" itemHeight="50" scrollbarMode="showNever" foregroundColor="white" backgroundColor="un6e6e6e" enableWrapAround="1" transparent="1" />
+    <widget source="description" render="Label" position="640,717" size="924,172" font="Regular; 26" halign="center" valign="center" backgroundColor="black" transparent="0" foregroundColor="white" borderWidth="1" borderColor="black" />
     <!--estructura menu/-->
-    <panel name="menu_templatewhite" />
-    <panel name="button_template_r_lg" />
-    <eLabel position="640,312" size="901,316" transparent="0" foregroundColor="white" backgroundColor="un6e6e6e" zPosition="-10" />
-    <ePixmap pixmap="openplusHD/menu/adapter.png" position="363,447" size="250,250" alphatest="blend" zPosition="-11" />
+    <panel name="menu_templatewhiteBIG" />
+    <panel name="button_template_r_lgBIG" />
+    <eLabel position="640,301" size="924,357" transparent="0" foregroundColor="white" backgroundColor="un6e6e6e" zPosition="-10" borderWidth="1" borderColor="black" />
+    <ePixmap pixmap="openplusHD/menu/adapter.png" position="175,457" size="250,250" alphatest="blend" zPosition="-11" />
     <!--finestructura menu/-->
   </screen>
  <screen name="ButtonSetup" position="center,center" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -645,6 +653,36 @@
     <panel name="menu_template1" />
     <!--finestructura menu/-->
   </screen>
+    <screen name="BluetoothSetupScreen" position="0,0" size="1920,1080" title="Bluetooth Setup" flags="wfNoBorder" backgroundColor="transparent">
+		
+		<widget source="deviceList" render="Listbox" position="507,271" size="1247,454" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="white" backgroundColor="un6e6e6e" foregroundColorSelected="white" transparent="1">
+			<convert type="TemplatedMultiContent">
+			{"template":
+				[
+					MultiContentEntryText(pos = (80, 0), size = (1020, 35), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 0 is Name
+					MultiContentEntryText(pos = (80, 42), size = (510, 25), font=2, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is Type
+					MultiContentEntryText(pos = (1000, 42), size = (510, 25), font=2, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 1 is status
+					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 50), png = 4), # index 4 is bt_icon
+				],
+				"fonts": [gFont("Caviar_bold", 32), gFont("Regular", 26) ,gFont("Regular", 22), gFont("Regular", 18)],
+				"itemHeight": 70
+			}
+			</convert>
+		</widget>
+		<widget source="description" render="Label" position="507,731" size="1247,140" halign="center" valign="center" transparent="1" font="Regular; 25" foregroundColor="white" backgroundColor="un6e6e6e" />
+		 <!-- colores keys  rojo azul verde amarillo sobre fondo blanco source-->
+    <eLabel position="1470,892" size="35,35" transparent="0" foregroundColor="white" backgroundColor="blue" zPosition="-1" />
+    <eLabel position="507,892" size="35,35" transparent="0" foregroundColor="white" backgroundColor="red" zPosition="-1" />
+    <eLabel position="1150,892" size="35,35" transparent="0" foregroundColor="white" backgroundColor="yellow" zPosition="-1" />
+    <eLabel position="830,892" size="35,35" transparent="0" foregroundColor="white" backgroundColor="green" zPosition="-1" />
+    <widget render="Label" position="1505,892" size="250,35" noWrap="1" zPosition="1" valign="center" font="Regular; 22" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" name="key_blue" />
+    <widget render="Label" position="1185,892" size="250,35" noWrap="1" zPosition="1" valign="center" font="Regular; 22" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" name="key_yellow" />
+    <widget render="Label" position="542,892" size="250,35" noWrap="1" zPosition="1" valign="center" font="Regular; 22" halign="center" transparent="0" backgroundColor="black" foregroundColor="white" name="key_red" />
+    <widget render="Label" position="865,892" size="250,35" noWrap="1" zPosition="1" valign="center" font="Regular; 22" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" name="key_green" />
+    <!-- fin colores keys -->
+    <panel name="menu_templateWIG" />
+		<ePixmap position="186,443" size="256,256" zPosition="2" pixmap="openplusHD/menu/bluetooth.png" transparent="1" alphatest="blend" />
+</screen>
   <screen name="AudioSelection" position="center,center" size="1920,1080" transparent="0" backgroundColor="transparent">
     <widget name="config" position="698,328" size="606,318" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" scrollbarMode="showOnDemand" zPosition="-2" />
     <widget source="key_red" render="Pixmap" pixmap="buttons/red1.png" position="664,328" size="25,25" alphatest="blend" zPosition="1">
@@ -697,22 +735,10 @@
     <widget name="title" position="0,145" size="598,50" transparent="1" foregroundColor="black" backgroundColor="white" font="Regular; 20" />
     <widget name="theClock" position="0,80" size="598,50" transparent="1" backgroundColor="white" foregroundColor="black" font="Regular; 20" />
   </screen>
-  <screen name="ChannelContextMenu" position="center,center" size="1920,1080" title="Channellist menu" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
-    <widget font="Caviar_bold; 22" name="menu" backgroundColor="un6e6e6e" position="640,312" size="901,514" zPosition="3" itemHeight="35" scrollbarMode="showNever" enableWrapAround="1" foregroundColor="white" transparent="1" />
-    <ePixmap pixmap="openplusHD/menu/menup.png" position="385,428" size="250,359" alphatest="blend" zPosition="-11" />
-    <panel name="menu_template1" />
-  </screen>
-  <screen name="menu_extended" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap pixmap="openplusHD/menu/menupe.png" position="385,428" size="250,359" alphatest="blend" zPosition="-11" />
-    <panel name="menu_template1" />
-    <widget source="menu" render="Listbox" position="640,312" scrollbarMode="showNever" foregroundColor="white" backgroundColor="un6e6e6e" backgroundColorSelected="orange" transparent="1" size="901,487">
-      <convert type="TemplatedMultiContent">
-                               {"template": [ MultiContentEntryText(pos = (30, 5), size = (460, 50), flags = RT_HALIGN_LEFT, text = 0) ], 
-                                "fonts": [gFont("Caviar_bold", 30)], 
-                                "itemHeight": 50 
-                                 }
-</convert>
-    </widget>
+ <screen name="ChannelContextMenu" position="center,center" size="1920,1080" title="Channellist menu" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
+    <widget font="Caviar_bold; 28" name="menu" backgroundColor="un6e6e6e" position="507,273" size="1247,640" zPosition="3" itemHeight="40" scrollbarMode="showNever" enableWrapAround="1" foregroundColor="white" transparent="1" />
+    <ePixmap pixmap="openplusHD/menu/menup.png" position="196,433" size="250,359" alphatest="blend" zPosition="-11" />
+    <panel name="menu_templateBIG" />
   </screen>
   <screen name="ChoiceBox" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="text" position="650,683" size="878,143" font="Regular; 17" halign="left" transparent="1" foregroundColor="white" backgroundColor="un6e6e6e" valign="center" zPosition="1" />
@@ -848,16 +874,15 @@
     <panel name="menu_templatewhite" />
     <panel name="button_template_rava_n" />
   </screen>
-  <screen name="Devices" position="0,0" size="1920,1080" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="TunerHeader" render="Label" position="655,312" backgroundColor="un6e6e6e" foregroundColor="unffff00" size="873,40" font="audiowide; 20" transparent="1" zPosition="6" halign="left" />
-    <widget source="nims" render="Label" position="649,344" size="883,153" font="Regular; 20" transparent="0" zPosition="1" foregroundColor="white" backgroundColor="un6e6e6e" />
-    <widget source="HDDHeader" render="Label" position="655,502" backgroundColor="un6e6e6e" foregroundColor="unffff00" size="873,40" font="audiowide; 20" transparent="1" zPosition="10" halign="left" />
-    <widget source="hdd" render="Label" backgroundColor="un6e6e6e" position="649,534" size="886,124" font="Regular;18" transparent="0" zPosition="1" foregroundColor="white" />
-    <widget source="MountsHeader" render="Label" position="655,662" backgroundColor="un6e6e6e" foregroundColor="unffff00" size="873,40" font="audiowide; 20" transparent="1" zPosition="10" halign="left" />
-    <widget source="mounts" backgroundColor="un6e6e6e" render="Label" position="649,693" size="886,126" font="Regular;18" transparent="0" zPosition="1" foregroundColor="white" />
-    <ePixmap pixmap="openplusHD/menu/devicesinf.png" position="360,443" size="250,259" alphatest="blend" zPosition="-11" />
-    <eLabel position="640,312" size="901,514" transparent="0" foregroundColor="white" backgroundColor="un6e6e6e" />
-    <panel name="menu_templatewhite" />
+ <screen name="Devices" position="0,0" size="1920,1080" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="TunerHeader" render="Label" position="520,282" backgroundColor="un6e6e6e" foregroundColor="unffff00" size="600,40" font="audiowide; 20" transparent="1" zPosition="6" halign="left" />
+    <widget source="nims" render="Label" position="514,314" size="605,345" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" backgroundColor="un6e6e6e" />
+    <widget source="HDDHeader" render="Label" position="1147,282" backgroundColor="un6e6e6e" foregroundColor="unffff00" size="670,40" font="audiowide; 20" transparent="1" zPosition="10" halign="left" />
+    <widget source="hdd" render="Label" backgroundColor="un6e6e6e" position="1140,314" size="605,345" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" />
+    <widget source="MountsHeader" render="Label" position="520,672" backgroundColor="un6e6e6e" foregroundColor="unffff00" size="873,40" font="audiowide; 20" transparent="1" zPosition="10" halign="left" />
+    <widget source="mounts" backgroundColor="un6e6e6e" render="Label" position="514,703" size="886,209" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" />
+    <ePixmap pixmap="openplusHD/menu/devicesinf.png" position="165,443" size="250,259" alphatest="blend" zPosition="-11" /> 
+    <panel name="menu_templateBIG" />
   </screen>
   <screen name="Dish" flags="wfNoBorder" position="20,20" size="150,270" zPosition="-1" backgroundColor="transparent">
     <widget name="Dishpixmap" position="0,0" size="130,160" zPosition="-1" pixmap="openplusHD/icons/dish.png" transparent="1" alphatest="on" />
@@ -873,48 +898,48 @@
       <convert type="FrontendInfop">SNR</convert>
     </widget>
   </screen>
-  <screen name="EPGSelection" position="center,center" size="1920,1080" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent" zPosition="-1">
-   <widget name="lab1" position="952,599" size="763,35" font="Regular; 20" halign="center" valign="center" zPosition="20" foregroundColor="white" backgroundColor="black" transparent="1" />
-  <eLabel text="GUIDE" position="106,89" size="100,45" font="Arial; 34" backgroundColor="white" transparent="1" foregroundColor="unfc0063" />
-  <widget name="list" position="845,312" size="971,636" EventFontSingle="Regular; 22" zPosition="3" scrollbarMode="showNever" backgroundColorSelected="#A71B4C" foregroundColor="white" foregroundColorSelected="white" backgroundColor="black" transparent="1" enableWrapAround="1" />
-  <widget source="Event" render="RunningText" position="101,312" size="688,636" font="Regular; 24" foregroundColor="white" backgroundColor="black" transparent="1" valign="top" halign="left" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=2,oneshot=1">
-    <convert type="EventName">ExtendedDescription</convert>
-  </widget>
-  <eLabel text="PROGRAMS TV" position="841,270" size="597,38" font="Arial; 22" backgroundColor="un929292" transparent="1" foregroundColor="black" zPosition="1" />
-  <eLabel position="204,93" size="1,28" backgroundColor="black" transparent="0" foregroundColor="iplusPink" halign="center" />
-  <widget alphatest="blend" position="1606,71" render="Picon" size="220,132" source="Service" transparent="1" zPosition="5">
-    <convert type="oplusRefString">ServicelistRef</convert>
-  </widget>
-  <widget source="Service" render="Label" position="218,89" size="1091,45" font="plus; 28" backgroundColor="white" transparent="1" foregroundColor="black">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <panel name="menu_template_list" />
-  <panel name="button_template_rava_list" />
-</screen>
+<screen name="EPGSelection" position="center,center" size="1920,1080" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent" zPosition="-1">
+    <widget name="lab1" position="952,599" size="763,35" font="Regular; 20" halign="center" valign="center" zPosition="20" foregroundColor="white" backgroundColor="black" transparent="1" />
+    <eLabel text="GUIDE" position="106,89" size="100,45" font="Arial; 34" backgroundColor="white" transparent="1" foregroundColor="unfc0063" />
+    <widget name="list" position="842,310" size="977,640" EventFontSingle="Regular; 24" zPosition="3" scrollbarMode="showNever" backgroundColorSelected="#A71B4C" foregroundColor="white" foregroundColorSelected="white" backgroundColor="black" transparent="1" enableWrapAround="1" />
+    <widget source="Event" render="RunningText" position="101,312" size="688,636" font="Regular; 30" foregroundColor="white" backgroundColor="black" transparent="1" valign="top" halign="left" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=2,oneshot=1">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <eLabel text="PROGRAMS TV" position="841,270" size="597,38" font="Arial; 22" backgroundColor="un929292" transparent="1" foregroundColor="black" zPosition="1" />
+    <eLabel position="204,93" size="1,28" backgroundColor="black" transparent="0" foregroundColor="iplusPink" halign="center" />
+    <widget alphatest="blend" position="1606,76" render="Picon" size="220,132" source="Service" transparent="1" zPosition="5">
+      <convert type="oplusRefString">ServicelistRef</convert>
+    </widget>
+    <widget source="Service" render="Label" position="218,89" size="1091,45" font="plus; 28" backgroundColor="white" transparent="1" foregroundColor="black">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <panel name="menu_template_list" />
+    <panel name="button_template_rava_list" />
+  </screen>
   <screen name="EPGSelectionMulti" position="center,center" size="1920,1080" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
- <eLabel text="MULTIGUID" position="106,97" size="170,38" font="Arial; 26" backgroundColor="white" transparent="1" foregroundColor="unfc0063" />
-  <widget name="lab1" position="952,599" size="721,35" font="Regular; 21" halign="center" valign="center" zPosition="20" foregroundColor="white" backgroundColor="black" transparent="1" />
-  <widget name="list" position="842,310" size="975,638" itemHeight="30" EventFontMulti="Regular; 24" zPosition="3" backgroundColorSelected="#A71B4C" scrollbarMode="showNever" foregroundColor="white" foregroundColorSelected="white" backgroundColor="black" transparent="1" enableWrapAround="1" />
-  <widget source="Event" render="RunningText" position="101,311" size="686,638" font="Regular; 24" foregroundColor="white" backgroundColor="black" transparent="1" valign="top" halign="left" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=2,oneshot=1">
-    <convert type="EventName">ExtendedDescription</convert>
-  </widget>
-  <widget source="Service" render="Label" position="273,93" size="1054,45" font="plus; 28" backgroundColor="white" transparent="1" foregroundColor="black">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <eLabel position="265,99" size="1,28" backgroundColor="black" transparent="0" foregroundColor="iplusPink" halign="center" />
-  <widget alphatest="blend" position="1606,71" render="Picon" size="220,132" source="Service" transparent="1" zPosition="5">
-    <convert type="ServiceName">Reference</convert>
-  </widget>
-  <widget name="now_button_sel" position="842,265" size="450,35" zPosition="2" pixmap="openplusHD/epg_now.png" />
-  <widget name="next_button_sel" position="842,265" size="450,35" zPosition="2" pixmap="openplusHD/epg_next.png" />
-  <widget name="more_button_sel" position="842,265" size="450,35" zPosition="2" pixmap="openplusHD/epg_more.png" />
-  <widget name="now_text" position="841,269" size="150,30" zPosition="3" font="Arial; 23" halign="center" backgroundColor="iplusDeepGrey" transparent="1" foregroundColor="white" text="NOW" />
-  <widget name="next_text" position="991,269" size="150,30" zPosition="3" font="Arial; 23" halign="center" backgroundColor="iplusDeepGrey" transparent="1" foregroundColor="white" text="NEXT" />
-  <widget name="more_text" position="1141,269" size="150,30" zPosition="3" font="Arial; 23" halign="center" backgroundColor="iplusDeepGrey" transparent="1" foregroundColor="white" text="MORE" />
-  <widget name="date" position="1304,268" zPosition="3" size="280,30" font="Arial; 20" valign="center" halign="left" transparent="1" backgroundColor="un929292" foregroundColor="white" />
-  <panel name="menu_template_list" />
-  <panel name="button_template_rava_list" />
-</screen>
+    <eLabel text="MULTIGUID" position="106,97" size="170,38" font="Arial; 26" backgroundColor="white" transparent="1" foregroundColor="unfc0063" />
+    <widget name="lab1" position="952,599" size="721,35" font="Regular; 21" halign="center" valign="center" zPosition="20" foregroundColor="white" backgroundColor="black" transparent="1" />
+    <widget name="list" position="842,310" size="977,640" itemHeight="30" EventFontMulti="Regular; 28" zPosition="3" backgroundColorSelected="#A71B4C" scrollbarMode="showNever" foregroundColor="white" foregroundColorSelected="white" backgroundColor="black" transparent="1" enableWrapAround="1" />
+    <widget source="Event" render="RunningText" position="101,312" size="688,636" font="Regular; 30" foregroundColor="white" backgroundColor="black" transparent="1" valign="top" halign="left" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=2,oneshot=1">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget source="Service" render="Label" position="275,93" size="1054,45" font="plus; 28" backgroundColor="white" transparent="1" foregroundColor="black">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <eLabel position="262,98" size="1,28" backgroundColor="black" transparent="0" foregroundColor="iplusPink" halign="center" />
+    <widget alphatest="blend" position="1606,76" render="Picon" size="220,132" source="Service" transparent="1" zPosition="5">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget name="now_button_sel" position="838,265" size="450,35" zPosition="2" pixmap="openplusHD/epg_now.png" />
+    <widget name="next_button_sel" position="838,265" size="450,35" zPosition="2" pixmap="openplusHD/epg_next.png" />
+    <widget name="more_button_sel" position="838,265" size="450,35" zPosition="2" pixmap="openplusHD/epg_more.png" />
+    <widget name="now_text" position="837,269" size="150,30" zPosition="3" font="Arial; 23" halign="center" backgroundColor="iplusDeepGrey" transparent="1" foregroundColor="white" text="NOW" />
+    <widget name="next_text" position="987,269" size="150,30" zPosition="3" font="Arial; 23" halign="center" backgroundColor="iplusDeepGrey" transparent="1" foregroundColor="white" text="NEXT" />
+    <widget name="more_text" position="1137,269" size="150,30" zPosition="3" font="Arial; 23" halign="center" backgroundColor="iplusDeepGrey" transparent="1" foregroundColor="white" text="MORE" />
+    <widget name="date" position="1304,268" zPosition="3" size="280,30" font="Regular; 21" valign="center" halign="left" transparent="1" backgroundColor="un929292" foregroundColor="white" />
+    <panel name="menu_template_list" />
+    <panel name="button_template_rava_list" />
+  </screen>
   <screen name="FastScanScreen" position="center,center" size="1920,1080" title="Fast Scan" backgroundColor="transparent">
     <widget name="config" position="640,312" size="901,503" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" />
     <widget name="introduction" position="0,0" size="0,0" />
@@ -923,6 +948,24 @@
     <panel name="menu_template1" />
     <ePixmap pixmap="openplusHD/menu/antenna.png" position="355,428" size="250,359" alphatest="blend" zPosition="-11" />
   </screen>
+    <screen name="FlashOnline" position="0,0" size="1920,1080" title="Flash Online" flags="wfNoBorder" backgroundColor="transparent">
+		
+		<widget name="info-online" position="542,370" size="1180,50" halign="center" transparent="0" zPosition="1" foregroundColor="white" backgroundColor="un6e6e6e" font="Regular; 25" valign="center" />
+		<widget name="info-local" position="542,535" size="1180,50" halign="center" transparent="0" zPosition="1" font="Regular; 25" foregroundColor="white" backgroundColor="un6e6e6e" valign="center" />
+		<eLabel text="OPEN SOURCE" position="768,187" size="380,55" halign="center" transparent="0" zPosition="1" font="Regular; 40" foregroundColor="white" backgroundColor="black" />
+		<panel name="menu_templateWIG" />
+		<ePixmap position="175,450" size="256,256" zPosition="2" pixmap="openplusHD/menu/oplusp.png" transparent="1" alphatest="blend" />
+	 <!-- colores keys  rojo azul verde amarillo sobre fondo blanco source-->
+    <eLabel position="1470,892" size="35,35" transparent="0" foregroundColor="white" backgroundColor="blue" zPosition="-1" />
+    <eLabel position="507,892" size="35,35" transparent="0" foregroundColor="white" backgroundColor="red" zPosition="-1" />
+    <eLabel position="1150,892" size="35,35" transparent="0" foregroundColor="white" backgroundColor="yellow" zPosition="-1" />
+    <eLabel position="830,892" size="35,35" transparent="0" foregroundColor="white" backgroundColor="green" zPosition="-1" />
+    <widget source="key_blue" render="Label" position="1505,892" size="250,35" noWrap="1" zPosition="1" valign="center" font="Regular; 22" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" />
+    <widget source="key_yellow" render="Label" position="1185,892" size="250,35" noWrap="1" zPosition="1" valign="center" font="Regular; 22" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" />
+    <widget source="key_red" render="Label" position="542,892" size="250,35" noWrap="1" zPosition="1" valign="center" font="Regular; 22" halign="center" transparent="0" backgroundColor="black" foregroundColor="white" />
+    <widget source="key_green" render="Label" position="865,892" size="250,35" noWrap="1" zPosition="1" valign="center" font="Regular; 22" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" />
+    <!-- fin colores keys -->
+</screen>
 <screen name="GraphicalEPGPIG" position="center,center" size="1920,1080" backgroundColor="transparent" transparent="0" flags="wfNoBorder">
   <widget source="Title" render="Label" position="230,74" size="706,43" font="Caviar_bold; 32" transparent="1" foregroundColor="unfc0063" backgroundColor="transpBlack1" zPosition="1" />
   <widget name="lab1" position="center,170" size="1460,571" font="Regular;26" foregroundColor="white" halign="center" valign="center" zPosition="20" backgroundColor="transpBlack1" transparent="1" />
@@ -1948,13 +1991,11 @@
     <widget name="divpic" position="0,0" size="0,0" />
   </screen>
    <screen name="PluginBrowser" position="0,0" size="1920,1080" title="Plugin browser" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap pixmap="openplusHD/menu/plugin.png" position="360,445" size="250,272" alphatest="blend" zPosition="-11" />
-    <widget name="list" position="640,312" size="901,489" itemHeight="70" font="Caviar_bold; 30" scrollbarMode="showNever" backgroundColor="un6e6e6e" foregroundColor="white" enableWrapAround="1" transparent="1" />
-    <widget name="green" position="376,783" size="228,40" zPosition="1" valign="center" halign="center" noWrap="1" transparent="1" foregroundColor="black" backgroundColor="transpWhite" font="Caviar_bold; 20" />
-    <eLabel position="640,312" size="901,498" transparent="0" foregroundColor="white" backgroundColor="un6e6e6e" zPosition="-10" />
-    <panel name="menu_template_net" />
-    <panel name="button_template_rv_lg_name" />
-  </screen>
+  <ePixmap pixmap="openplusHD/menu/plugin.png" position="172,448" size="256,256" alphatest="blend" zPosition="-11" />
+  <widget name="list" position="507,273" size="1247,625" itemHeight="70" font="Caviar_bold; 30" scrollbarMode="showNever" backgroundColor="un6e6e6e" foregroundColor="white" enableWrapAround="1" transparent="1" />
+  <panel name="menu_templateBIG" />
+  <panel name="button_template_rv_lg_nameBIG" />
+</screen>
   <screen name="PluginDownloadBrowser" position="0,0" size="1920,1080" title="Downloadable plugins" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="text" position="652,240" size="901,40" zPosition="1" font="Caviar_bold; 19" halign="right" valign="center" foregroundColor="white" transparent="1" backgroundColor="black" />
     <ePixmap pixmap="openplusHD/menu/plugin.png" position="360,445" size="250,272" alphatest="blend" zPosition="-11" />
@@ -2011,10 +2052,10 @@
   <screen name="PinInputExt" position="center,center" title="PIN code needed" size="1920,1080" backgroundColor="transparent">
     <panel name="pininput_template" />
   </screen>
-  <screen name="BufferIndicator" position="0,0" size="1920,61" flags="wfNoBorder" backgroundColor="transparent" zPosition="3">
-<widget name="status" position="center,6" size="404,50" transparent="0" halign="center" valign="center" zPosition="5" font="audiowide; 24" foregroundColor="black" />
-<widget source="Title" render="Label" position="center,0" size="416,61" transparent="0" noWrap="1" halign="left" valign="center" zPosition="2" foregroundColor="black" backgroundColor="transpblue" />
-</screen>
+  <screen name="BufferIndicator" position="0,0" size="1920,108" flags="wfNoBorder" backgroundColor="transparent" zPosition="3">
+    <widget name="status" position="758,16" size="404,50" transparent="0" halign="center" valign="center" zPosition="5" font="audiowide; 24" foregroundColor="black" />
+    <widget source="Title" render="Label" position="752,10" size="416,61" transparent="0" noWrap="1" halign="left" valign="center" zPosition="2" foregroundColor="black" backgroundColor="transpblue" />
+  </screen>
   <screen name="QuickMenu" position="center,1" size="1920,1080" title="Quick Launch Menu" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="openplusHD/buttons/red1.png" position="646,918" size="25,25" alphatest="blend" />
     <ePixmap pixmap="openplusHD/buttons/green1.png" position="830,918" size="25,25" alphatest="blend" />
@@ -2284,30 +2325,31 @@
     <panel name="button_template_rv_lg" />
   </screen>
  <screen name="ServiceInfo" position="0,0" size="1920,1080" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent">
-  <widget name="infolist" position="757,325" font="Regular; 23" backgroundColor="un6e6e6e" foregroundColor="white" size="790,467" itemHeight="35" selectionDisabled="1" scrollbarMode="showNever" transparent="1" valign="top" halign="center" />
-  <ePixmap pixmap="openplusHD/menu/menuinfchan.png" position="360,443" size="250,359" alphatest="blend" zPosition="-11" />
-  <!-- colores keys  rojo azul verde amarillo sobre fondo blanco source-->
-  <eLabel position="1272,789" size="35,35" transparent="0" foregroundColor="white" backgroundColor="blue" zPosition="-1" />
-  <eLabel position="640,789" size="35,35" transparent="0" foregroundColor="white" backgroundColor="red" zPosition="-1" />
-  <eLabel position="1064,789" size="35,35" transparent="0" foregroundColor="white" backgroundColor="yellow" zPosition="-1" />
-  <eLabel position="852,789" size="35,35" transparent="0" foregroundColor="white" backgroundColor="green" zPosition="-1" />
-  <widget source="key_blue" render="Label" position="1307,789" size="234,35" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" />
-  <widget source="key_yellow" render="Label" position="1099,789" size="166,35" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" />
-  <widget source="key_red" render="Label" position="675,789" size="170,35" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="center" transparent="0" backgroundColor="black" foregroundColor="white" />
-  <widget source="key_green" render="Label" position="887,789" size="170,35" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" />
-  <!-- fin colores keys -->
-  <panel name="menu_template_net" />
-</screen>
-  <screen name="Setup" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="config" zPosition="3" position="640,312" size="901,418" itemHeight="30" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="un6e6e6e" foregroundColor="white" backgroundColorSelected="#fd6502" foregroundColorSelected="white" transparent="0" font="Regular; 19" />
-    <widget name="description" position="640,731" size="901,97" halign="center" valign="center" transparent="0" foregroundColor="white" font="Regular; 17" backgroundColor="un6e6e6e" />
-    <widget name="HelpWindow" position="720,945" size="901,126" zPosition="1" transparent="1" alphatest="blend" foregroundColor="black" halign="center" />
-    <ePixmap pixmap="openplusHD/menu/menu1.png" position="360,443" size="250,359" alphatest="blend" zPosition="-11" />
-    <eLabel position="640,730" zPosition="-11" size="901,2" backgroundColor="white" foregroundColor="white" />
-    <eLabel position="640,731" size="901,97" halign="center" valign="center" transparent="0" foregroundColor="white" backgroundColor="un6e6e6e" zPosition="-1" />
-    <panel name="menu_templatewhite" />
-    <panel name="button_template_rv_lg" />
+    <widget name="infolist" position="532,288" font="Regular; 30" backgroundColor="un6e6e6e" foregroundColor="white" size="1210,580" itemHeight="35" selectionDisabled="1" scrollbarMode="showNever" transparent="1" valign="top" halign="center" />
+    <ePixmap pixmap="openplusHD/menu/menuinfchan.png" position="165,443" size="250,359" alphatest="blend" zPosition="-11" />
+    <!-- colores keys  rojo azul verde amarillo sobre fondo blanco source-->
+    <eLabel position="1470,892" size="35,35" transparent="0" foregroundColor="white" backgroundColor="blue" zPosition="-1" />
+    <eLabel position="507,892" size="35,35" transparent="0" foregroundColor="white" backgroundColor="red" zPosition="-1" />
+    <eLabel position="1150,892" size="35,35" transparent="0" foregroundColor="white" backgroundColor="yellow" zPosition="-1" />
+    <eLabel position="830,892" size="35,35" transparent="0" foregroundColor="white" backgroundColor="green" zPosition="-1" />
+    <widget source="key_blue" render="Label" position="1505,892" size="250,35" noWrap="1" zPosition="1" valign="center" font="Regular; 22" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" />
+    <widget source="key_yellow" render="Label" position="1185,892" size="250,35" noWrap="1" zPosition="1" valign="center" font="Regular; 22" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" />
+    <widget source="key_red" render="Label" position="542,892" size="250,35" noWrap="1" zPosition="1" valign="center" font="Regular; 22" halign="center" transparent="0" backgroundColor="black" foregroundColor="white" />
+    <widget source="key_green" render="Label" position="865,892" size="250,35" noWrap="1" zPosition="1" valign="center" font="Regular; 22" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" />
+    <!-- fin colores keys -->
+    <panel name="menu_templateWIG" />
   </screen>
+<screen name="Setup" position="center,center" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <widget name="config" zPosition="3" position="509,275" size="1243,457" itemHeight="46" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="un6e6e6e" foregroundColor="white" backgroundColorSelected="#fd6502" foregroundColorSelected="white" transparent="0" font="Regular; 30" />
+    <widget name="description" position="509,739" size="1243,179" halign="center" valign="center" transparent="0" foregroundColor="white" font="Regular; 26" backgroundColor="un6e6e6e" />
+    <widget name="HelpWindow" position="826,922" size="604,126" zPosition="1" transparent="1" alphatest="blend" foregroundColor="black" halign="center" />
+    <ePixmap pixmap="openplusHD/menu/menu1.png" position="172,448" size="250,359" alphatest="blend" zPosition="-11" />
+    <widget name="footnote" position="1049,195" size="700,40" halign="right" valign="center" transparent="1" font="Regular; 25" foregroundColor="white" backgroundColor="black" zPosition="3" />
+    <eLabel position="507,735" zPosition="-9" size="1247,2" backgroundColor="white" foregroundColor="white" />
+    <widget name="labelInfo" position="1203,381" size="415,220" halign="center" valign="center" transparent="1" zPosition="5" foregroundColor="white" font="Regular; 20" backgroundColor="un6e6e6e" />
+    <panel name="menu_templateBIG" />
+    <panel name="button_template_rv_lgBIG" />
+ </screen>
   <screen name="SkinSelector" position="0,0" size="1920,1080" title="Skin Selector" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="SkinList" position="645,317" size="448,384" itemHeight="35" scrollbarMode="showNever" backgroundColor="un6e6e6e" enableWrapAround="1" transparent="1" foregroundColor="white" font="Caviar_bold; 22" />
     <widget name="Preview" position="1120,320" size="413,259" alphatest="blend" />
@@ -2382,23 +2424,23 @@
     </widget>
   </screen>
   <screen name="SystemNetworkInfo" position="center,center" size="1920,1080" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="AboutScrollLabel" position="757,314" size="783,528" zPosition="10" backgroundColor="un6e6e6e" foregroundColor="white" font="Regular; 24" transparent="1" scrollbarMode="showNever" halign="left" noWrap="1" />
-    <widget source="IFtext" render="Label" position="1087,242" size="200,28" backgroundColor="black" foregroundColor="white" zPosition="10" font="Regular; 24" transparent="1" halign="right" />
-    <widget source="IF" render="Label" position="1219,242" size="320,28" font="Regular; 24" backgroundColor="black" foregroundColor="unffff00" zPosition="10" transparent="1" halign="right" />
-    <widget source="Statustext" render="Label" position="969,846" size="176,35" backgroundColor="un929292" foregroundColor="white" zPosition="10" font="Caviar_bold; 30" transparent="1" halign="right" />
-    <widget name="statuspic" pixmaps="openplusHD/skin_default/buttons/button_green.png,openplusHD/skin_default/buttons/button_green_off.png" position="1155,853" zPosition="10" size="25,25" transparent="1" alphatest="on" />
-    <panel name="menu_template1" />
-    <ePixmap pixmap="openplusHD/menu/menuinfnet1.png" position="360,443" size="250,359" alphatest="blend" zPosition="-11" />
+    <widget name="AboutScrollLabel" position="557,293" size="1183,615" zPosition="10" backgroundColor="un6e6e6e" foregroundColor="white" font="Regular; 32" transparent="1" scrollbarMode="showNever" halign="left" noWrap="1" />
+    <widget source="IFtext" render="Label" position="1262,202" size="200,28" backgroundColor="black" foregroundColor="white" zPosition="10" font="Regular; 24" transparent="1" halign="right" />
+    <widget source="IF" render="Label" position="1469,202" size="320,28" font="Regular; 24" backgroundColor="black" foregroundColor="unffff00" zPosition="10" transparent="1" halign="left" />
+    <widget source="Statustext" render="Label" position="1074,959" size="176,35" backgroundColor="un929292" foregroundColor="white" zPosition="10" font="Caviar_bold; 30" transparent="1" halign="right" />
+    <widget name="statuspic" pixmaps="openplusHD/skin_default/buttons/button_green.png,openplusHD/skin_default/buttons/button_green_off.png" position="1266,964" zPosition="10" size="25,25" transparent="1" alphatest="on" />
+    <panel name="menu_templateBIG" />
+    <ePixmap pixmap="openplusHD/menu/menuinfnet1.png" position="165,443" size="250,359" alphatest="blend" zPosition="-11" />
   </screen>
   <screen name="SystemMessage" title="Mensaje" position="center,center" size="1920,1080" zPosition="10" backgroundColor="transpWhite" transparent="0" flags="wfNoBorder">
     <panel name="menu_template_message" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1920,1080" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="AboutScrollLabel" position="757,319" size="783,603" zPosition="10" backgroundColor="un6e6e6e" foregroundColor="white" font="Regular; 28" transparent="1" scrollbarMode="showNever" halign="left" noWrap="1" />
-    <widget source="lab1" render="Label" position="1096,242" size="458,35" font="Regular; 22" transparent="1" zPosition="2" foregroundColor="unffff00" backgroundColor="black" halign="right" />
-    <widget source="lab2" render="Label" position="640,849" size="551,50" font="Caviar_bold; 25" transparent="1" zPosition="2" foregroundColor="white" backgroundColor="un6e6e6e" halign="center" />
-    <panel name="menu_template1" />
-    <ePixmap pixmap="openplusHD/menu/devicesinfmem1.png" position="360,443" size="250,359" alphatest="blend" zPosition="-11" />
+    <widget name="AboutScrollLabel" position="547,283" size="1202,634" zPosition="10" backgroundColor="un6e6e6e" foregroundColor="white" font="Regular; 32" transparent="1" scrollbarMode="showNever" halign="left" noWrap="1" />
+    <widget source="lab1" render="Label" position="1296,197" size="458,35" font="Regular; 22" transparent="1" zPosition="10" foregroundColor="unffff00" backgroundColor="black" halign="right" />
+    <widget source="lab2" render="Label" position="511,950" size="551,50" font="Caviar_bold; 25" transparent="1" zPosition="2" foregroundColor="white" backgroundColor="un929292" halign="center" />
+    <panel name="menu_templateBIG" />
+    <ePixmap pixmap="openplusHD/menu/devicesinfmem1.png" position="165,443" size="250,359" alphatest="blend" zPosition="-11" />
   </screen>
   <screen name="Subtitles" position="center,center" size="1920,1080" title="Subtitle selection" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="config" position="640,312" size="901,504" itemHeight="30" backgroundColor="un6e6e6e" transparent="1" foregroundColor="white" font="Regular; 22" />
@@ -2766,8 +2808,8 @@
     <panel name="menu_template_rc_wizard" />
   </screen>
   <screen name="AutoDiseqc" position="center,center" size="700,450" title="AutoDiseqc">
-    <widget source="statusbar" render="Label" position="5,20" zPosition="10" size="690,144" halign="center" valign="center" font="audiowide; 20" transparent="1" foregroundColor="black" />
-    <widget source="tunerstatusbar" render="Label" position="5,169" zPosition="10" size="690,70" halign="center" valign="center" font="audiowide; 22" transparent="1" foregroundColor="black" />
+    <widget source="statusbar" render="Label" position="5,20" zPosition="10" size="690,148" halign="center" valign="center" font="audiowide; 20" transparent="0" foregroundColor="white" backgroundColor="un6e6e6e" />
+    <widget source="tunerstatusbar" render="Label" position="5,169" zPosition="10" size="690,70" halign="center" valign="center" font="audiowide; 22" transparent="0" foregroundColor="white" backgroundColor="un6e6e6e" />
     <widget name="config" position="5,245" size="690,155" scrollbarMode="showOnDemand" backgroundColor="black" font="Regular; 19" foregroundColor="white" />
     <widget source="key_red" render="Label" font="Regular;20" halign="center" position="555,408" size="140,40" transparent="0" valign="center" zPosition="10" backgroundColor="red" foregroundColor="white" />
   </screen>

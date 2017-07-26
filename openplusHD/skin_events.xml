@@ -1,34 +1,37 @@
 <skin>
- 
-  <screen name="EventView" position="center,center" size="1920,1080" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">
-  <eLabel text="Program Duration:" position="305,538" size="362,31" font="audiowide; 19" backgroundColor="transpBlack" transparent="1" foregroundColor="unffa500" valign="top" zPosition="-20" halign="center" />
+<screen name="EventView" position="0,0" size="1920,1080" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">
+  <eLabel text="Program Duration:" position="305,538" size="362,31" font="audiowide; 24" backgroundColor="transpBlack" transparent="1" foregroundColor="unffa500" valign="top" zPosition="-20" halign="center" />
   <eLabel position="327,634" size="315,2" backgroundColor="iplusAccent1" foregroundColor="iplusAccent1" />
-  <widget backgroundColor="red" font="Regular; 16" halign="center" name="key_red" position="729,854" size="180,30" transparent="0" zPosition="1" foregroundColor="white" />
-  <widget backgroundColor="green" font="Regular; 16" halign="center" name="key_green" position="971,854" size="180,30" transparent="0" zPosition="1" foregroundColor="white" />
-  <widget backgroundColor="yellow" font="Regular; 16" halign="center" name="key_yellow" position="1208,854" size="180,30" transparent="0" zPosition="1" foregroundColor="white" />
-  <widget backgroundColor="iplusbarraback" font="Regular; 16" halign="center" name="key_blue" position="1445,854" size="180,30" transparent="0" zPosition="1" foregroundColor="white" />
-  <widget scrollbarMode="showNever" backgroundColor="black" font="Regular; 22" foregroundColor="white" name="epg_description" position="729,231" size="895,598" transparent="1" />
+  <widget backgroundColor="transpBlack" font="Regular; 22" halign="left" name="key_red" position="764,854" size="190,30" transparent="0" zPosition="1" foregroundColor="white" />
+  <widget backgroundColor="transpBlack" font="Regular; 22" halign="left" name="key_green" position="982,854" size="223,30" transparent="0" zPosition="1" foregroundColor="white" />
+  <widget backgroundColor="transpBlack" font="Regular; 22" halign="left" name="key_yellow" position="1258,854" size="190,30" transparent="0" zPosition="1" foregroundColor="white" />
+  <widget backgroundColor="transpBlack" font="Regular; 22" halign="left" name="key_blue" position="1471,854" size="190,30" transparent="0" zPosition="1" foregroundColor="white" />
+  <widget scrollbarMode="showNever" backgroundColor="black" font="Regular; 27" foregroundColor="white" name="epg_description" position="729,231" size="895,598" transparent="1" />
   <widget alphatest="blend" position="373,231" render="oPicon" size="220,132" source="Service" transparent="1" zPosition="5">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget font="Caviar_bold; 20" foregroundColor="white" halign="center" noWrap="1" options="movetype=running,direction=left,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=5,oneshot=1" position="266,704" render="RunningText" size="437,38" source="session.Event_Now" transparent="1" backgroundColor="transpBlack" zPosition="0">
+  <widget font="Caviar_bold; 21" foregroundColor="white" halign="center" noWrap="1" options="movetype=running,direction=left,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=5,oneshot=1" position="266,704" render="RunningText" size="437,38" source="session.Event_Now" transparent="1" backgroundColor="transpBlack" zPosition="0">
     <convert type="EventName">Name</convert>
   </widget>
  <widget backgroundColor="iplusBackground" borderWidth="0" pixmap="openplusHD/colors/00a61d4d.png" position="332,751" render="Progress" size="305,25" source="session.Event_Now" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
   <eLabel backgroundColor="darkgrey" foregroundColor="black" position="332,751" size="305,25" />
-  <widget font="audiowide; 20" foregroundColor="unffa500" halign="center" noWrap="1" options="movetype=running,direction=left,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=5,oneshot=1" position="266,434" render="RunningText" size="437,37" source="Event" transparent="1" backgroundColor="transpBlack" zPosition="0">
+  <widget font="audiowide; 22" foregroundColor="unffa500" halign="center" noWrap="1" options="movetype=running,direction=left,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=5,oneshot=1" position="266,434" render="RunningText" size="437,37" source="Event" transparent="1" backgroundColor="transpBlack" zPosition="0">
     <convert type="EventName">Name</convert>
   </widget>
   <widget name="datetime" position="294,485" size="384,40" font="audiowide; 24" halign="center" backgroundColor="transpBlack" transparent="1" foregroundColor="white" />
-  <eLabel position="266,667" size="437,31" font="Caviar_bold; 19" backgroundColor="transpBlack" transparent="1" foregroundColor="unffa500" valign="top" zPosition="-20" halign="center" text="You're watching..." />
-  <widget name="duration" position="372,575" size="229,40" font="audiowide; 24" halign="center" backgroundColor="transpBlack" transparent="1" foregroundColor="white" />
-  <widget name="channel" position="266,384" size="437,42" font="plus; 24" halign="center" backgroundColor="transpBlack" transparent="1" foregroundColor="white" />
+  <eLabel position="266,667" size="437,31" font="Caviar_bold; 24" backgroundColor="transpBlack" transparent="1" foregroundColor="unffa500" valign="top" zPosition="-20" halign="center" text="You're watching..." />
+  <widget name="duration" position="372,575" size="229,40" font="audiowide; 25" halign="center" backgroundColor="transpBlack" transparent="1" foregroundColor="white" />
+  <widget name="channel" position="266,384" size="437,42" font="plus; 25" halign="center" backgroundColor="transpBlack" transparent="1" foregroundColor="white" />
   <ePixmap position="646,483" size="36,36" zPosition="10" pixmap="openplusHD/right.png" transparent="1" alphatest="blend" />
   <ePixmap position="291,483" size="36,36" zPosition="10" pixmap="openplusHD/left.png" transparent="1" alphatest="blend" />
   <panel name="menu_template_events" />
-</screen>
+<eLabel position="729,854" size="30,30" transparent="0" foregroundColor="white" backgroundColor="unee1d11" zPosition="2" />
+   <eLabel position="946,854" size="30,30" transparent="0" foregroundColor="white" backgroundColor="un11b90a" zPosition="2" />
+  <eLabel position="1222,854" size="30,30" transparent="0" foregroundColor="white" backgroundColor="uneefb1a" zPosition="2" />
+  <eLabel position="1435,854" size="30,30" transparent="0" foregroundColor="white" backgroundColor="un1a2cfb" zPosition="2" />
+ </screen>
   <screen name="EventViewContextMenu" position="center,center" size="560,345" backgroundColor="transpWhite" transparent="0">
     <widget name="menu" render="Listbox" position="0,20" size="560,325" foregroundColor="black" backgroundColor="transpWhite" transparent="0" enableWrapAround="1" scrollbarMode="showNever">
       <convert type="TemplatedMultiContent">

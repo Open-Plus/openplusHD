@@ -1,4 +1,54 @@
 <skin>
+    <screen name="menu_templateBIG">
+<eLabel text="OPENPLUS" position="745,85" size="430,65" font="audiowide; 50" halign="center" transparent="1" foregroundColor="white" backgroundColor="un42b3" />
+  <eLabel position="1334,945" size="300,60" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+  <widget source="Title" transparent="1" render="Label" zPosition="2" valign="center" halign="left" position="147,179" size="1534,70" font="Caviar_bold; 37" backgroundColor="black" foregroundColor="white" noWrap="1" />
+  <widget source="global.CurrentTime" render="Label" position="1497,65" size="251,65" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 30" valign="center" halign="right">
+    <convert type="ClockToText">Format:%-H:%M</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1327,97" size="421,65" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 23" valign="center" halign="right">
+    <convert type="ClockToText">Date</convert>
+  </widget>
+  <widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=25,repeat=150,startdelay=1500,always=0" position="157,945" size="281,60" font="plus; 22" transparent="1" valign="center" zPosition="2" backgroundColor="black" foregroundColor="white" noWrap="1" halign="center">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <eLabel position="center,center" size="1728,1019" transparent="0" zPosition="-15" backgroundColor="transpWhite" />
+  <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 32" position="1340,953" size="288,60" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white" text="Temp. Sist: :(">
+     <convert type="openSTBinfo">SYStemp</convert>
+  </widget>
+  <eLabel position="131,179" size="1657,70" transparent="0" foregroundColor="white" backgroundColor="black" />
+  <eLabel position="155,945" size="286,60" transparent="0" foregroundColor="white" backgroundColor="black" />
+  <eLabel position="507,945" size="807,60" transparent="0" foregroundColor="white" backgroundColor="un929292" zPosition="-1" />
+  <eLabel position="507,273" size="1247,647" transparent="0" foregroundColor="white" backgroundColor="un6e6e6e" zPosition="-10" />
+  
+  <eLabel text="EXIT" position="1653,945" size="100,60" font="Regular; 38" zPosition="2" halign="center" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+  <eLabel position="131,70" size="1657,88" transparent="0" foregroundColor="white" backgroundColor="transpblue" zPosition="-10" />
+ </screen>
+    <screen name="menu_templateWIG">
+<eLabel text="OPENPLUS" position="745,85" size="430,65" font="audiowide; 50" halign="center" transparent="1" foregroundColor="white" backgroundColor="un42b3" />
+  <eLabel position="1334,945" size="300,60" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+  <widget source="Title" transparent="1" render="Label" zPosition="2" valign="center" halign="left" position="147,179" size="1534,70" font="Caviar_bold; 37" backgroundColor="black" foregroundColor="white" noWrap="1" />
+  <widget source="global.CurrentTime" render="Label" position="1497,65" size="251,65" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 30" valign="center" halign="right">
+    <convert type="ClockToText">Format:%-H:%M</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1327,97" size="421,65" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 23" valign="center" halign="right">
+    <convert type="ClockToText">Date</convert>
+  </widget>
+  <widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=25,repeat=150,startdelay=1500,always=0" position="157,945" size="281,60" font="plus; 22" transparent="1" valign="center" zPosition="2" backgroundColor="black" foregroundColor="white" noWrap="1" halign="center">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <eLabel position="center,center" size="1728,1019" transparent="0" zPosition="-15" backgroundColor="transpWhite" />
+  <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 32" position="1340,953" size="288,60" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white" text="Temp. Sist: :(">
+     <convert type="openSTBinfo">SYStemp</convert>
+  </widget>
+  <eLabel position="131,179" size="1657,70" transparent="0" foregroundColor="white" backgroundColor="black" />
+  <eLabel position="155,945" size="286,60" transparent="0" foregroundColor="white" backgroundColor="black" />
+  <eLabel position="507,945" size="807,60" transparent="0" foregroundColor="white" backgroundColor="un929292" zPosition="-1" />
+  <eLabel position="507,273" size="1247,600" transparent="0" foregroundColor="white" backgroundColor="un6e6e6e" zPosition="-10" />
+  
+  <eLabel text="EXIT" position="1653,945" size="100,60" font="Regular; 38" zPosition="2" halign="center" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+  <eLabel position="131,70" size="1657,88" transparent="0" foregroundColor="white" backgroundColor="transpblue" zPosition="-10" />
+ </screen>
 <screen name="menu_templateOP">
 <eLabel text="OPENPANEL" position="center,155" size="430,65" font="audiowide; 42" halign="center" transparent="1" foregroundColor="white" backgroundColor="un42b3" />
   <eLabel position="1201,840" size="230,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
@@ -123,8 +173,7 @@
   
   <eLabel text="EXIT" position="1441,840" size="100,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
   <eLabel position="center,150" size="1217,68" transparent="0" foregroundColor="white" backgroundColor="transpblue" zPosition="-10" />
-  </screen>
-    
+  </screen>   
 <screen name="menu_templatewhite">
 <eLabel text="OPENPLUS" position="center,155" size="430,65" font="audiowide; 42" halign="center" transparent="1" foregroundColor="white" backgroundColor="un42b3" />
   <eLabel position="1201,840" size="230,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
@@ -150,7 +199,29 @@
   <eLabel text="EXIT" position="1441,840" size="100,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
   <eLabel position="center,150" size="1217,68" transparent="0" foregroundColor="white" backgroundColor="transpblue" zPosition="-10" />
   </screen>
-
+    <screen name="menu_templatewhiteBIG">
+<eLabel text="OPENPLUS" position="745,85" size="430,65" font="audiowide; 50" halign="center" transparent="1" foregroundColor="white" backgroundColor="un42b3" />
+  <eLabel position="1334,945" size="300,60" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+  <widget source="Title" transparent="1" render="Label" zPosition="2" valign="center" halign="left" position="146,179" size="1534,70" font="Caviar_bold; 37" backgroundColor="black" foregroundColor="white" noWrap="1" />
+  <widget source="global.CurrentTime" render="Label" position="1497,65" size="251,65" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 30" valign="center" halign="right">
+    <convert type="ClockToText">Format:%-H:%M</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1327,97" size="421,65" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 23" valign="center" halign="right">
+    <convert type="ClockToText">Date</convert>
+  </widget>
+  <widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=25,repeat=150,startdelay=1500,always=0" position="157,945" size="281,60" font="plus; 22" transparent="1" valign="center" zPosition="2" backgroundColor="black" foregroundColor="white" noWrap="1" halign="center">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <eLabel position="center,center" size="1728,1019" transparent="0" zPosition="-15" backgroundColor="transpWhite" />
+  <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 32" position="1340,953" size="288,60" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white" text="Temp. Sist: :(">
+     <convert type="openSTBinfo">SYStemp</convert>
+  </widget>
+  <eLabel position="131,179" size="1657,70" transparent="0" foregroundColor="white" backgroundColor="black" />
+  <eLabel position="155,945" size="286,60" transparent="0" foregroundColor="white" backgroundColor="black" />
+  <eLabel position="507,945" size="807,60" transparent="0" foregroundColor="white" backgroundColor="un929292" zPosition="-1" />
+  <eLabel text="EXIT" position="1653,945" size="100,60" font="Regular; 38" zPosition="2" halign="center" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+  <eLabel position="131,70" size="1657,88" transparent="0" foregroundColor="white" backgroundColor="transpblue" zPosition="-10" />
+    </screen> 
     <screen name="menu_template_simple">
 <eLabel text="OPENPLUS" position="center,155" size="430,65" font="audiowide; 42" halign="center" transparent="1" foregroundColor="white" backgroundColor="un42b3" />
   <eLabel position="1201,840" size="230,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
@@ -179,40 +250,35 @@
   <eLabel position="center,150" size="1217,68" transparent="0" foregroundColor="white" backgroundColor="transpblue" zPosition="-10" />
    
       </screen>
-    
-     <screen name="menu_template_list">
-
+    <screen name="menu_template_list">
 <eLabel position="center,center" zPosition="-10" size="1810,970" backgroundColor="transpWhite" />
          <eLabel position="93,261" size="705,40" transparent="0" foregroundColor="white" backgroundColor="un929292" zPosition="0" />
      <eLabel position="833,261" size="995,40" transparent="0" foregroundColor="white" backgroundColor="un929292" zPosition="0" />
    <eLabel position="93,301" size="705,657" backgroundColor="black" transparent="0" foregroundColor="white" zPosition="-1" />
   <eLabel position="833,301" size="995,657" backgroundColor="black" transparent="0" foregroundColor="white" zPosition="-1" /> 
-    <eLabel position="55,153" size="50,50" backgroundColor="unfc0063" transparent="0" foregroundColor="unfc0063" zPosition="-1" />
-    <eLabel position="105,153" size="1492,50" backgroundColor="black" transparent="0" foregroundColor="iplusPink" zPosition="-1" />
+    <eLabel position="55,148" size="60,60" backgroundColor="unfc0063" transparent="0" foregroundColor="unfc0063" zPosition="-1" />
+    <eLabel position="115,148" size="1480,60" backgroundColor="black" transparent="0" foregroundColor="iplusPink" zPosition="-1" />
     
- <eLabel text="CLICK      TO RECORD SELECTED PROGRAM" position="103,217" size="735,38" font="Arial; 25" backgroundColor="white" transparent="1" foregroundColor="black" />
- <ePixmap pixmap="openplusHD/graba.png" position="193,220" size="24,27" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Label" position="1436,71" size="159,26" font="audiowide; 20" halign="right" backgroundColor="white" transparent="1" foregroundColor="black">
+ <eLabel text="CLICK      TO RECORD SELECTED PROGRAM" position="103,220" size="735,38" font="Arial; 25" backgroundColor="white" transparent="1" foregroundColor="black" />
+ <ePixmap pixmap="openplusHD/graba.png" position="193,223" size="22,22" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="1436,71" size="159,26" font="audiowide; 25" halign="right" backgroundColor="white" transparent="1" foregroundColor="black">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
    
-    <widget source="global.CurrentTime" render="Label" position="1388,102" size="206,27" font="audiowide; 20" halign="right" backgroundColor="white" foregroundColor="black" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="1388,104" size="206,27" font="audiowide; 25" halign="right" backgroundColor="white" foregroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1469,159" size="120,30" font="audiowide; 30" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="1449,156" size="140,60" font="audiowide; 35" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
       <convert type="ClockToText">Default</convert>
     </widget>
          
   <eLabel text="DESCRIPTION" position="103,270" size="410,38" font="Arial; 22" backgroundColor="un929292" transparent="1" foregroundColor="black" zPosition="1" />
-    <widget source="Event" render="Label" position="123,163" size="1311,33" font="Caviar_bold; 25" backgroundColor="black" transparent="0" valign="center" halign="left" foregroundColor="white">
+    <widget source="Event" render="Label" position="135,149" size="1311,60" font="Caviar_bold; 30" backgroundColor="black" transparent="1" valign="center" halign="left" foregroundColor="white" noWrap="1">
       <convert type="EventName">EventName</convert>
-    </widget> 
-   
+    </widget>
     </screen>
-    
-    <screen name="menu_template_net">
-
-  <eLabel text="OPENPLUS" position="center,155" size="430,65" font="audiowide; 42" halign="center" transparent="1" foregroundColor="white" backgroundColor="un42b3" />
+     <screen name="menu_template_net">
+ <eLabel text="OPENPLUS" position="center,155" size="430,65" font="audiowide; 42" halign="center" transparent="1" foregroundColor="white" backgroundColor="un42b3" />
   <eLabel position="1201,840" size="230,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
   <widget source="Title" transparent="1" render="Label" zPosition="2" valign="center" halign="left" position="365,235" size="1125,50" font="Caviar_bold; 32" backgroundColor="black" foregroundColor="white" noWrap="1" />
   <widget source="global.CurrentTime" render="Label" position="1287,144" size="251,55" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 26" valign="center" halign="right">
@@ -476,7 +542,6 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
      </screen>
     
    <screen name="menu_template_infobar">
-
 <eLabel backgroundColor="transpWhite" name="InfoBar" position="388,811" size="1187,136" zPosition="-10" />   
     <ePixmap alphatest="blend" pixmap="openplusHD/icons/flechas.png" position="280,768" size="64,43" zPosition="-30" />
     <ePixmap alphatest="blend" pixmap="openplusHD/icons/play1.png" position="802,768" size="64,43" zPosition="-30" />
@@ -529,117 +594,224 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
    <ePixmap position="20,20" zPosition="0" size="300,83" pixmap="openplusHD/piconlogoc.png" transparent="0" alphatest="blend" />
 </screen>
     
-     <screen name="menu_template_icons">
-     <widget alphatest="blend" pixmap="openplusHD/menu/pincel.png" position="361,460" render="Pixmap" size="250,359" source="menu">
+    <screen name="menu_template_icons">
+    <widget alphatest="blend" pixmap="openplusHD/menu/pincel.png" position="174,460" render="Pixmap" size="250,359" source="menu">
       <convert type="MenuEntryCompare">OpenPlusHD SkinPanel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/menuinf.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/menuinf.png" position="175,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">Open Panel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-         <widget alphatest="blend" pixmap="openplusHD/menu/menuinf.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+         <widget alphatest="blend" pixmap="openplusHD/menu/menuinf.png" position="175,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">Infopanel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/video1.png" position="371,427" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/video1.png" position="186,427" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">HMStreamHQ</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/video1.png" position="371,427" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/video1.png" position="186,427" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">XCplugin</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/Dashboard.png" position="360,443" render="Pixmap" size="256,356" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/Dashboard.png" position="175,443" render="Pixmap" size="256,356" source="menu">
       <convert type="MenuEntryCompare">timer_menu</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/menuinf.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/menuinf.png" position="175,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">info_screen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/shutdonw.png" position="345,463" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/shutdonw.png" position="160,468" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">standby_restart_list</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/menu1.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/menu1.png" position="172,448" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">dmc_mainmenu</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/gmaps.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/gmaps.png" position="165,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">googlemaps</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/subt.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/subt.png" position="165,448" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">subtitle_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/plex.png" position="364,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/plex.png" position="160,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">dreamplex</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/music.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/music.png" position="160,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">merlin_music_player</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/browser.png" position="360,457" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/browser.png" position="160,457" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">moviebrowser</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/menu1.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/menu1.png" position="172,448" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">vti_menu</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/menu1.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/menu1.png" position="172,448" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">setup_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/plugin.png" position="360,445" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/plugin.png" position="172,448" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">plugin_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/scart.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/scart.png" position="155,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">scart_switch</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/Dashboard.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/Dashboard.png" position="175,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">timer_edit</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/emc.png" position="371,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/emc.png" position="160,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">media_player</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/dvd.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/dvd.png" position="180,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">dvd_player</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/file.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/file.png" position="165,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">filecommand</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/epg.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/epg.png" position="180,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">epg_panel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/oplusp.png" position="354,452" size="250,240" render="Pixmap"  source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/oplusp.png" position="165,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">Openpanel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/iwea.png" position="361,460" render="Pixmap" size="256,356" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/iwea.png" position="172,460" render="Pixmap" size="256,356" source="menu">
       <convert type="MenuEntryCompare">openweather</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/menu/youtube.png" position="361,505" render="Pixmap" size="250,356" source="menu">
+    <widget alphatest="blend" pixmap="openplusHD/menu/youtube.png" position="161,505" render="Pixmap" size="250,356" source="menu">
       <convert type="MenuEntryCompare">youtubetv</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-         <widget alphatest="blend" pixmap="openplusHD/menu/kodi.png" position="360,443" render="Pixmap" size="256,256" source="menu">
+         <widget alphatest="blend" pixmap="openplusHD/menu/kodi.png" position="175,443" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">Kodi</convert>
+      <convert type="ConditionalShowHide" />
+    </widget> <widget alphatest="blend" pixmap="openplusHD/menu/pincel.png" position="174,460" render="Pixmap" size="250,359" source="menu">
+      <convert type="MenuEntryCompare">OpenPlusHD SkinPanel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/menuinf.png" position="175,443" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">Open Panel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+         <widget alphatest="blend" pixmap="openplusHD/menu/menuinf.png" position="175,443" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">Infopanel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/video1.png" position="186,427" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">HMStreamHQ</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/video1.png" position="186,427" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">XCplugin</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/Dashboard.png" position="175,443" render="Pixmap" size="256,356" source="menu">
+      <convert type="MenuEntryCompare">timer_menu</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/menuinf.png" position="175,443" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">info_screen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/shutdonw.png" position="160,468" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">standby_restart_list</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/menu1.png" position="172,448" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">dmc_mainmenu</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/gmaps.png" position="165,443" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">googlemaps</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/subt.png" position="165,448" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">subtitle_selection</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/plex.png" position="160,443" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">dreamplex</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/music.png" position="160,443" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">merlin_music_player</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/browser.png" position="160,457" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">moviebrowser</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/menu1.png" position="172,448" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">vti_menu</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/menu1.png" position="172,448" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">setup_selection</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/plugin.png" position="172,448" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">plugin_selection</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/scart.png" position="155,443" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">scart_switch</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/Dashboard.png" position="175,443" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">timer_edit</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/emc.png" position="160,443" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">media_player</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/dvd.png" position="180,443" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">dvd_player</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/file.png" position="165,443" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">filecommand</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/epg.png" position="180,443" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">epg_panel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/oplusp.png" position="165,443" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">Openpanel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/iwea.png" position="172,460" render="Pixmap" size="256,356" source="menu">
+      <convert type="MenuEntryCompare">openweather</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="openplusHD/menu/youtube.png" position="161,505" render="Pixmap" size="250,356" source="menu">
+      <convert type="MenuEntryCompare">youtubetv</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+         <widget alphatest="blend" pixmap="openplusHD/menu/kodi.png" position="175,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">Kodi</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     </screen>
-    
+    </screen>
     <screen name="menu_template_infobar_icons">
      <!--/* ICONOS INFO -->
   <ePixmap alphatest="blend" pixmap="openplusHD/icons/ico_line_off.png" position="1526,956" size="47,25" zPosition="1" />
@@ -809,20 +981,20 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 </screen>   
 <screen name="menu_template_infobar_descriptionrun"> 
 <!-- descripcion canales extendida */-->
-  <widget backgroundColor="black" foregroundColor="white" font="Regular; 21" halign="left" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=2,oneshot=1" position="360,394" render="RunningText" size="604,359" source="session.Event_Now" transparent="1" zPosition="1">
+  <widget backgroundColor="black" foregroundColor="white" font="Regular; 27" halign="left" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=2,oneshot=1" position="360,394" render="RunningText" size="604,359" source="session.Event_Now" transparent="1" zPosition="1">
     <convert type="EventName">FullDescription</convert>
   </widget>
-  <widget backgroundColor="black" foregroundColor="white" font="Regular; 20" halign="left" position="1019,413" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=2,oneshot=1" render="RunningText" size="542,318" source="session.Event_Next" transparent="1" zPosition="1">
+  <widget backgroundColor="black" foregroundColor="white" font="Regular; 26" halign="left" position="1019,413" options="movetype=running,direction=top,startpoint=0,startdelay=3000,wrap=1,always=0,repeat=2,oneshot=1" render="RunningText" size="542,318" source="session.Event_Next" transparent="1" zPosition="1">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <!-- find descripcio canales extendida */-->
 </screen>   
 <screen name="menu_template_infobar_description"> 
 <!-- descripcion canales extendida */-->
-  <widget backgroundColor="black" render="Label" foregroundColor="white" font="Regular; 21" halign="left"  position="360,394"  size="604,359" source="session.Event_Now" transparent="1" zPosition="1">
+  <widget backgroundColor="black" render="Label" foregroundColor="white" font="Regular; 27" halign="left"  position="360,394"  size="604,359" source="session.Event_Now" transparent="1" zPosition="1">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
-  <widget backgroundColor="black" render="Label" foregroundColor="white" font="Regular; 20" halign="left" position="1019,413"  size="542,318" source="session.Event_Next" transparent="1" zPosition="1">
+  <widget backgroundColor="black" render="Label" foregroundColor="white" font="Regular; 26" halign="left" position="1019,413"  size="542,318" source="session.Event_Next" transparent="1" zPosition="1">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
   <!-- find descripcio canales extendida */-->
@@ -1286,6 +1458,14 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   
     <!-- fin colores keys -->
       </screen>
+<screen name="button_template_rv_lg_nameBIG">
+       <!-- colores keys rojo y verde sobre linea gris nameBIG -->
+    <eLabel position="813,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="green" zPosition="1" />
+   <widget render="Label" position="854,956" size="450,40" zPosition="1" font="Regular; 30" backgroundColor="un929292" transparent="1" foregroundColor="white" name="key_green" /> 
+   <eLabel position="518,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="red" zPosition="1" />
+   <widget render="Label" position="558,956" size="250,36" zPosition="1" font="Regular; 30" backgroundColor="un929292" transparent="1" foregroundColor="white" name="key_red" /> 
+ <!-- fin colores keys -->
+      </screen>
      <screen name="button_template_ra_lg">
       <!-- colores keys rojo y azul sobre linea gris -->
     
@@ -1306,6 +1486,37 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   
     <!-- fin colores keys -->
       </screen>
+
+<screen name="button_template_rv_lgBIG">
+      <!-- colores keys rojo y verde sobre linea gris --> 
+    <eLabel position="813,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="green" zPosition="1" />
+   <widget source="key_green" render="Label" position="854,956" size="250,36" zPosition="1" font="Regular; 30" backgroundColor="un929292" transparent="1" foregroundColor="white" /> 
+   <eLabel position="518,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="red" zPosition="1" />
+   <widget source="key_red" render="Label" position="558,956" size="250,36" zPosition="1" font="Regular; 30" backgroundColor="un929292" transparent="1" foregroundColor="white" /> 
+  
+    <!-- fin colores keys -->
+      </screen>
+  <screen name="button_template_r_lgBIG">
+<!-- colores keys rojo sobre linea grisBIG -->
+   <eLabel position="518,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="red" zPosition="1" />
+   <widget source="key_red" render="Label" position="558,956" size="250,36" zPosition="1" font="Regular; 30" backgroundColor="un929292" transparent="1" foregroundColor="white" /> 
+    <!-- fin colores keys -->
+    </screen>
+<screen name="button_template_v_lgBIG">
+<!-- colores keys verde sobre linea grisBIG -->
+    <eLabel position="518,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="green" zPosition="1" />
+   <widget source="key_green" render="Label" position="558,956" size="250,36" zPosition="1" font="Regular; 30" backgroundColor="un929292" transparent="1" foregroundColor="white" /> 
+    <!-- fin colores keys -->
+    </screen>
+<screen name="button_template_ra_lgBIG">
+<!-- colores keys rojo y azul sobre linea gris -->
+    <eLabel position="813,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="blue" zPosition="1" />
+   <widget source="key_blue" render="Label" position="854,956" size="250,36" zPosition="1" font="Regular; 30" backgroundColor="un929292" transparent="1" foregroundColor="white" /> 
+   <eLabel position="518,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="red" zPosition="1" />
+   <widget source="key_red" render="Label" position="558,956" size="250,36" zPosition="1" font="Regular; 30" backgroundColor="un929292" transparent="1" foregroundColor="white" /> 
+ <!-- fin colores keys -->
+    </screen>
+
       <screen name="button_template_r_lg">
       <!-- colores keys rojo sobre linea gris -->
     
