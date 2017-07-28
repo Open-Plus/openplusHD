@@ -164,7 +164,7 @@
     <alias name="FileList" font="Caviar_bold" size="28" height="40" />
     <alias name="FileListMulti" font="Caviar_bold" size="28" height="40" />
     <alias name="PlayList" font="Regular" size="21" height="40" />
-    <alias name="ServiceInfo" font="Caviar_bold" size="30" height="45" />  
+    <alias name="ServiceInfo" font="Caviar_bold" size="30" height="50" />  
 	</fonts>
     <parameters>
 	<!--<parameter name="EPGImportFilterListLockOn" value="10,5,35,35" />-->
@@ -196,9 +196,9 @@
     <parameter name="FileListMultiLock" value="5,5,35,35" />
     <parameter name="FileListMultiIcon" value="50,2,35,35" />
     <parameter name="FileListMultiName" value="100,2,850,40" />
-    <parameter name="ServiceInfo" value="0,0,300,45" />
-    <parameter name="ServiceInfoLeft" value="0,0,300,45" />
-    <parameter name="ServiceInfoRight" value="300,0,1000,45" />
+    <parameter name="ServiceInfo" value="0,0,600,50" />
+    <parameter name="ServiceInfoLeft" value="0,0,600,50" />
+    <parameter name="ServiceInfoRight" value="600,0,1000,50" />
     <parameter name="PlayListIcon" value="10,5,35,30" />
     <parameter name="PlayListName" value="50,0,800,30" />
   </parameters>
@@ -538,7 +538,7 @@
     <panel name="menu_templateBIG" />
   </screen>
   <screen name="AboutOE" position="center,center" size="1920,1080" title="About" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="AboutScrollLabel" position="572,303" size="1192,606" zPosition="10" backgroundColor="un6e6e6e" foregroundColor="white" font="audiowide; 40" transparent="1" scrollbarMode="showNever" halign="left" noWrap="1" />
+    <widget name="AboutScrollLabel" position="572,303" size="1192,606" zPosition="10" backgroundColor="un6e6e6e" foregroundColor="white" font="audiowide; 35" transparent="1" scrollbarMode="showNever" halign="left" noWrap="1" />
     <widget source="lab1" render="Label" position="784,189" size="400,70" font="Regular; 35" transparent="1" zPosition="2" foregroundColor="unffff00" backgroundColor="black" halign="center" noWrap="1" />
     <widget source="lab2" render="Label" position="138,768" size="330,28" font="Caviar_bold; 22" transparent="1" zPosition="2" foregroundColor="black" backgroundColor="white" halign="center" />
     <widget source="lab3" render="Label" position="1155,197" size="600,55" font="Regular; 25" transparent="1" zPosition="1" foregroundColor="white" backgroundColor="black" halign="right" noWrap="1" />
@@ -875,11 +875,11 @@
     <panel name="button_template_rava_n" />
   </screen>
  <screen name="Devices" position="0,0" size="1920,1080" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="TunerHeader" render="Label" position="520,282" backgroundColor="un6e6e6e" foregroundColor="unffff00" size="600,40" font="audiowide; 20" transparent="1" zPosition="6" halign="left" />
+    <widget source="TunerHeader" render="Label" position="520,282" backgroundColor="un6e6e6e" foregroundColor="unffff00" size="600,40" font="audiowide; 25" transparent="1" zPosition="6" halign="left" />
     <widget source="nims" render="Label" position="514,314" size="605,345" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" backgroundColor="un6e6e6e" />
-    <widget source="HDDHeader" render="Label" position="1147,282" backgroundColor="un6e6e6e" foregroundColor="unffff00" size="670,40" font="audiowide; 20" transparent="1" zPosition="10" halign="left" />
+    <widget source="HDDHeader" render="Label" position="1147,282" backgroundColor="un6e6e6e" foregroundColor="unffff00" size="670,40" font="audiowide; 25" transparent="1" zPosition="10" halign="left" />
     <widget source="hdd" render="Label" backgroundColor="un6e6e6e" position="1140,314" size="605,345" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" />
-    <widget source="MountsHeader" render="Label" position="520,672" backgroundColor="un6e6e6e" foregroundColor="unffff00" size="873,40" font="audiowide; 20" transparent="1" zPosition="10" halign="left" />
+    <widget source="MountsHeader" render="Label" position="520,672" backgroundColor="un6e6e6e" foregroundColor="unffff00" size="873,40" font="audiowide; 25" transparent="1" zPosition="10" halign="left" />
     <widget source="mounts" backgroundColor="un6e6e6e" render="Label" position="514,703" size="886,209" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" />
     <ePixmap pixmap="openplusHD/menu/devicesinf.png" position="165,443" size="250,259" alphatest="blend" zPosition="-11" /> 
     <panel name="menu_templateBIG" />
@@ -2325,7 +2325,7 @@
     <panel name="button_template_rv_lg" />
   </screen>
  <screen name="ServiceInfo" position="0,0" size="1920,1080" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="infolist" position="532,288" font="Regular; 30" backgroundColor="un6e6e6e" foregroundColor="white" size="1210,580" itemHeight="35" selectionDisabled="1" scrollbarMode="showNever" transparent="1" valign="top" halign="center" />
+    <widget name="infolist" position="532,288" font="Caviar_bold; 26" backgroundColor="un6e6e6e" foregroundColor="white" size="1210,580" itemHeight="45" selectionDisabled="1" scrollbarMode="showNever" transparent="1" valign="top" halign="center" />
     <ePixmap pixmap="openplusHD/menu/menuinfchan.png" position="165,443" size="250,359" alphatest="blend" zPosition="-11" />
     <!-- colores keys  rojo azul verde amarillo sobre fondo blanco source-->
     <eLabel position="1470,892" size="35,35" transparent="0" foregroundColor="white" backgroundColor="blue" zPosition="-1" />
@@ -2436,7 +2436,7 @@
     <panel name="menu_template_message" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1920,1080" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="AboutScrollLabel" position="547,283" size="1202,634" zPosition="10" backgroundColor="un6e6e6e" foregroundColor="white" font="Regular; 32" transparent="1" scrollbarMode="showNever" halign="left" noWrap="1" />
+    <widget name="AboutScrollLabel" position="547,283" size="1202,652" zPosition="10" backgroundColor="un6e6e6e" foregroundColor="white" font="Regular; 32" transparent="1" scrollbarMode="showNever" halign="left" noWrap="1" />
     <widget source="lab1" render="Label" position="1296,197" size="458,35" font="Regular; 22" transparent="1" zPosition="10" foregroundColor="unffff00" backgroundColor="black" halign="right" />
     <widget source="lab2" render="Label" position="511,950" size="551,50" font="Caviar_bold; 25" transparent="1" zPosition="2" foregroundColor="white" backgroundColor="un929292" halign="center" />
     <panel name="menu_templateBIG" />

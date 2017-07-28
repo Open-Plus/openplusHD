@@ -13,7 +13,7 @@
     <convert type="ServiceName">Name</convert>
   </widget>
   <eLabel position="center,center" size="1728,1019" transparent="0" zPosition="-15" backgroundColor="transpWhite" />
-  <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 32" position="1340,953" size="288,60" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white" text="Temp. Sist: :(">
+  <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 32" position="1340,953" size="288,60" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white">
      <convert type="openSTBinfo">SYStemp</convert>
   </widget>
   <eLabel position="131,179" size="1657,70" transparent="0" foregroundColor="white" backgroundColor="black" />
@@ -38,7 +38,7 @@
     <convert type="ServiceName">Name</convert>
   </widget>
   <eLabel position="center,center" size="1728,1019" transparent="0" zPosition="-15" backgroundColor="transpWhite" />
-  <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 32" position="1340,953" size="288,60" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white" text="Temp. Sist: :(">
+  <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 32" position="1340,953" size="288,60" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white">
      <convert type="openSTBinfo">SYStemp</convert>
   </widget>
   <eLabel position="131,179" size="1657,70" transparent="0" foregroundColor="white" backgroundColor="black" />
@@ -213,7 +213,7 @@
     <convert type="ServiceName">Name</convert>
   </widget>
   <eLabel position="center,center" size="1728,1019" transparent="0" zPosition="-15" backgroundColor="transpWhite" />
-  <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 32" position="1340,953" size="288,60" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white" text="Temp. Sist: :(">
+  <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 32" position="1340,953" size="288,60" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white" >
      <convert type="openSTBinfo">SYStemp</convert>
   </widget>
   <eLabel position="131,179" size="1657,70" transparent="0" foregroundColor="white" backgroundColor="black" />
@@ -810,7 +810,6 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="MenuEntryCompare">Kodi</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    </screen>
     </screen>
     <screen name="menu_template_infobar_icons">
      <!--/* ICONOS INFO -->
