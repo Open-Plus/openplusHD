@@ -1026,15 +1026,15 @@
     <widget source="Service" options="movetype=running,startpoint=0,direction=left,steptime=25,repeat=5,startdelay=1500,always=0" render="RunningText" position="131,143" size="783,40" font="Caviar_bold; 28" foregroundColor="white" backgroundColor="black" halign="left" transparent="1">
       <convert type="EMCEventName">Name</convert>
     </widget>
-    <widget source="Service" render="Label" position="111,563" size="120,40" font="audiowide; 25" halign="right" foregroundColor="unffa500" backgroundColor="black" transparent="1">
+    <widget source="Service" render="Label" position="111,563" size="120,40" font="audiowide; 25" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="EMCServiceTime">StartTime</convert>
       <convert type="EMCClockToText">Format:%H:%M </convert>
     </widget>
-    <widget source="Service" render="Label" position="238,563" size="140,40" font="audiowide; 25" foregroundColor="unffa500" backgroundColor="black" transparent="1">
+    <widget source="Service" render="Label" position="238,563" size="140,40" font="audiowide; 25" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="EMCServiceTime">EndTime</convert>
       <convert type="EMCClockToText">Format:- %H:%M </convert>
     </widget>
-    <widget source="Service" render="Label" position="206,563" size="480,40" font="audiowide; 25" halign="center" foregroundColor="unffa500" backgroundColor="black" transparent="1">
+    <widget source="Service" render="Label" position="206,563" size="480,40" font="audiowide; 25" halign="center" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="EMCServiceTime">Duration</convert>
       <convert type="EMCClockToText">Format:%Hh:%Mmin</convert>
     </widget>
@@ -1042,10 +1042,10 @@
       <convert type="EMCMovieInfo">FileSize</convert>
     </widget>
     <!-- EMC Short Description -->
-    <widget source="Service" position="123,605" size="597,40" font="Caviar_bold; 30" zPosition="2" foregroundColor="unbab329" backgroundColor="black" transparent="1" halign="right" render="Label">
+    <widget source="Service" position="123,602" size="597,40" font="Caviar_bold; 30" zPosition="2" foregroundColor="unbab329" backgroundColor="black" transparent="1" halign="right" render="Label">
       <convert type="EMCMovieInfo">ShortDescription</convert>
     </widget>
-    <widget source="Service" options="movetype=running,startpoint=0,direction=top,steptime=50,repeat=5,startdelay=10500,wrap,always=0" render="RunningText" position="143,643" size="597,271" font="Regular; 26" foregroundColor="white" backgroundColor="black" transparent="1" halign="left" valign="top">
+    <widget source="Service" options="movetype=running,startpoint=0,direction=top,steptime=50,repeat=5,startdelay=10500,wrap,always=0" render="RunningText" position="143,643" size="597,278" font="Regular; 26" foregroundColor="white" backgroundColor="black" transparent="1" halign="left" valign="top">
       <convert type="EMCEventName">ExtendedDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="1144,144" size="295,24" font="plus; 22" foregroundColor="white" halign="right" backgroundColor="black" transparent="1" zPosition="1">
@@ -1057,7 +1057,7 @@
     </widget>
     <widget source="Title" render="Label" position="1150,80" size="136,30" font="Caviar_bold; 25" foregroundColor="black" backgroundColor="white" transparent="1" zPosition="1" valign="center" />
     <panel name="menu_template_movielist" />
-    <eLabel position="723,605" size="50,40" zPosition="12" font="Caviar_bold; 30" halign="left" backgroundColor="black" transparent="1" foregroundColor="unbab329" text="..." />
+    <eLabel position="723,602" size="50,40" zPosition="12" font="Caviar_bold; 30" halign="left" backgroundColor="black" transparent="1" foregroundColor="unbab329" text="..." />
     <!-- colores keys  rojo azul verde amarillo para movielist-->
     <eLabel position="965,975" size="35,35" transparent="0" foregroundColor="white" backgroundColor="uneefb1a" zPosition="-1" />
     <eLabel position="598,975" size="35,35" transparent="0" foregroundColor="white" backgroundColor="un11b90a" zPosition="-1" />
