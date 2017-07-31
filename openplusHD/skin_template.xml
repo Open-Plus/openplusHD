@@ -715,11 +715,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="openplusHD/menu/video1.png" position="186,427" render="Pixmap" size="256,256" source="menu">
-      <convert type="MenuEntryCompare">HMStreamHQ</convert>
+      <convert type="MenuEntryCompare">Videoclub</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="openplusHD/menu/video1.png" position="186,427" render="Pixmap" size="256,256" source="menu">
-      <convert type="MenuEntryCompare">XCplugin</convert>
+      <convert type="MenuEntryCompare">QueVeoHoy</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="openplusHD/menu/Dashboard.png" position="175,443" render="Pixmap" size="256,356" source="menu">
