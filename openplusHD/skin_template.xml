@@ -702,7 +702,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
          <widget alphatest="blend" pixmap="openplusHD/menu/kodi.png" position="175,443" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">Kodi</convert>
       <convert type="ConditionalShowHide" />
-    </widget> <widget alphatest="blend" pixmap="openplusHD/menu/pincel.png" position="174,460" render="Pixmap" size="250,359" source="menu">
+    </widget>
+        <widget alphatest="blend" pixmap="openplusHD/menu/pincel.png" position="174,460" render="Pixmap" size="250,359" source="menu">
       <convert type="MenuEntryCompare">OpenPlusHD SkinPanel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -716,6 +717,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     </widget>
     <widget alphatest="blend" pixmap="openplusHD/menu/video1.png" position="186,427" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">Videoclub</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+        <widget alphatest="blend" pixmap="openplusHD/menu/video1.png" position="186,427" render="Pixmap" size="256,256" source="menu">
+      <convert type="MenuEntryCompare">VideoStar</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="openplusHD/menu/video1.png" position="186,427" render="Pixmap" size="256,256" source="menu">
