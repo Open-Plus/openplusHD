@@ -1,12 +1,13 @@
 AC_INIT(skins,0.0.1)
-AC_INIT([enigma2-plugins],[3.0.0])
+## AC_INIT([enigma2-plugins],[3.0.0])
 AM_INIT_AUTOMAKE([dist-bzip2 foreign no-define tar-pax])
 
-TUXBOX_APPS_DIRECTORY
+# Silent rules are available since 1.11, but older versions
+# are still in use. So don't use them unconditionally.
+m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
+
 AC_USE_SYSTEM_EXTENSIONS
 AC_SYS_LARGEFILE
-AM_PATH_PYTHON()
-AC_PYTHON_DEVEL
 
 AC_PROG_CC
 AC_PROG_CXX
@@ -16,6 +17,16 @@ AC_CONFIG_MACRO_DIR([m4])
 AC_PATH_PROG(MSGFMT, msgfmt, AC_MSG_ERROR(Could not find msgfmt))
 
 AM_PATH_PYTHON
+
+AC_ARG_WITH(debug,
+	AS_HELP_STRING([--without-debug],[disable debugging code]),
+	[with_debug="$withval"],[with_debug="no"])
+if test "$with_debug" = "yes"; then
+	DEBUG_CFLAGS="-ggdb3"
+	AC_DEFINE([DEBUG],[1],[Define to 1 to enable debugging code])
+fi
+
+AM_CONDITIONAL(UPDATE_PO, test "$with_po" = "yes")
 
 CPPFLAGS="$CPPFLAGS $PYTHON_CPPFLAGS -include Python.h"
 CFLAGS="$CFLAGS $DEBUG_CFLAGS -Wall"
@@ -42,3 +53,4 @@ components/Makefile
 components/Converter/Makefile
 components/Renderer/Makefile
 ])
+AC_OUTPUT
