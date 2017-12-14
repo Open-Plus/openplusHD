@@ -1159,27 +1159,27 @@
       <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
     <!-- /*Barramedia-->
-    <widget source="Service" render="Label" position="389,955" size="100,28" font="Caviar_bold; 24" halign="left" valign="center" backgroundColor="iplusBackground" shadowColor="iplusBackground" shadowOffset="-1,-1" transparent="1">
+    <widget source="Service" render="Label" position="389,970" size="100,28" font="Caviar_bold; 24" halign="left" valign="center" backgroundColor="iplusBackground" shadowColor="iplusBackground" shadowOffset="-1,-1" transparent="1">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
-    <widget source="Service" render="EMCPositionGauge" position="525,965" size="900,10" zPosition="6" transparent="1">
+    <widget source="Service" render="EMCPositionGauge" position="525,980" size="900,10" zPosition="6" transparent="1">
       <convert type="EMCServicePosition">Gauge</convert>
     </widget>
-    <widget source="Service" render="EMCPositionGauge" pointer="openplusHD/CoolPointerRecemc.png:900,0" position="525,968" size="900,6" zPosition="4" transparent="1">
+    <widget source="Service" render="EMCPositionGauge" pointer="openplusHD/CoolPointerRecemc.png:900,0" position="525,983" size="900,6" zPosition="4" transparent="1">
       <convert type="EMCRecordPosition">Position</convert>
     </widget>
-    <widget source="Service" render="EMCPositionGauge" pointer="openplusHD/CoolPointeremc.png:900,0" position="525,968" size="900,6" zPosition="5" transparent="1">
+    <widget source="Service" render="EMCPositionGauge" pointer="openplusHD/CoolPointeremc.png:900,0" position="525,983" size="900,6" zPosition="5" transparent="1">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
-    <eLabel name="new eLabel" position="525,969" size="900,2" backgroundColor="white" foregroundColor="white" zPosition="-1" />
-    <widget source="Service" render="Label" position="1463,955" size="100,28" font="Caviar_bold; 24" halign="left" valign="center" backgroundColor="iplusBackground" transparent="1">
+    <eLabel name="new eLabel" position="525,984" size="900,2" backgroundColor="white" foregroundColor="white" zPosition="-1" />
+    <widget source="Service" render="Label" position="1463,970" size="100,28" font="Caviar_bold; 24" halign="left" valign="center" backgroundColor="iplusBackground" transparent="1">
       <convert type="EMCServicePosition">Remaining,Negate</convert>
     </widget>
     <widget name="audioLabel" position="1089,906" size="100,22" font="Regular; 18" backgroundColor="white" zPosition="3" transparent="1" halign="right" foregroundColor="black" />
-    <widget backgroundColor="white" font="audiowide; 30" halign="left" position="656,831" render="Label" size="727,40" source="session.CurrentService" transparent="1" valign="top" foregroundColor="black" zPosition="-1">
+    <widget backgroundColor="white" font="audiowide; 30" halign="left" position="533,831" render="Label" size="1017,40" source="session.CurrentService" transparent="1" valign="top" foregroundColor="black" zPosition="-1">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget alphatest="blend" position="389,813" render="MCOPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+    <widget alphatest="blend" position="219,820" render="MCOPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
       <convert type="ServiceName">Reference</convert>
     </widget>
     
@@ -1206,20 +1206,20 @@
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget name="chapterLabel" position="872,775" size="692,34" font="audiowide; 25" halign="left" foregroundColor="white" backgroundColor="iplusBlue" transparent="1" />
-    <widget source="Service" render="Label" position="1402,831" size="137,40" font="audiowide; 30" halign="right" valign="top" backgroundColor="white" transparent="1" foregroundColor="black">
+    <widget name="chapterLabel" position="872,758" size="847,51" font="audiowide; 25" halign="left" foregroundColor="white" backgroundColor="iplusBlue" transparent="1" />
+    <widget source="Service" render="Label" position="1559,831" size="161,40" font="audiowide; 30" halign="right" valign="top" backgroundColor="white" transparent="1" foregroundColor="black">
       <convert type="EMCServicePosition">Length</convert>
     </widget>
-    <widget alphatest="blend" name="Cover" position="344,329" size="237,335" transparent="0" zPosition="4" />
-    <widget backgroundColor="transpWhite" font="audiowide; 22" foregroundColor="black" halign="right" position="871,900" render="Label" size="97,30" source="session.CurrentService" transparent="1">
+    <widget alphatest="blend" name="Cover" position="159,366" size="237,335" transparent="0" zPosition="4" />
+    <widget backgroundColor="transpWhite" font="audiowide; 22" foregroundColor="black" halign="right" position="731,900" render="Label" size="97,30" source="session.CurrentService" transparent="1">
       <convert type="openplusHDServiceTime">StartTime</convert>
     </widget>
-    <eLabel backgroundColor="transpWhite" font="audiowide; 22" foregroundColor="black" halign="center" position="968,900" size="20,30" text="-" transparent="1" />
-    <widget backgroundColor="transpWhite" font="audiowide; 22" foregroundColor="black" halign="left" position="988,900" render="Label" size="97,30" source="session.CurrentService" transparent="1">
+    <eLabel backgroundColor="transpWhite" font="audiowide; 22" foregroundColor="black" halign="center" position="828,900" size="20,30" text="-" transparent="1" />
+    <widget backgroundColor="transpWhite" font="audiowide; 22" foregroundColor="black" halign="left" position="848,900" render="Label" size="97,30" source="session.CurrentService" transparent="1">
       <convert type="openplusHDServiceTime">EndTime</convert>
     </widget>
-    <eLabel text="Playback Time:" foregroundColor="black" noWrap="1" font="audiowide; 19" halign="right" position="631,902" size="248,30" transparent="1" backgroundColor="transpWhite" />
-  </screen>
+    <eLabel text="Playback Time:" foregroundColor="black" noWrap="1" font="audiowide; 19" halign="right" position="486,902" size="248,30" transparent="1" backgroundColor="transpWhite" />
+</screen>
   <!-- EMC EnhancedMovieCenterMenu -->
   <screen name="EnhancedMovieCenterMenu" position="0,0" size="1920,1080" title="EnhancedMovieCenterMenu" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="help" render="Label" position="650,696" size="880,123" font="Caviar_bold; 18" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" halign="center" />

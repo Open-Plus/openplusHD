@@ -9,10 +9,10 @@
   <panel name="menu_template_infobar_description" />
   <panel name="menu_template_infobar_eventname" />
   <panel name="menu_template_tuner_type" />
-  <panel name="menu_template_crypto_info" />
-  <panel name="menu_template_mini_health" />
+  <panel name="menu_template_crypto_info_off" />
+  <panel name="menu_template_mini_health_off" />
   <panel name="menu_template_frec" />
-  <panel name="menu_template_camcryptecm" />
-  <panel name="menu_template_provider" />	 
+  <panel name="menu_template_camcryptecm_off" />
+  <panel name="menu_template_provider_off" />	 
 </screen>
 </skin>

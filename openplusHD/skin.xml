@@ -1394,7 +1394,7 @@
     <eLabel position="595,270" size="730,341" transparent="0" zPosition="-14" backgroundColor="un6e6e6e" />
     <eLabel position="595,624" size="730,266" transparent="0" zPosition="-13" backgroundColor="black" />
   </screen>
-  <screen name="MoviePlayer" position="center,center" size="1920,1080" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
+ <screen name="MoviePlayer" position="center,center" size="1920,1080" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="session.CurrentService" render="Label" font="Regular; 19" position="1258,904" size="55,25" halign="right" foregroundColor="black" backgroundColor="white" transparent="1">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
@@ -1402,24 +1402,24 @@
     <widget source="session.CurrentService" render="Label" font="Regular; 19" position="1329,904" size="55,25" halign="left" foregroundColor="black" backgroundColor="white" transparent="1">
       <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
-    <eLabel name="new eLabel" position="505,969" size="900,2" backgroundColor="white" foregroundColor="white" zPosition="-1" />
-    <widget source="session.CurrentService" render="PositionGauge" position="505,965" size="900,10" transparent="1">
+    <eLabel name="new eLabel" position="505,984" size="900,2" backgroundColor="white" foregroundColor="white" zPosition="-1" />
+    <widget source="session.CurrentService" render="PositionGauge" position="505,980" size="900,10" transparent="1">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget source="session.CurrentService" render="Progress" foregroundColor="uncd3870" position="505,968" size="900,4" backgroundColor="iplusForeground" borderWidth="0" transparent="1">
+    <widget source="session.CurrentService" render="Progress" foregroundColor="uncd3870" position="505,983" size="900,4" backgroundColor="iplusForeground" borderWidth="0" transparent="1">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="347,955" size="100,28" font="Caviar_bold; 22" halign="right" valign="center" backgroundColor="iplusBackground" shadowColor="iplusBackground" shadowOffset="-1,-1" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="347,970" size="100,28" font="Caviar_bold; 22" halign="right" valign="center" backgroundColor="iplusBackground" shadowColor="iplusBackground" shadowOffset="-1,-1" transparent="1">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1463,955" size="100,28" font="Caviar_bold; 22" halign="left" valign="center" backgroundColor="iplusBackground" transparent="1" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" position="1463,970" size="100,28" font="Caviar_bold; 22" halign="left" valign="center" backgroundColor="iplusBackground" transparent="1" foregroundColor="white">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
     <widget name="audioLabel" position="1089,906" size="100,22" font="Regular; 18" backgroundColor="white" zPosition="3" transparent="1" halign="right" foregroundColor="black" />
-    <widget backgroundColor="white" font="audiowide; 30" halign="left" position="656,831" render="Label" size="727,40" source="session.CurrentService" transparent="1" valign="top" foregroundColor="black" zPosition="-1">
+    <widget backgroundColor="white" font="audiowide; 30" halign="left" position="544,831" render="Label" size="993,40" source="session.CurrentService" transparent="1" valign="top" foregroundColor="black" zPosition="-1">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <ePixmap alphatest="blend" position="389,813" render="Pixmap" size="220,132" transparent="1" zPosition="5" pixmap="openplusHD/piconmedia.png" />
+    <ePixmap alphatest="blend" position="229,813" render="Pixmap" size="220,132" transparent="1" zPosition="5" pixmap="openplusHD/piconmedia.png" />
     <widget alphatest="blend" pixmap="openplusHD/icons/ico_rec_onev.png" position="1197,904" render="Pixmap" size="47,25" source="session.RecordState" zPosition="2">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
@@ -1444,8 +1444,8 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- ICONOS INFO */-->
-    <widget name="chapterLabel" position="872,775" size="692,34" font="audiowide; 25" halign="left" foregroundColor="white" backgroundColor="iplusBlue" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1402,831" size="137,40" font="audiowide; 30" halign="right" valign="top" backgroundColor="white" transparent="1" foregroundColor="black">
+    <widget name="chapterLabel" position="886,758" size="828,51" font="audiowide; 25" halign="left" foregroundColor="white" backgroundColor="iplusBlue" transparent="1" valign="center" />
+    <widget source="session.CurrentService" render="Label" position="1554,831" size="160,40" font="audiowide; 30" halign="right" valign="top" backgroundColor="white" transparent="1" foregroundColor="black">
       <convert type="ServicePosition">Length</convert>
     </widget>
     <widget backgroundColor="white" font="audiowide; 22" foregroundColor="black" halign="right" position="850,902" render="Label" size="97,30" source="session.CurrentService" transparent="1">
@@ -1455,8 +1455,8 @@
     <widget backgroundColor="white" font="audiowide; 22" foregroundColor="black" halign="left" position="972,902" render="Label" size="97,30" source="session.CurrentService" transparent="1">
       <convert type="openplusHDServiceTime">EndTime</convert>
     </widget>
-    <widget name="statusicon" position="656,880" zPosition="3" size="50,50" alphatest="on" pixmaps="icons/play_large.png,icons/pause_large.png,icons/stop_large.png,icons/forward_large.png,icons/backward_large.png,icons/slow_large.png" halign="left" />
-    <widget name="speed" position="706,885" size="135,50" font="audiowide; 35" halign="left" foregroundColor="black" backgroundColor="transpWhite" transparent="1" zPosition="4" />
+    <widget name="statusicon" position="546,880" zPosition="3" size="50,50" alphatest="on" pixmaps="icons/play_large.png,icons/pause_large.png,icons/stop_large.png,icons/forward_large.png,icons/backward_large.png,icons/slow_large.png" halign="left" />
+    <widget name="speed" position="596,885" size="135,50" font="audiowide; 35" halign="left" foregroundColor="black" backgroundColor="transpWhite" transparent="1" zPosition="4" />
     <panel name="menu_template_infobar" />
   </screen>
   <screen name="MovieListTags" position="center,center" size="660,550" backgroundColor="transpWhite">
@@ -2664,9 +2664,9 @@
   <ePixmap alphatest="blend" pixmap="openplusHD/menu/teclado.png" position="360,469" size="256,256" transparent="1" zPosition="2" />
   <panel name="menu_templatewhite" />
 </screen>
-  <screen name="EMCMediaCenter" position="center,center" size="1920,1080" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="EMCMediaCenter" position="center,center" size="1920,1080" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="menu_template_infobar" />
-	<panel name="menu_template_infobar_yweather_off" />
+    <panel name="menu_template_infobar_yweather_off" />
     <widget source="session.CurrentService" render="Label" font="Regular; 19" position="1258,904" size="55,25" halign="right" foregroundColor="black" backgroundColor="white" transparent="1">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
@@ -2675,29 +2675,30 @@
       <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
     <!-- /*Barramedia-->
-    <widget source="Service" render="Label" position="389,955" size="100,28" font="Caviar_bold; 24" halign="left" valign="center" backgroundColor="iplusBackground" shadowColor="iplusBackground" shadowOffset="-1,-1" transparent="1">
+    <widget source="Service" render="Label" position="389,970" size="100,28" font="Caviar_bold; 24" halign="left" valign="center" backgroundColor="iplusBackground" shadowColor="iplusBackground" shadowOffset="-1,-1" transparent="1">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
-    <widget source="Service" render="EMCPositionGauge" position="525,965" size="900,10" zPosition="6" transparent="1">
+    <widget source="Service" render="EMCPositionGauge" position="525,980" size="900,10" zPosition="6" transparent="1">
       <convert type="EMCServicePosition">Gauge</convert>
     </widget>
-    <widget source="Service" render="EMCPositionGauge" pointer="openplusHD/CoolPointerRecemc.png:900,0" position="525,968" size="900,6" zPosition="4" transparent="1">
+    <widget source="Service" render="EMCPositionGauge" pointer="openplusHD/CoolPointerRecemc.png:900,0" position="525,983" size="900,6" zPosition="4" transparent="1">
       <convert type="EMCRecordPosition">Position</convert>
     </widget>
-    <widget source="Service" render="EMCPositionGauge" pointer="openplusHD/CoolPointeremc.png:900,0" position="525,968" size="900,6" zPosition="5" transparent="1">
+    <widget source="Service" render="EMCPositionGauge" pointer="openplusHD/CoolPointeremc.png:900,0" position="525,983" size="900,6" zPosition="5" transparent="1">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
-    <eLabel name="new eLabel" position="525,969" size="900,2" backgroundColor="white" foregroundColor="white" zPosition="-1" />
-    <widget source="Service" render="Label" position="1463,955" size="100,28" font="Caviar_bold; 24" halign="left" valign="center" backgroundColor="iplusBackground" transparent="1">
+    <eLabel name="new eLabel" position="525,984" size="900,2" backgroundColor="white" foregroundColor="white" zPosition="-1" />
+    <widget source="Service" render="Label" position="1463,970" size="100,28" font="Caviar_bold; 24" halign="left" valign="center" backgroundColor="iplusBackground" transparent="1">
       <convert type="EMCServicePosition">Remaining,Negate</convert>
     </widget>
     <widget name="audioLabel" position="1089,906" size="100,22" font="Regular; 18" backgroundColor="white" zPosition="3" transparent="1" halign="right" foregroundColor="black" />
-    <widget backgroundColor="white" font="audiowide; 30" halign="left" position="656,831" render="Label" size="727,40" source="session.CurrentService" transparent="1" valign="top" foregroundColor="black" zPosition="-1">
+    <widget backgroundColor="white" font="audiowide; 30" halign="left" position="533,831" render="Label" size="1017,40" source="session.CurrentService" transparent="1" valign="top" foregroundColor="black" zPosition="-1">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget alphatest="blend" position="389,813" render="MCOPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+    <widget alphatest="blend" position="219,820" render="MCOPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
       <convert type="ServiceName">Reference</convert>
     </widget>
+    
     <widget alphatest="blend" pixmap="openplusHD/icons/ico_rec_onev.png" position="1197,904" render="Pixmap" size="47,25" source="session.RecordState" zPosition="2">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
@@ -2721,20 +2722,20 @@
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget name="chapterLabel" position="872,775" size="692,34" font="audiowide; 25" halign="left" foregroundColor="white" backgroundColor="iplusBlue" transparent="1" />
-    <widget source="Service" render="Label" position="1402,831" size="137,40" font="audiowide; 30" halign="right" valign="top" backgroundColor="white" transparent="1" foregroundColor="black">
+    <widget name="chapterLabel" position="872,758" size="847,51" font="audiowide; 25" halign="left" foregroundColor="white" backgroundColor="iplusBlue" transparent="1" />
+    <widget source="Service" render="Label" position="1559,831" size="161,40" font="audiowide; 30" halign="right" valign="top" backgroundColor="white" transparent="1" foregroundColor="black">
       <convert type="EMCServicePosition">Length</convert>
     </widget>
-    <widget alphatest="blend" name="Cover" position="344,329" size="237,335" transparent="0" zPosition="4" />
-    <widget backgroundColor="transpWhite" font="audiowide; 22" foregroundColor="black" halign="right" position="871,900" render="Label" size="97,30" source="session.CurrentService" transparent="1">
+    <widget alphatest="blend" name="Cover" position="159,366" size="237,335" transparent="0" zPosition="4" />
+    <widget backgroundColor="transpWhite" font="audiowide; 22" foregroundColor="black" halign="right" position="731,900" render="Label" size="97,30" source="session.CurrentService" transparent="1">
       <convert type="openplusHDServiceTime">StartTime</convert>
     </widget>
-    <eLabel backgroundColor="transpWhite" font="audiowide; 22" foregroundColor="black" halign="center" position="968,900" size="20,30" text="-" transparent="1" />
-    <widget backgroundColor="transpWhite" font="audiowide; 22" foregroundColor="black" halign="left" position="988,900" render="Label" size="97,30" source="session.CurrentService" transparent="1">
+    <eLabel backgroundColor="transpWhite" font="audiowide; 22" foregroundColor="black" halign="center" position="828,900" size="20,30" text="-" transparent="1" />
+    <widget backgroundColor="transpWhite" font="audiowide; 22" foregroundColor="black" halign="left" position="848,900" render="Label" size="97,30" source="session.CurrentService" transparent="1">
       <convert type="openplusHDServiceTime">EndTime</convert>
     </widget>
-    <eLabel text="Playback Time:" foregroundColor="black" noWrap="1" font="audiowide; 19" halign="right" position="631,902" size="248,30" transparent="1" backgroundColor="transpWhite" />
-  </screen>
+    <eLabel text="Playback Time:" foregroundColor="black" noWrap="1" font="audiowide; 19" halign="right" position="486,902" size="248,30" transparent="1" backgroundColor="transpWhite" />
+</screen>
   <screen name="UserInterfacePositioner2" position="center,1" size="1920,1080" backgroundColor="transpBlackb" title="OSD Adjustment">
     <widget source="text" render="Label" position="center,154" zPosition="1" size="880,100" font="Caviar_bold; 21" halign="center" valign="center" foregroundColor="white" backgroundColor="transpBlackb" transparent="1" />
     <widget name="config" position="470,445" zPosition="1" size="980,150" font="Caviar_bold; 20" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="transpBlackb" />

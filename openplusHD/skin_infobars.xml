@@ -4,7 +4,7 @@
     <panel name="menu_template_infobar" />
     <panel name="menu_template_infobar_infos" />
     <panel name="menu_template_infobar_icons" />
-	<panel name="menu_template_infobar_bitrate" />
+	<panel name="menu_template_infobar_bitrate_off" />
 	<panel name="menu_template_infobar_yweather_off" />
     <panel name="menu_template_infobar_fweather_off" />
 	<panel name="menu_template_infobar_eventname" />
