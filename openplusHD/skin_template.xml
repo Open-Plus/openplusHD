@@ -943,7 +943,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 </screen>   
     
     <screen name="menu_template_infobar_fweather">    
- <!--   FWeather   -->
+<!--   FWeather   -->
   <eLabel position="1288,135" size="471,180" backgroundColor="transpBlack" zPosition="-11" />
   <widget source="session.CurrentService" render="Label" position="1300,140" size="452,35" font="audiowide; 25" foregroundColor="white" backgroundColor="background" halign="left" transparent="1" zPosition="3">
     <convert type="FWeather">Location</convert>
@@ -951,19 +951,19 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <widget source="session.CurrentService" render="PiconUni" path="Cyber_fhd/msnweather" position="1305,184" size="128,128" zPosition="2" alphatest="blend">
     <convert type="FWeather">Picon</convert>
   </widget>
-  <eLabel text="Temperatura:" position="1430,183" size="180,30" font="audiowide; 18" foregroundColor="white" backgroundColor="background" halign="left" transparent="1" />
+  <eLabel text="Temperatura:" position="1425,183" size="180,30" font="audiowide; 18" foregroundColor="white" backgroundColor="background" halign="left" transparent="1" />
   <widget source="session.CurrentService" render="Label" position="1555,183" size="180,30" font="audiowide; 18" foregroundColor="unffa500" backgroundColor="background" halign="right" transparent="1">
     <convert type="FWeather">Temp</convert>
   </widget>
-  <eLabel text="Sens. Termica:" position="1430,213" size="180,30" font="audiowide; 18" foregroundColor="white" backgroundColor="background" halign="left" transparent="1" />
+  <eLabel text="Sens. Termica:" position="1425,213" size="180,30" font="audiowide; 18" foregroundColor="white" backgroundColor="background" halign="left" transparent="1" />
   <widget source="session.CurrentService" render="Label" position="1555,213" size="180,30" font="audiowide; 18" foregroundColor="unffa500" backgroundColor="background" halign="right" transparent="1">
     <convert type="FWeather">Feelslike</convert>
   </widget>
-  <eLabel text="Viento:" position="1430,273" size="180,30" font="audiowide; 18" foregroundColor="white" backgroundColor="background" halign="left" transparent="1" />
+  <eLabel text="Viento:" position="1425,273" size="180,30" font="audiowide; 18" foregroundColor="white" backgroundColor="background" halign="left" transparent="1" />
   <widget source="session.CurrentService" render="Label" position="1509,273" size="226,30" font="audiowide; 18" foregroundColor="unffa500" backgroundColor="background" halign="right" transparent="1">
     <convert type="FWeather">Winddisplay</convert>
   </widget>
-  <eLabel text="Humedad:" position="1430,243" size="180,30" font="audiowide; 18" foregroundColor="white" backgroundColor="background" halign="left" transparent="1" />
+  <eLabel text="Humedad:" position="1425,243" size="180,30" font="audiowide; 18" foregroundColor="white" backgroundColor="background" halign="left" transparent="1" />
   <widget source="session.CurrentService" render="Label" position="1555,243" size="180,30" font="audiowide; 18" foregroundColor="unffa500" backgroundColor="background" halign="right" transparent="1">
     <convert type="FWeather">Humidity</convert>
   </widget>
@@ -1024,21 +1024,21 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </widget> 
  </screen>  
  <screen name="menu_template_mini_health">
- <!--    /* Mini Health Widget    -->
-  <widget source="session.FrontendStatus" render="Progress" position="847,910" size="100,14" backgroundColor="black" foregroundColor="blue" zPosition="100" transparent="0" borderWidth="1" borderColor="unffa500">
+  <!--    /* Mini Health Widget    -->
+  <widget source="session.FrontendStatus" render="Progress" position="847,909" size="100,14" backgroundColor="black" foregroundColor="blue" zPosition="100" transparent="0" borderWidth="1" borderColor="unffa500">
     <convert type="FrontendInfo">SNR</convert>
   </widget>
-  <widget source="session.FrontendStatus" render="Progress" position="1078,910" size="100,14" zPosition="1" backgroundColor="black" foregroundColor="blue" transparent="0" borderWidth="1" borderColor="unffa500">
+  <widget source="session.FrontendStatus" render="Progress" position="1078,909" size="100,14" zPosition="1" backgroundColor="black" foregroundColor="blue" transparent="0" borderWidth="1" borderColor="unffa500">
     <convert type="FrontendInfo">AGC</convert>
   </widget>
   <!-- /* AGC -->
-  <eLabel text="SNR:" position="788,902" size="60,30" font="Arial; 20" halign="left" valign="center" backgroundColor="white" foregroundColor="black" transparent="1" noWrap="1" />
-  <widget source="session.FrontendStatus" render="Label" position="952,902" size="60,30" valign="center" font="Arial; 20" backgroundColor="white" foregroundColor="black" transparent="1" halign="left" noWrap="1" text="100%">
+  <eLabel text="SNR" position="798,902" size="60,30" font="Arial; 20" halign="left" valign="center" backgroundColor="white" foregroundColor="black" transparent="1" noWrap="1" />
+  <widget source="session.FrontendStatus" render="Label" position="952,902" size="60,30" valign="center" font="Arial; 20" backgroundColor="white" foregroundColor="black" transparent="1" halign="left" noWrap="1">
     <convert type="FrontendInfop">SNR</convert>
   </widget>
   <!-- AGC */-->
-  <eLabel text="AGC:" position="1019,902" size="60,30" font="Arial; 20" halign="left" valign="center" backgroundColor="white" foregroundColor="black" transparent="1" noWrap="1" />
-  <widget source="session.FrontendStatus" render="Label" position="1182,902" size="60,30" valign="center" font="Arial; 20" backgroundColor="white" foregroundColor="black" transparent="1" halign="left" noWrap="1" text="100%">
+  <eLabel text="AGC" position="1027,902" size="60,30" font="Arial; 20" halign="left" valign="center" backgroundColor="white" foregroundColor="black" transparent="1" noWrap="1" />
+  <widget source="session.FrontendStatus" render="Label" position="1182,902" size="60,30" valign="center" font="Arial; 20" backgroundColor="white" foregroundColor="black" transparent="1" halign="left" noWrap="1">
     <convert type="FrontendInfop">AGC</convert>
   </widget>
   <!--   Mini Health Widget */   -->
@@ -1052,7 +1052,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <widget source="session.CurrentService" position="230,18" size="171,30" render="Label" font="Caviar_bold; 18" halign="center" valign="center" backgroundColor="black" foregroundColor="unffa500" transparent="2" noWrap="1" text="Seca mediaguard">
     <convert type="openplusCaidInfo">CryptInfo</convert>
   </widget>
-<widget source="session.CurrentService" position="789,932" size="450,25" render="Label" font="Arial; 18" halign="center" valign="center" backgroundColor="white" foregroundColor="black" transparent="2" noWrap="1" text="-">
+<widget source="session.CurrentService" position="784,932" size="455,25" render="Label" font="Caviar_bold; 18" halign="center" valign="center" backgroundColor="white" foregroundColor="black" transparent="2" noWrap="1" text="-">
     <convert type="openplusCamdInfo">Camd</convert>
   </widget>
   <!-- camcryptecm */ -->
