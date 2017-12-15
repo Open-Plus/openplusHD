@@ -1151,15 +1151,16 @@
   <!-- EMC 1280 EMCMediaCenter -->
  <screen name="EMCMediaCenter" position="center,center" size="1920,1080" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="menu_template_infobar" />
-    <widget source="session.CurrentService" render="Label" font="Regular; 19" position="1258,904" size="55,25" halign="right" foregroundColor="black" backgroundColor="white" transparent="1">
+    <panel name="menu_template_infobar_yweather_off" />
+    <widget source="session.CurrentService" render="Label" font="audiowide; 19" position="1368,902" size="90,32" halign="right" foregroundColor="black" backgroundColor="white" transparent="1">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
-    <eLabel text="x" font="Regular; 19" position="1313,904" size="15,25" halign="center" foregroundColor="black" backgroundColor="white" transparent="1" />
-    <widget source="session.CurrentService" render="Label" font="Regular; 19" position="1329,904" size="55,25" halign="left" foregroundColor="black" backgroundColor="white" transparent="1">
+    <eLabel text="x" font="audiowide; 19" position="1458,902" size="14,32" halign="center" foregroundColor="black" backgroundColor="white" transparent="1" />
+    <widget source="session.CurrentService" render="Label" font="audiowide; 19" position="1472,902" size="90,32" halign="left" foregroundColor="black" backgroundColor="white" transparent="1">
       <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
     <!-- /*Barramedia-->
-    <widget source="Service" render="Label" position="389,970" size="100,28" font="Caviar_bold; 24" halign="left" valign="center" backgroundColor="iplusBackground" shadowColor="iplusBackground" shadowOffset="-1,-1" transparent="1">
+    <widget source="Service" render="Label" position="296,962" size="193,50" font="Caviar_bold; 28" halign="right" valign="center" backgroundColor="black" shadowColor="iplusBackground" shadowOffset="-1,-1" transparent="1">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
     <widget source="Service" render="EMCPositionGauge" position="525,980" size="900,10" zPosition="6" transparent="1">
@@ -1172,11 +1173,11 @@
       <convert type="EMCServicePosition">Position</convert>
     </widget>
     <eLabel name="new eLabel" position="525,984" size="900,2" backgroundColor="white" foregroundColor="white" zPosition="-1" />
-    <widget source="Service" render="Label" position="1463,970" size="100,28" font="Caviar_bold; 24" halign="left" valign="center" backgroundColor="iplusBackground" transparent="1">
+    <widget source="Service" render="Label" position="1463,962" size="258,50" font="Caviar_bold; 28" halign="left" valign="center" backgroundColor="black" transparent="1">
       <convert type="EMCServicePosition">Remaining,Negate</convert>
     </widget>
     <widget name="audioLabel" position="1089,906" size="100,22" font="Regular; 18" backgroundColor="white" zPosition="3" transparent="1" halign="right" foregroundColor="black" />
-    <widget backgroundColor="white" font="audiowide; 30" halign="left" position="533,831" render="Label" size="1017,40" source="session.CurrentService" transparent="1" valign="top" foregroundColor="black" zPosition="-1">
+    <widget backgroundColor="white" font="audiowide; 34" halign="left" position="533,826" render="Label" size="1007,50" source="session.CurrentService" transparent="1" valign="top" foregroundColor="black" zPosition="-1">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget alphatest="blend" position="219,820" render="MCOPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
@@ -1186,31 +1187,31 @@
     <widget alphatest="blend" pixmap="openplusHD/icons/ico_rec_onev.png" position="1197,904" render="Pixmap" size="47,25" source="session.RecordState" zPosition="2">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <ePixmap alphatest="blend" pixmap="openplusHD/icons/ico_dolby_off.png" position="1384,904" size="36,25" zPosition="1" />
-    <widget alphatest="blend" pixmap="openplusHD/icons/ico_dolby_on.png" position="1384,904" render="Pixmap" size="36,25" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="openplusHD/icons/ico_dolby_off.png" position="1569,904" size="36,25" zPosition="1" />
+    <widget alphatest="blend" pixmap="openplusHD/icons/ico_dolby_on.png" position="1569,904" render="Pixmap" size="36,25" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="openplusHD/icons/ico_hd_off.png" position="1487,904" size="49,25" zPosition="1" />
-    <widget alphatest="blend" pixmap="openplusHD/icons/ico_hd_on.png" position="1487,904" render="Pixmap" size="49,25" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="openplusHD/icons/ico_hd_off.png" position="1672,904" size="49,25" zPosition="1" />
+    <widget alphatest="blend" pixmap="openplusHD/icons/ico_hd_on.png" position="1672,904" render="Pixmap" size="49,25" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="openplusHD/icons/ico_hd_on.png" position="1487,904" render="Pixmap" size="49,25" source="session.CurrentService" zPosition="2">
+    <widget alphatest="blend" pixmap="openplusHD/icons/ico_hd_on.png" position="1672,904" render="Pixmap" size="49,25" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="openplusHD/icons/ico_format_off.png" position="1430,904" size="47,25" zPosition="1" />
-    <widget alphatest="blend" pixmap="openplusHD/icons/ico_format_on.png" position="1430,904" render="Pixmap" size="47,25" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="openplusHD/icons/ico_format_off.png" position="1615,904" size="47,25" zPosition="1" />
+    <widget alphatest="blend" pixmap="openplusHD/icons/ico_format_on.png" position="1615,904" render="Pixmap" size="47,25" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget name="chapterLabel" position="872,758" size="847,51" font="audiowide; 25" halign="left" foregroundColor="white" backgroundColor="iplusBlue" transparent="1" />
-    <widget source="Service" render="Label" position="1559,831" size="161,40" font="audiowide; 30" halign="right" valign="top" backgroundColor="white" transparent="1" foregroundColor="black">
+    <widget source="Service" render="Label" position="1538,826" size="182,50" font="audiowide; 34" halign="right" valign="top" backgroundColor="white" transparent="1" foregroundColor="black">
       <convert type="EMCServicePosition">Length</convert>
     </widget>
-    <widget alphatest="blend" name="Cover" position="159,366" size="237,335" transparent="0" zPosition="4" />
+    <widget alphatest="blend" name="Cover" position="159,422" size="237,335" transparent="0" zPosition="4" />
     <widget backgroundColor="transpWhite" font="audiowide; 22" foregroundColor="black" halign="right" position="731,900" render="Label" size="97,30" source="session.CurrentService" transparent="1">
       <convert type="openplusHDServiceTime">StartTime</convert>
     </widget>

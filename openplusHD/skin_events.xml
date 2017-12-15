@@ -6,7 +6,7 @@
   <widget backgroundColor="transpBlack" font="Regular; 22" halign="left" name="key_green" position="982,854" size="223,30" transparent="0" zPosition="1" foregroundColor="white" />
   <widget backgroundColor="transpBlack" font="Regular; 22" halign="left" name="key_yellow" position="1258,854" size="190,30" transparent="0" zPosition="1" foregroundColor="white" />
   <widget backgroundColor="transpBlack" font="Regular; 22" halign="left" name="key_blue" position="1471,854" size="190,30" transparent="0" zPosition="1" foregroundColor="white" />
-  <widget scrollbarMode="showNever" backgroundColor="black" font="Regular; 27" foregroundColor="white" name="epg_description" position="729,231" size="895,598" transparent="1" />
+  <widget scrollbarMode="showNever" backgroundColor="black" font="Regular; 30" foregroundColor="white" name="epg_description" position="729,231" size="895,598" transparent="1" />
   <widget alphatest="blend" position="373,231" render="oPicon" size="220,132" source="Service" transparent="1" zPosition="5">
     <convert type="ServiceName">Reference</convert>
   </widget>
@@ -53,7 +53,7 @@
   <widget source="Title" render="Label" position="266,434" size="437,53" font="audiowide; 20" transparent="1" foregroundColor="unffa500" backgroundColor="transpBlackb" zPosition="1" valign="center" halign="center" />
   <widget name="datetime" position="253,490" size="463,35" font="audiowide; 24" foregroundColor="white" backgroundColor="transpBlackb" transparent="1" valign="center" halign="center" />
   <widget name="duration" position="253,544" size="463,35" font="audiowide; 24" foregroundColor="unffa500" backgroundColor="transpBlackb" transparent="1" noWrap="1" valign="center" halign="center" />
-  <widget name="epg_description" position="729,231" size="895,598" font="Regular;22" foregroundColor="white" backgroundColor="black" scrollbarMode="showNever" transparent="1" />
+  <widget name="epg_description" position="729,231" size="895,598" font="Regular; 30" foregroundColor="white" backgroundColor="black" scrollbarMode="showNever" transparent="1" />
  <widget alphatest="blend" position="373,231" render="XoPicon" size="220,132" source="Service" transparent="1" zPosition="5">
     <convert type="MovieInfo">RecordServiceRef</convert>
   </widget>
