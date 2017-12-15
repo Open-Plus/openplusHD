@@ -2687,7 +2687,7 @@
     <widget source="Service" render="EMCPositionGauge" pointer="openplusHD/CoolPointeremc.png:900,0" position="525,985" size="900,6" zPosition="5" transparent="1">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
-    <eLabel name="new eLabel" position="525,987" size="900,2" backgroundColor="white" foregroundColor="white" zPosition="-1" />
+    <eLabel name="new eLabel" position="525,986" size="900,2" backgroundColor="white" foregroundColor="white" zPosition="-1" />
     <widget source="Service" render="Label" position="1463,962" size="258,50" font="Caviar_bold; 28" halign="left" valign="center" backgroundColor="black" transparent="1">
       <convert type="EMCServicePosition">Remaining,Negate</convert>
     </widget>
