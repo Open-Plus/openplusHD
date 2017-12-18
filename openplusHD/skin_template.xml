@@ -1052,9 +1052,9 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <widget source="session.CurrentService" position="230,18" size="171,30" render="Label" font="Caviar_bold; 18" halign="center" valign="center" backgroundColor="black" foregroundColor="unffa500" transparent="2" noWrap="1" text="Seca mediaguard">
     <convert type="openplusCaidInfo">CryptInfo</convert>
   </widget>
-<widget source="session.CurrentService" position="784,932" size="455,25" render="Label" font="Caviar_bold; 18" halign="center" valign="center" backgroundColor="white" foregroundColor="black" transparent="2" noWrap="1" text="-">
-    <convert type="openplusCamdInfo">Camd</convert>
-  </widget>
+<widget source="session.CurrentService" position="784,932" size="455,25" render="Label" font="Arial; 18" halign="center" valign="center" backgroundColor="white" foregroundColor="black" transparent="2" noWrap="1" text="-">
+  <convert type="openplusCamdInfo">Camd</convert>
+</widget>
   <!-- camcryptecm */ -->
 </screen>
 
@@ -1577,6 +1577,17 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="key_green" position="902,854" size="184,35" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" />
     
     <!-- fin colores keys -->
+      </screen>
+    
+     <screen name="button_template_ava_big">
+       <!-- colores keys rojo y verde sobre linea gris nameBIG -->
+    <eLabel position="773,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="yellow" zPosition="1" />
+   <widget render="Label" position="814,958" size="205,36" zPosition="1" font="Regular; 24" backgroundColor="un929292" transparent="1" foregroundColor="white" name="yellow" /> 
+   <eLabel position="518,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="green" zPosition="1" />
+   <widget render="Label" position="558,958" size="207,36" zPosition="1" font="Regular; 24" backgroundColor="un929292" transparent="1" foregroundColor="white" name="green" /> 
+   <eLabel position="1033,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="blue" zPosition="1" />
+   <widget render="Label" position="1075,958" size="235,36" zPosition="1" font="Regular; 25" backgroundColor="un929292" transparent="1" foregroundColor="white" name="blue" /> 
+<!-- fin colores keys -->
       </screen>
     
 	</skin>

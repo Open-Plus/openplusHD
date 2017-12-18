@@ -102,6 +102,15 @@ class openSTBinfo(Converter, object):
 			#info ="SYS-Temp: " + temp.replace('\n', '') + str('\xc2\xb0') + "C"
 			info = temp.replace('\n', '').replace(' ','') + str('\xc2\xb0') + "C"
 			info = _("SYS-Temp: %s") % info
+			
+		elif path.exists('/proc/loadavg'):
+			f = open('/proc/loadavg', 'r')
+			temp = f.readline(4)
+			f.close()
+			#info = "CPU-Load: " + temp
+			info = temp.replace('\n', '').replace(' ','')
+			info = _("CPU-Load: %s") % info	
+			
 		return info
 
 	def getRAMfree(self):
