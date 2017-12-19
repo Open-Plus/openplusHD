@@ -2046,14 +2046,9 @@
     <widget name="list" position="507,273" size="1247,625" itemHeight="70" font="Caviar_bold; 30" scrollbarMode="showNever" backgroundColor="un6e6e6e" foregroundColor="white" enableWrapAround="1" transparent="1" />
     <panel name="menu_templateBIG" />
     <panel name="button_template_rv_lg_nameBIG" />
-  
-
-
 <!-- colores keys rojo y verde sobre linea gris nameBIG -->
     <eLabel position="166,767" size="36,36" transparent="0" foregroundColor="white" backgroundColor="yellow" zPosition="1" />
    <widget render="Label" position="209,767" size="236,36" zPosition="1" font="Regular; 24" backgroundColor="white" transparent="1" foregroundColor="black" name="yellow" /> 
-   
-    
    <eLabel position="166,710" size="36,36" transparent="0" foregroundColor="white" backgroundColor="blue" zPosition="1" />
    <widget render="Label" position="209,710" size="235,36" zPosition="1" font="Regular; 25" backgroundColor="white" transparent="1" foregroundColor="black" name="blue" /> 
 <!-- fin colores keys --></screen>
@@ -2288,7 +2283,7 @@
     <widget name="RtpText" position="0,40" size="1920,60" font="LCD;50" halign="center" valign="center" noWrap="1" backgroundColor="transpBlack" shadowOffset="-2,-2" shadowColor="black" transparent="0" zPosition="1" />
   </screen>
   <screen name="RemoteControlCode" position="center,center" size="1920,1080" title="Remote Control System Code Setting" backgroundColor="transparent" flags="wfNoBorder">
-    <widget name="config" zPosition="2" position="640,312" size="901,505" scrollbarMode="showOnDemand" transparent="1" foregroundColor="black" backgroundColor="white" />
+    <widget name="config" zPosition="2" position="640,312" size="901,505" scrollbarMode="showOnDemand" transparent="1" foregroundColor="white" backgroundColor="un6e6e6e" />
     <ePixmap pixmap="skin_default/rc.png" position="409,320" size="154,500" alphatest="blend" zPosition="-11" />
     <panel name="menu_template1" />
     <panel name="button_template_rv_lg" />
