@@ -794,7 +794,7 @@
     <panel name="menu_templateBIG" />
   </screen>
   <screen name="ChoiceBox" position="center,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="text" position="138,648" size="339,254" font="Regular; 17" halign="left" transparent="1" foregroundColor="white" backgroundColor="un6e6e6e" valign="center" zPosition="1" />
+    <widget name="text" position="138,648" size="339,254" font="Regular; 22" halign="left" transparent="1" foregroundColor="black" backgroundColor="white" valign="center" zPosition="1" />
     <widget name="list" font="Regular;35" position="507,273" size="1247,628" itemHeight="45" scrollbarMode="showNever" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" />
     <ePixmap pixmap="openplusHD/menu/choice.png" position="196,433" size="200,204" alphatest="blend" zPosition="-11" />
     <panel name="menu_templateBIG" />
@@ -2045,11 +2045,12 @@
     <panel name="menu_templateBIG" />
     <panel name="button_template_rv_lg_nameBIG" />
 <!-- colores keys rojo y verde sobre linea gris nameBIG -->
-    <eLabel position="166,767" size="36,36" transparent="0" foregroundColor="white" backgroundColor="yellow" zPosition="1" />
-   <widget render="Label" position="209,767" size="236,36" zPosition="1" font="Regular; 24" backgroundColor="white" transparent="1" foregroundColor="black" name="yellow" /> 
-   <eLabel position="166,710" size="36,36" transparent="0" foregroundColor="white" backgroundColor="blue" zPosition="1" />
-   <widget render="Label" position="209,710" size="235,36" zPosition="1" font="Regular; 25" backgroundColor="white" transparent="1" foregroundColor="black" name="blue" /> 
-<!-- fin colores keys --></screen>
+    <eLabel position="1189,198" size="36,36" transparent="0" foregroundColor="white" backgroundColor="yellow" zPosition="1" name="yellow" />
+   <widget render="Label" position="1232,198" size="236,36" zPosition="1" font="Regular; 24" backgroundColor="black" transparent="1" foregroundColor="white" name="key_yellow" /> 
+   <eLabel position="1491,197" size="36,36" transparent="0" foregroundColor="white" backgroundColor="blue" zPosition="1" />
+   <widget render="Label" position="1534,197" size="235,36" zPosition="3" font="Regular; 25" backgroundColor="black" transparent="1" foregroundColor="white" name="blue" /> 
+<!-- fin colores keys -->
+</screen>
   <screen name="PluginDownloadBrowser" position="0,0" size="1920,1080" title="Downloadable plugins" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="text" position="652,240" size="901,40" zPosition="1" font="Caviar_bold; 19" halign="right" valign="center" foregroundColor="white" transparent="1" backgroundColor="black" />
     <ePixmap pixmap="openplusHD/menu/plugin.png" position="360,445" size="250,272" alphatest="blend" zPosition="-11" />
