@@ -1406,16 +1406,14 @@
   <screen name="MessageBoxGenuine" title="Mensaje" position="center,center" size="1920,1080" zPosition="10" backgroundColor="transpWhite" transparent="0" flags="wfNoBorder">
     <panel name="menu_template_message" />
   </screen>
-  <screen name="MessageBoxPixmap" title="Mensaje" position="center,center" size="1920,1080" zPosition="10" backgroundColor="transpWhite" transparent="0" flags="wfNoBorder">
-    <widget source="Title" render="Label" position="77,15" size="711,52" noWrap="0" font="audiowide; 28" backgroundColor="transpblue" foregroundColor="white" transparent="1" />
-    <eLabel name="line1" position="70,8" size="1920,52" backgroundColor="transpblue" zPosition="-1" foregroundColor="transpblue" />
-    <widget name="text" position="10,65" size="980,80" foregroundColor="white" backgroundColor="black" font="Caviar_bold; 23" valign="center" halign="center" transparent="0" />
-    <widget name="ErrorPixmap" pixmap="openplusHD/icons/input_error.png" position="10,8" size="53,53" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="openplusHD/icons/input_question.png" position="10,8" size="53,53" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="openplusHD/icons/input_info.png" position="10,8" size="53,53" alphatest="blend" />
-    <widget name="WarningPixmap" pixmap="openplusHD/icons/input_warning.png" position="10,8" size="53,53" alphatest="blend" />
-    <widget name="list" position="10,150" size="980,240" itemHeight="30" foregroundColor="white" foregroundColorSelected="white" backgroundColor="un6e6e6e" scrollbarMode="showOnDemand" transparent="0" />
-  </screen>
+  <screen name="MessageBoxPixmap" title="Mensaje" position="center,center" size="885,405" zPosition="10" backgroundColor="transpWhite" transparent="0" flags="wfBorder">
+   
+
+  <widget backgroundColor="white" font="Regular; 26" foregroundColor="black" name="text" position="420,5" size="450,400" transparent="1" valign="center" />
+    <ePixmap pixmap="openplusHD/icons/input_info.png" position="13,13" size="53,53" alphatest="blend" />
+    <widget alphatest="blend" name="InfoPixmap" position="5,5" size="400,400" transparent="1" />
+
+</screen>
   <screen name="MessageBox" title="Mensaje" position="center,center" size="1920,1080" zPosition="10" backgroundColor="transpWhite" transparent="0" flags="wfNoBorder">
     <panel name="menu_template_message" />
   </screen>
