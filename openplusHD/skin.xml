@@ -2046,7 +2046,17 @@
     <widget name="list" position="507,273" size="1247,625" itemHeight="70" font="Caviar_bold; 30" scrollbarMode="showNever" backgroundColor="un6e6e6e" foregroundColor="white" enableWrapAround="1" transparent="1" />
     <panel name="menu_templateBIG" />
     <panel name="button_template_rv_lg_nameBIG" />
-  </screen>
+  
+
+
+<!-- colores keys rojo y verde sobre linea gris nameBIG -->
+    <eLabel position="166,767" size="36,36" transparent="0" foregroundColor="white" backgroundColor="yellow" zPosition="1" />
+   <widget render="Label" position="209,767" size="236,36" zPosition="1" font="Regular; 24" backgroundColor="white" transparent="1" foregroundColor="black" name="yellow" /> 
+   
+    
+   <eLabel position="166,710" size="36,36" transparent="0" foregroundColor="white" backgroundColor="blue" zPosition="1" />
+   <widget render="Label" position="209,710" size="235,36" zPosition="1" font="Regular; 25" backgroundColor="white" transparent="1" foregroundColor="black" name="blue" /> 
+<!-- fin colores keys --></screen>
   <screen name="PluginDownloadBrowser" position="0,0" size="1920,1080" title="Downloadable plugins" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="text" position="652,240" size="901,40" zPosition="1" font="Caviar_bold; 19" halign="right" valign="center" foregroundColor="white" transparent="1" backgroundColor="black" />
     <ePixmap pixmap="openplusHD/menu/plugin.png" position="360,445" size="250,272" alphatest="blend" zPosition="-11" />
