@@ -260,41 +260,6 @@
     <panel name="menu_templateBIG" />
  <panel name="button_template_ava_big" />
 
-
-
-<eLabel text="OPENPLUS" position="745,85" size="430,65" font="audiowide; 50" halign="center" transparent="1" foregroundColor="white" backgroundColor="un42b3" />
-  <eLabel position="1334,945" size="300,60" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
-  <widget source="Title" transparent="1" render="Label" zPosition="2" valign="center" halign="left" position="147,179" size="1534,70" font="Caviar_bold; 37" backgroundColor="black" foregroundColor="white" noWrap="1" />
-  <widget source="global.CurrentTime" render="Label" position="1497,65" size="251,65" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 30" valign="center" halign="right">
-    <convert type="ClockToText">Format:%-H:%M</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Label" position="1327,97" size="421,65" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 23" valign="center" halign="right">
-    <convert type="ClockToText">Date</convert>
-  </widget>
-  <widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=25,repeat=150,startdelay=1500,always=0" position="157,945" size="281,60" font="plus; 22" transparent="1" valign="center" zPosition="2" backgroundColor="black" foregroundColor="white" noWrap="1" halign="center">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <eLabel position="center,center" size="1728,1019" transparent="0" zPosition="-15" backgroundColor="transpWhite" />
-  <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 32" position="1340,953" size="288,60" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white">
-     <convert type="openSTBinfo">SYStemp</convert>
-  </widget>
-  <eLabel position="131,179" size="1657,70" transparent="0" foregroundColor="white" backgroundColor="black" />
-  <eLabel position="155,945" size="286,60" transparent="0" foregroundColor="white" backgroundColor="black" />
-  <eLabel position="507,945" size="807,60" transparent="0" foregroundColor="white" backgroundColor="un929292" zPosition="-1" />
-  <eLabel position="507,273" size="1247,647" transparent="0" foregroundColor="white" backgroundColor="un6e6e6e" zPosition="-10" />
-  
-  <eLabel text="EXIT" position="1653,945" size="100,60" font="Regular; 38" zPosition="2" halign="center" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
-  <eLabel position="131,70" size="1657,88" transparent="0" foregroundColor="white" backgroundColor="transpblue" zPosition="-10" />
-  
-
-       <!-- colores keys rojo y verde sobre linea gris nameBIG -->
-    <eLabel position="773,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="yellow" zPosition="1" />
-   <widget render="Label" position="814,958" size="205,36" zPosition="1" font="Regular; 24" backgroundColor="un929292" transparent="1" foregroundColor="white" name="yellow" /> 
-   <eLabel position="518,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="green" zPosition="1" />
-   <widget render="Label" position="558,958" size="207,36" zPosition="1" font="Regular; 24" backgroundColor="un929292" transparent="1" foregroundColor="white" name="green" /> 
-   <eLabel position="1033,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="blue" zPosition="1" />
-   <widget render="Label" position="1075,956" size="235,36" zPosition="1" font="Regular; 25" backgroundColor="un929292" transparent="1" foregroundColor="white" name="blue" /> 
-<!-- fin colores keys -->
       </screen>
   <screen name="menu_display" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="menu" render="Listboxop" position="507,273" size="1247,623" foregroundColor="white" backgroundColor="un6e6e6e" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
@@ -649,11 +614,11 @@
     <!--finestructura menu/-->
   </screen>
   <screen name="ButtonSetup" position="center,center" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="list" position="640,312" font="Regular; 40" size="901,351" itemHeight="35" enableWrapAround="1" backgroundColor="un6e6e6e" foregroundColor="white" transparent="0" />
-    <widget name="choosen" position="640,663" size="901,164" itemHeight="30" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="black" foregroundColor="unffa500" transparent="0" halign="center" font="Regular; 18" />
-    <widget name="description" position="640,840" size="551,50" font="Regular; 24" foregroundColor="white" halign="center" backgroundColor="un929292" valign="center" transparent="1" />
-    <ePixmap pixmap="skin_default/rc.png" position="409,320" size="154,500" alphatest="blend" zPosition="-11" />
-    <panel name="menu_template1" />
+    <widget name="list" position="507,273" font="Regular; 40" size="1247,400" itemHeight="45" enableWrapAround="1" backgroundColor="un6e6e6e" foregroundColor="white" transparent="0" />
+    <widget name="choosen" position="507,676" size="1247,245" itemHeight="40" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="black" foregroundColor="unffa500" transparent="0" halign="center" font="Regular; 18" />
+    <widget name="description" position="511,950" size="796,50" font="Regular; 24" foregroundColor="white" halign="center" backgroundColor="un929292" valign="center" transparent="1" />
+    <ePixmap pixmap="skin_default/rc.png" position="219,340" size="154,500" alphatest="blend" zPosition="-11" />
+    <panel name="menu_templateBIG" />
   </screen>
   <screen name="BackupSelection" position="0,0" size="1920,1080" title="Select files/folders to backup..." flags="wfBorder" backgroundColor="transparent">
     <widget name="checkList" position="640,312" size="901,469" itemHeight="40" scrollbarMode="showNever" backgroundColor="black" foregroundColor="white" transparent="0" font="Regular; 25" />
@@ -692,13 +657,18 @@
     <ePixmap pixmap="openplusHD/menu/packages.png" position="356,440" size="250,259" alphatest="blend" zPosition="-11" />
   </screen>
   <screen name="ButtonSetupSelect" position="center,center" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="list" position="640,312" font="Regular; 30" size="901,287" itemHeight="32" enableWrapAround="1" backgroundColor="un6e6e6e" foregroundColor="white" transparent="0" />
-    <widget name="choosen" position="640,715" size="901,112" itemHeight="30" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="black" foregroundColor="white" transparent="0" halign="center" font="Regular; 18" />
-    <widget name="description" position="640,612" size="901,101" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="un6e6e6e" valign="center" transparent="1" />
-    <ePixmap pixmap="skin_default/rc.png" position="409,320" size="154,500" alphatest="blend" zPosition="-11" />
-    <panel name="menu_template1" />
-    <panel name="button_template_rv_lg_name" />
-  </screen>
+    <widget name="list" position="507,272" font="Regular; 30" size="1247,393" itemHeight="45" enableWrapAround="1" backgroundColor="un6e6e6e" foregroundColor="white" transparent="0" />
+    <widget name="choosen" position="507,762" size="1247,159" itemHeight="40" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="black" foregroundColor="white" transparent="0" halign="center" font="Regular; 18" />
+    <widget name="description" position="507,668" size="1247,93" font="Regular; 22" foregroundColor="white" halign="center" backgroundColor="un6e6e6e" valign="center" transparent="1" />
+    <ePixmap pixmap="skin_default/rc.png" position="219,340" size="154,500" alphatest="blend" zPosition="-11" />
+    <panel name="menu_templateBIG" />
+ <!-- colores keys rojo y verde sobre linea gris nameBIG -->
+    <eLabel position="813,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="green" zPosition="1" />
+   <widget render="Label" position="854,958" size="450,36" zPosition="1" font="Regular; 30" backgroundColor="un929292" transparent="1" foregroundColor="white" name="key_green" halign="left" valign="center" /> 
+   <eLabel position="518,958" size="36,36" transparent="0" foregroundColor="white" backgroundColor="red" zPosition="1" />
+   <widget render="Label" position="558,958" size="250,36" zPosition="1" font="Regular; 30" backgroundColor="un929292" transparent="1" foregroundColor="white" name="key_red" halign="left" valign="center" /> 
+ <!-- fin colores keys -->
+</screen>
   <screen name="BouquetSelector" position="0,0" size="1920,1080" title="Choose bouquet" flags="wfNoBorder" backgroundColor="transparent">
     <widget font="Caviar_bold; 28" backgroundColor="un6e6e6e" foregroundColor="white" backgroundColorSelected="iplusSelection" foregroundColorSelected="white" name="menu" position="650,322" size="882,494" zPosition="3" itemHeight="35" scrollbarMode="showNever" enableWrapAround="1" transparent="0" />
     <eLabel text="Channel Selection" position="653,842" size="525,50" font="Regular; 32" transparent="1" backgroundColor="un929292" />
@@ -2119,10 +2089,10 @@
     <widget name="key_green" position="820,969" size="226,31" zPosition="1" font="Regular; 24" halign="left" backgroundColor="un929292" transparent="1" foregroundColor="white" />
     <widget name="key_yellow" position="1130,969" size="228,31" zPosition="1" font="Regular; 24" halign="left" backgroundColor="un929292" transparent="1" foregroundColor="white" />
     <!--eLabel position="222,105" zPosition="-11" size="426,466" backgroundColor="white" foregroundColor="white" /-->
-    <widget name="list" position="186,225" size="769,629" itemHeight="70" scrollbarMode="showNever" transparent="0" backgroundColor="black" foregroundColor="white" font="Caviar_bold; 24" zPosition="0" />
+    <widget name="list" position="186,225" size="769,629" itemHeight="70" scrollbarMode="showNever" transparent="0" backgroundColor="black" backgroundColorSelected="iplusPink" foregroundColor="white" font="Caviar_bold; 24" zPosition="0" />
     <!--eLabel position="648,122" zPosition="-11" size="397,431" backgroundColor="layer-b-background" foregroundColor="layer-b-background" /-->
     <widget name="sublist" position="966,225" size="761,629" itemHeight="70" scrollbarMode="shownever" transparent="0" backgroundColor="un6e6e6e" foregroundColor="white" />
-    <widget name="description" position="186,888" size="1540,54" zPosition="1" font="Caviar_bold; 23" halign="center" valign="center" backgroundColor="un929292" transparent="0" foregroundColor="white" />
+    <widget name="description" position="186,881" size="1540,61" zPosition="1" font="Caviar_bold; 23" halign="center" valign="center" backgroundColor="un929292" transparent="0" foregroundColor="white" />
     <eLabel position="946,253" size="28,18" font="RegularLight; 35" backgroundColor="un6e6e6e" transparent="0" foregroundColor="white" zPosition="-12" />
     <eLabel position="309,870" size="18,28" font="audiowide; 35" backgroundColor="black" transparent="0" foregroundColor="white" zPosition="-12" />
   <eLabel position="186,225" size="769,645" transparent="0" foregroundColor="white" backgroundColor="black" zPosition="-1" />

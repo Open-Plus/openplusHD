@@ -2186,4 +2186,22 @@
 				</convert>
 </widget>
 	</screen>
+    <screen name="YoutubeTVSettings" position="center,center" size="650,310" title="YouTube TV Settings">
+		<widget itemHeight="40" name="config" position="6,22" size="640,238" backgroundColorSelected="iplusPink" valign="center" halign="center" font="Regular; 24" backgroundColor="black" foregroundColor="white" transparent="1" />
+			<ePixmap pixmap="skin_default/buttons/green.png" position="170,270" size="140,40" alphatest="on" />
+			<ePixmap pixmap="skin_default/buttons/red.png" position="6,270" size="140,40" alphatest="on" />
+			<widget source="key_green" render="Label" position="170,270" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_red" render="Label" position="6,270" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
+	                <eLabel position="6,22" size="640,241" valign="center" halign="center" font="Regular;20" backgroundColor="black" transparent="0" zPosition="-10" />
+</screen>
+<screen name="YoutubeTVWindow" position="center,center" size="650,310" title="Start YouTube TV">
+			<widget name="infomation" position="6,22" size="640,97" valign="center" halign="center" font="Regular; 24" backgroundColor="black" transparent="1" />
+			<widget name="startdesc" position="6,131" size="640,47" valign="center" font="Regular; 26" transparent="1" backgroundColor="black" halign="center" />
+			<widget name="helpdesc" position="6,189" size="640,48" valign="center" font="Regular; 26" backgroundColor="black" halign="center" />
+			<ePixmap pixmap="skin_default/buttons/green.png" position="170,270" size="140,40" alphatest="on" />
+			<ePixmap pixmap="skin_default/buttons/yellow.png" position="6,270" size="140,40" alphatest="on" />
+			<widget source="key_green" render="Label" position="170,270" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_yellow" render="Label" position="6,270" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
+	                <eLabel position="6,22" size="640,241" valign="center" halign="center" font="Regular;20" backgroundColor="black" transparent="0" zPosition="-10" />
+</screen>
 </skin>
