@@ -72,7 +72,7 @@ class openplusCamdInfo(Poll, Converter, object):
 			emu = ""
 			server = ""
 			for line in open("/etc/image-version"):
-				if line.find("=AAF") > -1 or line.find("=openPlus") > -1 or line.find("=openATV") > -1:
+				if line.find("=AAF") > -1 or line.find("=OpenPlus") > -1 or line.find("=openATV") > -1:
 					if config.softcam.actCam.value: 
 						emu = config.softcam.actCam.value
 						if "Oscam" in config.softcam.actCam.value:
