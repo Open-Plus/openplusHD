@@ -2829,6 +2829,43 @@
     <widget source="key_yellow" render="Label" position="1054,913" zPosition="1" size="150,30" font="Regular;18" halign="center" valign="center" backgroundColor="yellow" transparent="0" foregroundColor="white" />
     <widget source="key_blue" render="Label" position="1397,913" zPosition="1" size="150,30" font="Regular;18" halign="center" valign="center" backgroundColor="blue" transparent="0" foregroundColor="white" />
   </screen>
+   <screen name="optelebot" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+    <widget name="lab1" position="524,871" size="254,40" font="Regular; 20" valign="center" halign="left" backgroundColor="white" foregroundColor="un666666" transparent="1" render="Label" />
+    <widget name="labactive" position="514,911" size="275,40" font="Regular; 22" valign="center" halign="center" backgroundColor="black" zPosition="2" foregroundColor="white" transparent="0" />
+    <widget name="lab2" position="524,790" size="255,40" font="Regular; 20" valign="center" halign="left" backgroundColor="white" foregroundColor="un666666" transparent="1" />
+    <widget name="labstop" position="514,830" size="274,40" font="Regular; 22" valign="center" halign="center" backgroundColor="red" zPosition="1" foregroundColor="white" borderWidth="1" borderColor="red" />
+    <widget name="labrun" position="514,830" size="274,40" font="Regular; 22" valign="center" halign="center" backgroundColor="green" zPosition="2" foregroundColor="white" borderWidth="1" borderColor="green" />
+    <ePixmap alphatest="blend" pixmap="openplusHD/SkinDesign/telegrambot.png" position="center,center" size="891,856" transparent="1" zPosition="-2" />
+    <ePixmap alphatest="blend" pixmap="openplusHD/buttons/key_infot.png" position="536,507" size="34,34" />
+    <widget backgroundColor="white" font="Regular; 19" halign="left" position="579,507" render="Label" size="205,34" name="key_info" transparent="1" zPosition="1" foregroundColor="darkgrey" noWrap="1" valign="center" borderWidth="1" borderColor="grey" />
+   <widget source="Title" transparent="1" render="Label" zPosition="2" font="Regular; 26" foregroundColor="iplusAccent1" backgroundColor="iplusCyan" position="567,162" size="176,71" valign="center" halign="center" borderWidth="1" borderColor="iplusBlue" />
+   <eLabel position="center,center" size="939,901" zPosition="-10" backgroundColor="iplusBackground" transparent="0" />
+ <!-- colores keys  rojo verde amarillo azul-->
+  <ePixmap alphatest="blend" pixmap="openplusHD/buttons/redt.png" position="536,330" size="34,34" />
+  <ePixmap alphatest="blend" pixmap="openplusHD/buttons/greent.png" position="536,374" size="34,34" />
+  <ePixmap alphatest="blend" pixmap="openplusHD/buttons/yellowt.png" position="536,418" size="34,34" />
+<ePixmap alphatest="blend" pixmap="openplusHD/buttons/bluet.png" position="536,463" size="34,34" />
+ <widget backgroundColor="white" font="Regular; 19" halign="left" position="579,374" render="Label" size="205,34" name="key_green" transparent="1" zPosition="1" foregroundColor="green" noWrap="1" valign="center" borderWidth="1" borderColor="grey" />
+   <widget backgroundColor="white" font="Regular; 19" halign="left" position="579,330" render="Label" size="205,34" name="key_red" transparent="1" zPosition="1" foregroundColor="unff0000" noWrap="1" valign="center" borderWidth="1" borderColor="grey" />
+  <widget backgroundColor="white" font="Regular; 19" halign="left" position="579,418" render="Label" size="205,34" name="key_yellow" transparent="1" zPosition="1" foregroundColor="yellow" noWrap="1" valign="center" borderWidth="1" borderColor="darkgrey" />
+   <widget backgroundColor="white" font="Regular; 19" halign="left" position="579,463" render="Label" size="205,34" name="key_blue" transparent="1" zPosition="1" foregroundColor="blue" noWrap="1" valign="center" borderWidth="1" borderColor="grey" />
+  <!-- fin colores keys -->    
+</screen>
+
+<screen name="WebifPort" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+   <ePixmap alphatest="blend" pixmap="openplusHD/SkinDesign/telegrambot.png" position="center,center" size="891,856" transparent="1" zPosition="-2" />
+   <widget source="Title" transparent="1" render="Label" zPosition="2" font="Regular; 26" foregroundColor="white" backgroundColor="iplusCyan" position="593,143" size="185,70" valign="center" halign="left" borderWidth="1" borderColor="iplusBlue" />
+   <eLabel position="center,center" size="939,901" zPosition="-10" backgroundColor="iplusBackground" transparent="0" />
+ <!-- colores keys  rojo verde amarillo azul-->
+  <ePixmap alphatest="blend" pixmap="openplusHD/buttons/redt.png" position="536,330" size="34,34" />
+  <ePixmap alphatest="blend" pixmap="openplusHD/buttons/greent.png" position="536,374" size="34,34" />
+  <widget backgroundColor="white" font="Regular; 19" halign="left" position="579,374" render="Label" size="205,34" name="key_green" transparent="1" zPosition="1" foregroundColor="green" noWrap="1" valign="center" borderWidth="1" borderColor="grey" />
+   <widget backgroundColor="white" font="Regular; 19" halign="left" position="579,330" render="Label" size="205,34" name="key_red" transparent="1" zPosition="1" foregroundColor="unff0000" noWrap="1" valign="center" borderWidth="1" borderColor="grey" />
+   <!-- fin colores keys -->   
+ <widget selectionPixmap="openplusHD/sep/sep100.png" position="524,911" size="254,40" backgroundColor="black" backgroundColorSelected="black" font="Regular; 21" foregroundColorSelected="white" itemHeight="40" name="config" scrollbarMode="showNever" transparent="1" zPosition="2" foregroundColor="white" />		 
+<eLabel position="514,911" size="275,40" valign="center" halign="center" backgroundColor="black" zPosition="1" foregroundColor="white" transparent="0" />
+</screen> 
+    
   <!-- Wizards -->
   <screen name="DefaultSatLists" position="center,center" size="1920,1080" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="menu_template_wizard" />
