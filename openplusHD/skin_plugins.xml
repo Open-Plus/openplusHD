@@ -2204,4 +2204,25 @@
 			<widget source="key_yellow" render="Label" position="6,270" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
 	                <eLabel position="6,22" size="640,241" valign="center" halign="center" font="Regular;20" backgroundColor="black" transparent="0" zPosition="-10" />
 </screen>
+    <screen name="SpeedTestScreen" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap pixmap="openplusHD/buttons/key_red.png" alphatest="blend" position="725,600" size="34,34" backgroundColor="red" />
+    <ePixmap pixmap="openplusHD/buttons/key_yellow.png" alphatest="blend" position="725,780" size="34,34" backgroundColor="green" />
+    <ePixmap pixmap="openplusHD/buttons/key_green.png" alphatest="blend" position="725,690" size="34,34" backgroundColor="yellow" />
+    <ePixmap pixmap="openplusHD/buttons/key_blue.png" alphatest="blend" position="725,870" size="34,34" backgroundColor="blue" />
+    <widget backgroundColor="un6e6e6e" font="Regular; 32" halign="left" position="776,760" render="Label" size="843,70" name="key_yellow" transparent="1" zPosition="1" foregroundColor="white" noWrap="1" valign="center" />
+    <widget backgroundColor="un6e6e6e" font="Regular; 32" halign="left" position="776,580" render="Label" size="843,70" name="key_red" transparent="1" zPosition="1" foregroundColor="white" noWrap="1" valign="center" />
+    <widget backgroundColor="un6e6e6e" font="Regular; 32" halign="left" position="776,670" render="Label" size="843,70" name="key_green" transparent="1" zPosition="1" foregroundColor="white" noWrap="1" valign="center" />
+    <widget backgroundColor="un6e6e6e" font="Regular; 32" halign="left" position="776,850" size="843,70" transparent="1" zPosition="1" foregroundColor="white" noWrap="1" name="key_blue" render="Label" valign="center" />
+    <ePixmap position="722,283" size="800,300" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Openpanel/icons/speed.png" transparent="1" alphatest="blend" />
+    <widget name="introduction" position="115,665" size="374,301" font="Regular; 26" foregroundColor="black" halign="center" backgroundColor="white" valign="top" transparent="1" />
+    <ePixmap position="175,407" size="256,256" zPosition="2" pixmap="openplusHD/menu/speedtestlogop.png" transparent="1" alphatest="blend" />
+    <panel name="menu_templateBIG" />
+</screen>
+    <screen name="serversel" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+  <widget name="list" position="512,278" size="1236,635" itemHeight="45" font="Regular; 26" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="un6e6e6e" foregroundColor="white" transparent="1" />
+  <panel name="button_template_rv_lg_nameBIG" />
+  <widget name="introduction" position="115,665" size="374,301" font="Regular; 26" foregroundColor="black" halign="center" backgroundColor="white" valign="top" transparent="1" />
+  <ePixmap position="175,407" size="256,256" zPosition="2" pixmap="openplusHD/menu/speedtestlogop.png" transparent="1" alphatest="blend" />
+  <panel name="menu_templateBIG" />
+</screen>
 </skin>
